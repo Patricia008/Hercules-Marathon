@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html body #desktop-nav {
+  background-color: #000;
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  height: 7vh;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body #desktop-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+html body #desktop-nav ul li {
+  margin: 0 1rem;
+}
+html body #desktop-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+html body #mobile-nav {
+  display: none;
+}
+html body .inscriere-button {
+  font-family: "Ubuntu";
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-color: purple;
+  color: #fff;
+  box-shadow: 0 0 40px 40px purple inset, 0 0 0 0 purple;
+  transition: all 150ms ease-in-out;
+}
+html body .inscriere-button:hover {
+  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+}
+html body .Heading {
+  color: white;
+  background-image: url(./assets/photos/heading.jpg);
+  box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.45);
+  width: 100%;
+  height: 57vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body .Heading__title {
+  font-family: "Ubuntu";
+  font-size: 5rem;
+  line-height: 5rem;
+  margin-top: 7vh;
+}
+@media (max-width: 1250px) {
+  html body .Heading__title {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 850px) {
+  html body .Heading__title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 670px) {
+  html body .Heading__title {
+    font-size: 2rem;
+  }
+}
+html body .Heading__subtitle {
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  margin-top: 1rem;
+}
+html body .Heading__description {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  line-height: 2.25rem;
+}
+html body .Heading__cta {
+  font-size: 1.5rem;
+  margin-top: 4rem;
+}
+html body .Intro__title {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-top: 9rem;
+}
+html body .Intro__description {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 9rem;
+}
+html body .Sarbatoreste {
+  color: white;
+  background-image: url(./assets/photos/stoned.jpg);
+  box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.45);
+  width: 100%;
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html body .Sarbatoreste p {
+  display: inline;
+  margin: 1.5rem;
+  font-size: 1.5rem;
+}
+html body .Sarbatoreste__flex {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+html body .Details {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  text-align: justify;
+}
+html body .Details__text_container {
+  width: 88%;
+  align-self: center;
+}
+html body .Details__text_container b {
+  font-weight: 600;
+  color: purple;
+}
+html body .Details__text_container ul {
+  padding: 0 5rem;
+}
+html body .Trasee__subtitle {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+html body .Trasee__description {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+html body .DespreNoi__subtitle {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+html body .DespreNoi__description {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin-bottom: 3rem;
+  width: 88%;
+  align-self: center;
+}
+html body .DespreNoi__description b {
+  font-weight: 600;
+  color: purple;
+}
+html body .Editii {
+  padding: 0;
+}
+html body .Editii__poze {
+  background-image: url(./assets/photos/anterior.jpg);
+  width: 100%;
+  height: 57vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+html body .Inscriere {
+  text-align: center;
+}
+html body .Inscriere__description {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  margin-bottom: 3rem;
+  width: 88%;
+  align-self: center;
+  font-weight: 600;
+  color: purple;
+}
+html body .Inscriere__button {
+  margin: 4rem auto;
+}
+html body .Inscriere__button:hover {
+  color: purple;
+}
+html body .section-title {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-top: 9rem;
+  margin-bottom: 3rem;
+}
+html body article section {
+  width: 100%;
+  padding: 0 21rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1600px) {
+  html body article section {
+    padding: 0 9rem;
+  }
+}
+@media (max-width: 1250px) {
+  html body article section {
+    padding: 0 3rem;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  html body #desktop-nav ul {
+    width: 100%;
+  }
+  html body article h1 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 700px) {
+  html body #desktop-nav {
+    display: none;
+  }
+  html body #mobile-nav {
+    background-color: #000;
+    opacity: 0.8;
+    position: fixed;
+    width: 100%;
+    height: 7vh;
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.3s linear;
+    font-family: monospace;
+  }
+  html body #mobile-nav i {
+    color: #fff;
+    font-size: 2em;
+    margin-left: 10px;
+    transition: all 0.3s linear;
+  }
+  html body #mobile-nav ul {
+    position: absolute;
+    top: 0px;
+    transform: translatex(-100vw);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s linear;
+  }
+  html body #mobile-nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  html body #mobile-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
