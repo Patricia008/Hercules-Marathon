@@ -1,3 +1,23 @@
+.base-color {
+  color: #ffba00;
+}
+
+.orange {
+  color: orange;
+}
+
+.turquoise {
+  color: turquoise;
+}
+
+.red {
+  color: red;
+}
+
+.burgundy {
+  color: #800020;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,15 +29,15 @@ html {
   scroll-behavior: smooth;
 }
 html body #desktop-nav {
-  background-color: #000;
-  opacity: 0.8;
+  background-color: white;
   position: fixed;
   width: 100%;
-  height: 7vh;
+  height: 6vh;
   min-height: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  padding: 2.5rem;
 }
 html body #desktop-nav ul {
   list-style: none;
@@ -28,7 +48,7 @@ html body #desktop-nav ul li {
   margin: 0 1rem;
 }
 html body #desktop-nav ul li a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   font-size: 1.5em;
   text-transform: uppercase;
@@ -39,29 +59,28 @@ html body #mobile-nav {
 html body .inscriere-button {
   font-family: "Ubuntu";
   box-sizing: border-box;
-  appearance: none;
-  background-color: transparent;
+  background-color: #ffba00;
   border: 2px solid;
-  border-radius: 0.6em;
   cursor: pointer;
   display: flex;
   align-self: center;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1;
-  margin: 20px;
+  margin-top: 2rem;
   padding: 1.2em 2.8em;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
-  border-color: purple;
-  color: #fff;
-  box-shadow: 0 0 40px 40px purple inset, 0 0 0 0 purple;
-  transition: all 150ms ease-in-out;
+  border-color: #ffba00;
+  color: black;
 }
 html body .inscriere-button:hover {
-  box-shadow: 0 0 10px 0 purple inset, 0 0 10px 4px purple;
+  box-shadow: 0 0 10px 0 #ffba00 inset, 0 0 10px 4px #ffba00;
+}
+html body .inscriere-button:active {
+  box-shadow: none;
 }
 html body .Heading {
   color: white;
@@ -73,15 +92,41 @@ html body .Heading {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1000px) {
+  html body .Heading {
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 7vh;
+  }
+}
+html body .Heading__right {
+  margin-left: 11rem;
+}
+@media (max-width: 1000px) {
+  html body .Heading__right {
+    margin-left: 0;
+  }
+}
 html body .Heading__title {
+  display: inline-flex;
   font-family: "Ubuntu";
+  font-weight: 900;
+}
+html body .Heading__title__hercules {
   font-size: 5rem;
-  line-height: 5rem;
-  margin-top: 7vh;
+  line-height: 5.4rem;
+  flex: 1;
+  margin-right: 1rem;
+}
+html body .Heading__title__x {
+  color: #ffba00;
+  font-size: 12rem;
+  line-height: 10rem;
+  flex: 1;
 }
 @media (max-width: 1250px) {
   html body .Heading__title {
@@ -101,46 +146,58 @@ html body .Heading__title {
 html body .Heading__subtitle {
   font-size: 1.75rem;
   line-height: 1.75rem;
-  margin-top: 1rem;
+}
+html body .Heading__subtitle__colored {
+  color: #ffba00;
+  font-weight: 900;
+  margin-top: 4rem;
 }
 html body .Heading__description {
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: 1.2rem;
   margin-top: 2rem;
-  line-height: 2.25rem;
+  line-height: 1.5rem;
 }
 html body .Heading__cta {
+  text-transform: uppercase;
   font-size: 1.5rem;
-  margin-top: 4rem;
 }
 html body .Intro__title {
   text-align: center;
-  font-size: 3rem;
-  line-height: 3rem;
-  margin-top: 9rem;
+  margin-top: 7rem;
+}
+html body .Intro__title b {
+  color: #ffba00;
 }
 html body .Intro__description {
   font-size: 1.5rem;
   line-height: 2.25rem;
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 9rem;
+  margin-bottom: 7rem;
 }
 html body .Sarbatoreste {
-  color: white;
-  background-image: url(./assets/photos/stoned.jpg);
-  box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.45);
   width: 100%;
-  height: 30vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 9rem;
 }
 html body .Sarbatoreste p {
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline;
+  margin: 1.5rem;
+  font-size: 1.5rem;
+}
+html body .Sarbatoreste strong {
+  font-size: 2.3rem;
+}
+html body .Sarbatoreste__sarbatoreste {
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
   display: inline;
   margin: 1.5rem;
   font-size: 1.5rem;
@@ -150,10 +207,116 @@ html body .Sarbatoreste__flex {
   width: 100%;
   justify-content: space-around;
 }
+html body .Sarbatoreste__flex__1 {
+  left: -5rem;
+  position: relative;
+}
+html body .Sarbatoreste__flex__2 {
+  left: 4rem;
+  position: relative;
+}
+html body .Sarbatoreste__flex__miscarea {
+  position: relative;
+  left: -13rem;
+}
+html body .Sarbatoreste__flex__natura {
+  position: relative;
+  left: 7rem;
+}
+html body .Sarbatoreste__hercules {
+  display: inline-flex;
+  font-size: 2.3rem;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+html body .Sarbatoreste__hercules__maraton {
+  line-height: 2.7rem;
+  margin-right: 0.5rem;
+}
+html body .Sarbatoreste__hercules__x {
+  font-size: 6rem;
+  line-height: 5rem;
+}
+html body .floating-nv {
+  animation-name: floating-nv;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+html body .floating-sv {
+  animation-name: floating-sv;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+html body .floating-ne {
+  animation-name: floating-ne;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+html body .floating-circle {
+  animation-name: floating-circle;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+@keyframes floating-nv {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(10px, 15px);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
+}
+@keyframes floating-sv {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(-15px, 5px);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
+}
+@keyframes floating-ne {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(10px, -12px);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
+}
+@keyframes floating-circle {
+  from {
+    -webkit-transform: rotate(0deg) translate3d(6px, 0, 0) rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translate3d(6px, 0, 0) rotate(-360deg);
+  }
+}
 html body .Details {
   font-size: 1.5rem;
   line-height: 2.25rem;
   text-align: justify;
+  background-color: black;
+  color: white;
 }
 html body .Details__text_container {
   width: 88%;
@@ -161,7 +324,7 @@ html body .Details__text_container {
 }
 html body .Details__text_container b {
   font-weight: 600;
-  color: purple;
+  color: #ffba00;
 }
 html body .Details__text_container ul {
   padding: 0 5rem;
@@ -193,7 +356,7 @@ html body .DespreNoi__description {
 }
 html body .DespreNoi__description b {
   font-weight: 600;
-  color: purple;
+  color: #ffba00;
 }
 html body .Editii {
   padding: 0;
@@ -215,18 +378,15 @@ html body .Inscriere__description {
   width: 88%;
   align-self: center;
   font-weight: 600;
-  color: purple;
+  color: #ffba00;
 }
 html body .Inscriere__button {
   margin: 4rem auto;
 }
-html body .Inscriere__button:hover {
-  color: purple;
-}
 html body .section-title {
-  text-align: center;
+  text-transform: uppercase;
   font-size: 3rem;
-  line-height: 3rem;
+  font-weight: 900;
   margin-top: 9rem;
   margin-bottom: 3rem;
 }
