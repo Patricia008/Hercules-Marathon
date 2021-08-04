@@ -10,7 +10,7 @@
 	<!-- Nav Bar For Desktop and Tablet-->
 	<nav id="desktop-nav">
 		<ul>
-			<!-- <li><a href="#heading">Home</a></li> -->
+			<li><a href="#heading">Home</a></li>
 			<li><a href="#intro">intro</a></li>
 			<li><a href="#details">detalii</a></li>
 			<li><a href="#trasee">trasee</a></li>
@@ -27,7 +27,7 @@
 			</svg>
 		</div>
 		<ul>
-			<!-- <li><a href="#heading">home</a></li> -->
+			<li><a href="#heading">home</a></li>
 			<li><a href="#intro">intro</a></li>
 			<li><a href="#details">detalii</a></li>
 			<li><a href="#trasee">trasee</a></li>
@@ -65,7 +65,7 @@
 					Vino în Valea Cernei, Herculane și participă la a X-a ediție Hercules Maraton alături de prietenii tăi<br/>
 					Știm. Și nouă ne-a fost dor. 
 				</div>
-				<button class="inscriere-button">
+				<button class="button">
 					Vreau să particip
 				</button>
 			</div>
@@ -110,43 +110,48 @@
 				Detalii Concurs
 			</div>
 			<div class="Details__text_container">
-				<div>
-					Așa cum te-am obișnuit, <b>Startul</b> îl vom da din zona Podului dinspre Vânturătoarea, la ora 9:00. 
+				<div class="Details__text_container__left">
+
+					<div>
+						Așa cum te-am obișnuit, <b>Startul</b> îl vom da din zona Podului dinspre Vânturătoarea, la ora 9:00. 
+					</div>
+					<div>
+						Traseul de <b>Semimaraton</b> urmează marcajul galben și are o lungime de X km și o diferență de nivel de X metri. 
+					</div>
+					<div>
+						Traseul de <b>Maraton</b> este marcat cu cern roșu și are o lungime de X km, cu diferență de nivel de X metri.
+					</div><br/>
+					<div>
+						<b>Înscrierile</b> se pot face până în data de X, inclusiv, iar <b>înscrieri la fața locului nu vor fi posibile</b> din motive logistice și de siguranță.
+					</div>
+					<div>
+						<b>Participarea la concurs</b> se face pe baza unei brățări pe care o primești doar după ce prezinți dovada de vaccinare, un test PCR negativ nu mai vechi de 72 de ore sau un test antigen negativ nu mai vechi de 24 de ore. 
+					</div>
 				</div>
-				<div>
-					Traseul de <b>Semimaraton</b> urmează marcajul galben și are o lungime de X km și o diferență de nivel de X metri. 
-				</div>
-				<div>
-					Traseul de <b>Maraton</b> este marcat cu cern roșu și are o lungime de X km, cu diferență de nivel de X metri.
-				</div><br/>
-				<div>
-					<b>Înscrierile</b> se pot face până în data de X, inclusiv, iar <b>înscrieri la fața locului nu vor fi posibile</b> din motive logistice și de siguranță.
-				</div>
-				<div>
-					<b>Participarea la concurs</b> se face pe baza unei brățări pe care o primești doar după ce prezinți dovada de vaccinare, un test PCR negativ nu mai vechi de 72 de ore sau un test antigen negativ nu mai vechi de 24 de ore. 
-				</div><br/>
-				<div>
-					<b>Categoriile de vârstă</b> premiate în concurs vor fi următoarele: 
-				</div><br/>
-				<div>
-					<b>Clasamentul general</b> va fi împărțit în următoarele categorii:
-				</div>
-				<ul>
-					<li>
-						Semimaraton Masculin
-					</li>
-					<li>
-						Semimaraton Feminin
-					</li>
-					<li>
-						Maraton Masculin
-					</li>
-					<li>
-						Maraton Feminin
-					</li>
-				</ul><br/>
-				<div>
-					<b>Premiile</b> pentru fiecare categorie vor consta în:
+				<div class="Details__text_container__right">
+					<div>
+						<b>Categoriile de vârstă</b> premiate în concurs vor fi următoarele: 
+					</div><br/>
+					<div>
+						<b>Clasamentul general</b> va fi împărțit în următoarele categorii:
+					</div>
+					<ul>
+						<li>
+							- Semimaraton Masculin
+						</li>
+						<li>
+							- Semimaraton Feminin
+						</li>
+						<li>
+							- Maraton Masculin
+						</li>
+						<li>
+							- Maraton Feminin
+						</li>
+					</ul><br/>
+					<div>
+						<b>Premiile</b> pentru fiecare categorie vor consta în:
+					</div>
 				</div>
 			</div>
 		</section>
@@ -154,21 +159,28 @@
 			<div class="section-title">
 				Descrierea traseelor
 			</div>
-			<div class="Trasee__subtitle">
-				Proba SEMIMARATON
+			<div class="Trasee__subtitle base-color">
+				SEMIMARATON
 			</div>
 			<div class="Trasee__description">
 				Aici va fi descriere text, un paragraf vizibil, restul descrierii cu “see more”/dropdown
 			</div>
-			<div class="Trasee__subtitle">
-				Proba MARATON
+			<button class="button Trasee__semimaraton__button">
+				vezi harta
+			</button>
+			<div class="Trasee__subtitle red">
+				MARATON
 			</div>
 			<div class="Trasee__description">
 				Aici va fi descriere text, un paragraf vizibil, restul descrierii cu “see more”/dropdown
 			</div>
+			<button class="button Trasee__maraton__button">
+				vezi harta
+			</button>
 		</section>
+
 		<section id="desprenoi" class="DespreNoi">
-			<div class="section-title">
+			<div class="section-title DespreNoi__title">
 				Cine suntem noi
 			</div>
 			<div class="DespreNoi__subtitle">
@@ -185,33 +197,38 @@
 			</div>
 
 		</section>
+
 		<section id="editii" class="Editii">
 			<div class="section-title">
-				Cum a fost la edițiile trecute Hercules Maraton
+				Cum a fost la edițiile trecute<br/>
+				Hercules Maraton
 			</div>
-			<div class="Editii__poze"/>
+			<div class="Editii__poze">
+				<img src="./assets/photos/anterior.jpg" alt="Girl in a jacket" width="400" height="250">
+				<img src="./assets/photos/heading.jpg" alt="Girl in a jacket" width="400" height="250">
+				<img src="./assets/photos/cladire.jpg" alt="Girl in a jacket" width="400" height="250">
+			</div>
 		</section>
 		<section id="inscriere" class="Inscriere">
-			<div class="section-title">
-				Sărbătorește și tu Hercules Maraton X împreună cu noi!
+			<div class="section-title Inscriere__title">
+				Sărbătorește și tu
+				<div class="base-color">
+					Hercules Maraton X 
+				</div>
+				împreună cu noi!
 			</div>
 			<duv class="Inscriere__description">
-				1<br/>
-				Apasă butonul de înscriere<br/><br/>
+				1. Apasă butonul de înscriere<br/><br/>
 
-				2<br/>
-				Alege proba la care vrei să participi<br/><br/>
+				2. Alege proba la care vrei să participi<br/><br/>
 
-				3<br/>
-				Fă plata și confirmă locul în concurs<br/><br/>
+				3. Fă plata și confirmă locul în concurs<br/><br/>
 
-				4<br/>
-				Aleargă la Hercules Maraton X<br/>
+				4. Aleargă la Hercules Maraton X<br/>
 
-				<button class="inscriere-button Inscriere__button">
-					Vreau să particip
+				<button class="button Inscriere__button">
+					sarbatorim impreuna
 				</button>
-				Sărbătorim împreună!
 			</duv>
 		</section>
 	</article>
