@@ -1,13 +1,13 @@
 .base-color {
-  color: #ffba00;
+  color: #ffad1d;
 }
 
 .orange {
-  color: orange;
+  color: #ff6914;
 }
 
 .turquoise {
-  color: turquoise;
+  color: #00e0dd;
 }
 
 .red {
@@ -15,14 +15,15 @@
 }
 
 .burgundy {
-  color: #800020;
+  color: #830000;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Exo 2", sans-serif;
+  font-family: "Poppins", "Exo 2", sans-serif;
+  cursor: default;
 }
 
 .section-title {
@@ -46,6 +47,7 @@ html body #desktop-nav {
   justify-content: flex-end;
   align-items: center;
   padding: 2.5rem;
+  z-index: 3;
 }
 html body #desktop-nav ul {
   list-style: none;
@@ -56,53 +58,92 @@ html body #desktop-nav ul li {
   margin: 0 1rem;
 }
 html body #desktop-nav ul li a {
+  cursor: pointer;
   color: black;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-transform: uppercase;
 }
 html body #mobile-nav {
   display: none;
 }
 html body .button {
-  font-family: "Ubuntu";
   box-sizing: border-box;
-  background-color: #ffba00;
-  border: 2px solid;
+  background-color: #ffad1d;
+  font-style: italic;
+  border: 4px solid;
   cursor: pointer;
   display: flex;
   align-self: center;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1;
-  margin-top: 2rem;
-  padding: 1.2em 2.8em;
+  margin-top: 5rem;
+  padding: 1.05rem;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
-  border-color: #ffba00;
+  border-color: #ffad1d;
   color: black;
 }
 html body .button:hover {
-  box-shadow: 0 0 10px 0 #ffba00 inset, 0 0 10px 4px #ffba00;
+  background-color: #00e0dd;
+  border-color: #00e0dd;
 }
 html body .button:active {
-  box-shadow: none;
+  border-color: #101111;
 }
-html body .Heading {
-  color: white;
-  background-image: url(./assets/photos/cladire.jpg);
-  box-shadow: inset 0 0 0 2000px rgba(2, 2, 2, 0.7);
+html body article section {
   width: 100%;
-  height: 57vh;
+  padding: 0 15rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
+}
+@media (max-width: 1600px) {
+  html body article section {
+    padding: 0 9rem;
+  }
+}
+@media (max-width: 1250px) {
+  html body article section {
+    padding: 0 3rem;
+  }
+}
+html body .perioada-de-inscrieri {
+  font-size: 0.9rem;
+  color: #ffad1d;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+html body .black-mountain {
+  padding: 6vh 0 0 0;
+  position: relative;
+  bottom: -1rem;
+  z-index: -1;
+}
+html body .top-mountains {
+  padding: 0;
+  top: -20.55rem;
+  position: relative;
+}
+@media (max-width: 1700px) {
+  html body .top-mountains {
+    top: -15rem;
+  }
+}
+html body .Heading {
+  color: white;
+  background-color: #101111;
+  width: 100%;
+  height: 57vh;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  padding-top: 1rem;
 }
 @media (max-width: 1000px) {
   html body .Heading {
@@ -113,6 +154,7 @@ html body .Heading {
 }
 html body .Heading__right {
   margin-left: 11rem;
+  z-index: 2;
 }
 @media (max-width: 1000px) {
   html body .Heading__right {
@@ -121,20 +163,20 @@ html body .Heading__right {
 }
 html body .Heading__title {
   display: inline-flex;
-  font-family: "Ubuntu";
-  font-weight: 900;
+  font-family: "Myriad Pro";
 }
 html body .Heading__title__hercules {
   font-size: 5rem;
-  line-height: 5.4rem;
+  line-height: 5rem;
   flex: 1;
   margin-right: 1rem;
 }
 html body .Heading__title__x {
-  color: #ffba00;
+  color: #ffad1d;
   font-size: 12rem;
   line-height: 10rem;
   flex: 1;
+  font-weight: 600;
 }
 @media (max-width: 1250px) {
   html body .Heading__title {
@@ -152,29 +194,32 @@ html body .Heading__title__x {
   }
 }
 html body .Heading__subtitle {
-  font-size: 1.75rem;
-  line-height: 1.75rem;
+  font-size: 2.25rem;
+  line-height: 1.25rem;
 }
 html body .Heading__subtitle__colored {
-  color: #ffba00;
-  font-weight: 900;
+  color: #ffad1d;
+  font-weight: 600;
   margin-top: 4rem;
+  font-style: italic;
 }
 html body .Heading__description {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin-top: 2rem;
   line-height: 1.5rem;
 }
 html body .Heading__cta {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 600;
 }
 html body .Intro__title {
   text-align: center;
   margin-top: 7rem;
 }
 html body .Intro__title b {
-  color: #ffba00;
+  color: #ffad1d;
 }
 html body .Intro__description {
   font-size: 1.5rem;
@@ -323,7 +368,7 @@ html body .Details {
   font-size: 1.5rem;
   line-height: 2.25rem;
   text-align: justify;
-  background-color: black;
+  background-color: #101111;
   color: white;
   padding-bottom: 9rem;
 }
@@ -340,7 +385,7 @@ html body .Details__text_container {
 }
 html body .Details__text_container b {
   font-weight: 600;
-  color: #ffba00;
+  color: #ffad1d;
 }
 html body .Details__text_container ul {
   list-style-type: none;
@@ -373,20 +418,20 @@ html body .Trasee__semimaraton__button {
   margin-bottom: 12rem;
 }
 html body .Trasee__semimaraton__button:hover {
-  box-shadow: 0 0 5px 0 #ffba00 inset, 0 0 5px 2px #ffba00;
+  box-shadow: 0 0 5px 0 #ffad1d inset, 0 0 5px 2px #ffad1d;
 }
 html body .Trasee__semimaraton__button:active {
   box-shadow: none;
 }
 html body .Trasee__maraton__button {
   align-self: flex-start;
-  background-color: red;
+  background-color: #da0000;
   color: white;
-  border-color: red;
+  border-color: #da0000;
   margin-bottom: 9rem;
 }
 html body .Trasee__maraton__button:hover {
-  box-shadow: 0 0 5px 0 red inset, 0 0 5px 2px red;
+  box-shadow: 0 0 5px 0 #da0000 inset, 0 0 5px 2px #da0000;
 }
 html body .Trasee__maraton__button:active {
   box-shadow: none;
@@ -415,7 +460,7 @@ html body .DespreNoi__description {
 }
 html body .DespreNoi__description b {
   font-weight: 600;
-  color: #ffba00;
+  color: #ffad1d;
 }
 html body .Editii {
   padding-bottom: 9rem;
@@ -427,7 +472,7 @@ html body .Editii__poze {
   gap: 40px;
 }
 html body .Inscriere {
-  background-color: black;
+  background-color: #101111;
   color: white;
   width: 100%;
   padding-bottom: 5rem;
@@ -459,25 +504,6 @@ html body .Inscriere__description {
 }
 html body .Inscriere__button {
   margin-top: 4rem;
-}
-html body article section {
-  width: 100%;
-  padding: 0 18rem;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-}
-@media (max-width: 1600px) {
-  html body article section {
-    padding: 0 9rem;
-  }
-}
-@media (max-width: 1250px) {
-  html body article section {
-    padding: 0 3rem;
-  }
 }
 @media (min-width: 700px) and (max-width: 1000px) {
   html body #desktop-nav ul {
