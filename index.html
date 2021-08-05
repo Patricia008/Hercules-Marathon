@@ -36,9 +36,10 @@
 			<i class="fas fa-times" onclick="click_times()"></i>
 		</ul>
 	</nav>
+	<img class="logo" src="./assets/svgs/Hercules_Maraton_Logo.svg" width="156.325px" height="149.427px">
 	<!-- Sections -->
 	<article>
-		<section id="heading" class="black-mountain">
+		<section id="heading" class="black-mountain Heading__black-mountain">
 			<img src="./assets/svgs/Black_Mountain.svg">
 		</section>
 		<section class="Heading">
@@ -64,7 +65,7 @@
 					Înscrie-te și tu!
 				</i>
 				<div class="Heading__description">
-					Vino în Valea Cernei, Herculane și participă la a X-a ediție Hercules Maraton alături de prietenii tăi<br/>
+					Vino în Valea Cernei, Herculane și participă la a X-a ediție Hercules Maraton alături de prietenii tăi.<br/>
 					Știm. Și nouă ne-a fost dor. 
 				</div>
 				<button class="button">
@@ -84,20 +85,20 @@
 				Hercules Maraton <b>X</b>
 			</div>
 			<div class="Intro__description">
-				După o pauză în care ne-a fost dor de oameni, de mișcare și de atmosfera din fiecare an din Valea Cernei, revenim cu o ediție specială. Sărbătorim a X-a ediție Hercules Maraton și vrem să ne fii alături. 
+				După o pauză în care ne-a fost dor de oameni, de mișcare și de atmosfera din fiecare an din Valea Cernei, revenim cu o ediție specială. <strong>Sărbătorim</strong> a X-a ediție Hercules Maraton și vrem să ne fii alături. 
 			</div>
 		</section>
 		<section class="Sarbatoreste">
 			<div class="Sarbatoreste__flex Sarbatoreste__flex__1">
-				<p class="floating-nv">Sărbătorește<br/> <strong class="base-color">Revederea</strong></p>
+				<p class="Sarbatoreste__flex__revederea floating-nv">Sărbătorește<br/> <strong class="base-color">Revederea</strong></p>
 				<p class="floating-circle">Sărbătorește<br/> <strong class="turquoise">Oameni</strong></p>
 			</div>
 			<div class="Sarbatoreste__flex Sarbatoreste__flex__2">
 				<p class="Sarbatoreste__flex__natura floating-sv">Sărbătorește<br/> <strong class="orange">Natura</strong></p>
-				<p class="floating-ne">Sărbătorește<br/> <strong class="burgundy">Emoția</strong></p>
+				<p class="floating-ne Sarbatoreste__flex__emotia">Sărbătorește<br/> <strong class="burgundy">Emoția</strong></p>
 			</div>
 			<div class="Sarbatoreste__flex Sarbatoreste__flex__3">
-				<p class="floating-circle">Sărbătorește<br/> <strong class="turquoise">Valea Cernei</strong></p>
+				<p class="Sarbatoreste__flex__valea-cernei floating-circle">Sărbătorește<br/> <strong class="turquoise">Valea Cernei</strong></p>
 				<p class="Sarbatoreste__flex__miscarea floating-circle">Sărbătorește<br/> <strong class="red">Mișcarea</strong></p>
 			</div>
 			<br/>
@@ -111,27 +112,48 @@
 					</div>
 				</div>
 			</div>
-			
+		</section>
+		<div class="button-sarbatoreste">
+			<button class="button button-sarbatoreste__button">
+				sărbătorește<br/>și tu cu noi
+			</button>
+			<div class="perioada-de-inscrieri button-sarbatoreste__perioada-de-inscrieri">
+				Perioada de înscrieri se încheie în 30 Septembrie.
+			</div>
+		</div>
+		
+		<section class="black-mountain">
+			<img src="./assets/svgs/Black_Mountain.svg">
 		</section>
 		<section id="details" class="Details">
-			<div class="section-title">
+			<div class="section-title Details__title">
 				Detalii Concurs
 			</div>
+			<img
+				class="Details__bete"
+				src="./assets/svgs/bete_trail.svg"
+				width="516.6521px"
+				height="191.6045px"
+			>
 			<div class="Details__text_container">
 				<div class="Details__text_container__left">
 
 					<div>
-						Așa cum te-am obișnuit, <b>Startul</b> îl vom da din zona Podului dinspre Vânturătoarea, la ora 9:00. 
+						Așa cum te-am obișnuit, Startul îl vom da din zona Podului dinspre Vânturătoarea, la ora 9:00. 
 					</div>
+					<br/>
 					<div>
-						Traseul de <b>Semimaraton</b> urmează marcajul galben și are o lungime de X km și o diferență de nivel de X metri. 
+						Traseul de <strong class="Details__text_container__semi">Semimaraton</strong> urmează marcajul galben și are o lungime de <strong class="Details__text_container__semi">X km</strong> și o diferență de nivel de <strong class="Details__text_container__semi">X metri</strong>. 
 					</div>
+					<br/>
 					<div>
-						Traseul de <b>Maraton</b> este marcat cu cern roșu și are o lungime de X km, cu diferență de nivel de X metri.
-					</div><br/>
-					<div>
-						<b>Înscrierile</b> se pot face până în data de X, inclusiv, iar <b>înscrieri la fața locului nu vor fi posibile</b> din motive logistice și de siguranță.
+						Traseul de <strong class="Details__text_container__maraton">Maraton</strong> este marcat cu cern roșu și are o lungime de <strong class="Details__text_container__maraton">X km</strong>, cu diferență de nivel de <strong class="Details__text_container__maraton">X metri</strong>.
 					</div>
+					<br/>
+					<div>
+						Înscrierile se pot face până în data de <b>X</b>, inclusiv, iar <b>înscrieri la fața locului nu vor fi posibile</b> din motive logistice și de siguranță.
+					</div>
+					<br/>
 					<div>
 						<b>Participarea la concurs</b> se face pe baza unei brățări pe care o primești doar după ce prezinți dovada de vaccinare, un test PCR negativ nu mai vechi de 72 de ore sau un test antigen negativ nu mai vechi de 24 de ore. 
 					</div>
@@ -139,7 +161,8 @@
 				<div class="Details__text_container__right">
 					<div>
 						<b>Categoriile de vârstă</b> premiate în concurs vor fi următoarele: 
-					</div><br/>
+					</div>
+					<br/>
 					<div>
 						<b>Clasamentul general</b> va fi împărțit în următoarele categorii:
 					</div>
@@ -163,6 +186,11 @@
 				</div>
 			</div>
 		</section>
+		<section class="black-mountain-reversed">
+			<img src="./assets/svgs/Black_Mountain_Reversed.svg">
+		</section>
+
+
 		<section id="trasee" class="Trasee">
 			<div class="section-title">
 				Descrierea traseelor

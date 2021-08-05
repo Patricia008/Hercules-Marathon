@@ -29,6 +29,7 @@
 .section-title {
   text-transform: uppercase;
   font-size: 3rem;
+  line-height: 3.75rem;
   font-weight: 900;
   margin-top: 9rem;
   margin-bottom: 3rem;
@@ -56,6 +57,7 @@ html body #desktop-nav ul {
 }
 html body #desktop-nav ul li {
   margin: 0 1rem;
+  padding: 0 0.5rem;
 }
 html body #desktop-nav ul li a {
   cursor: pointer;
@@ -77,7 +79,7 @@ html body .button {
   align-self: center;
   font-size: 2rem;
   font-weight: 400;
-  line-height: 1;
+  line-height: 2rem;
   margin-top: 5rem;
   padding: 1.05rem;
   text-decoration: none;
@@ -120,9 +122,13 @@ html body .perioada-de-inscrieri {
   font-style: italic;
 }
 html body .black-mountain {
-  padding: 6vh 0 0 0;
+  padding: 0;
   position: relative;
-  bottom: -1rem;
+  bottom: -0.1rem;
+  z-index: -1;
+}
+html body .black-mountain-reversed {
+  padding: 0;
   z-index: -1;
 }
 html body .top-mountains {
@@ -134,6 +140,12 @@ html body .top-mountains {
   html body .top-mountains {
     top: -15rem;
   }
+}
+html body .logo {
+  position: absolute;
+  top: 3vh;
+  left: 1rem;
+  z-index: 4;
 }
 html body .Heading {
   color: white;
@@ -151,6 +163,9 @@ html body .Heading {
     justify-content: space-around;
     padding-top: 7vh;
   }
+}
+html body .Heading__black-mountain {
+  padding-top: 6vh;
 }
 html body .Heading__right {
   margin-left: 11rem;
@@ -206,7 +221,7 @@ html body .Heading__subtitle__colored {
 html body .Heading__description {
   font-size: 1.25rem;
   margin-top: 2rem;
-  line-height: 1.5rem;
+  line-height: 2rem;
 }
 html body .Heading__cta {
   text-transform: uppercase;
@@ -216,17 +231,26 @@ html body .Heading__cta {
 }
 html body .Intro__title {
   text-align: center;
-  margin-top: 7rem;
+  margin-top: -13rem;
+}
+@media (max-width: 1000px) {
+  html body .Intro__title {
+    margin-top: -7rem;
+  }
 }
 html body .Intro__title b {
   color: #ffad1d;
+  font-weight: 900;
 }
 html body .Intro__description {
-  font-size: 1.5rem;
-  line-height: 2.25rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 7rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+html body .Intro__description strong {
+  color: #ff6914;
 }
 html body .Sarbatoreste {
   width: 100%;
@@ -234,15 +258,16 @@ html body .Sarbatoreste {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 9rem;
 }
 html body .Sarbatoreste p {
   font-style: italic;
   text-transform: uppercase;
-  text-align: center;
+  text-align: start;
   display: inline;
   margin: 1.5rem;
   font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 900;
 }
 html body .Sarbatoreste strong {
   font-size: 2.3rem;
@@ -250,10 +275,12 @@ html body .Sarbatoreste strong {
 html body .Sarbatoreste__sarbatoreste {
   font-style: italic;
   text-transform: uppercase;
-  text-align: center;
+  text-align: start;
   display: inline;
   margin: 1.5rem;
   font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 900;
 }
 html body .Sarbatoreste__flex {
   display: flex;
@@ -272,9 +299,21 @@ html body .Sarbatoreste__flex__miscarea {
   position: relative;
   left: -13rem;
 }
+html body .Sarbatoreste__flex__miscarea strong {
+  font-size: 2.5rem;
+}
 html body .Sarbatoreste__flex__natura {
   position: relative;
   left: 7rem;
+}
+html body .Sarbatoreste__flex__emotia strong {
+  font-size: 3.25rem;
+}
+html body .Sarbatoreste__flex__valea-cernei strong {
+  font-size: 1.75rem;
+}
+html body .Sarbatoreste__flex__revederea strong {
+  font-size: 2rem;
 }
 html body .Sarbatoreste__hercules {
   display: inline-flex;
@@ -364,13 +403,43 @@ html body .floating-circle {
     -webkit-transform: rotate(360deg) translate3d(6px, 0, 0) rotate(-360deg);
   }
 }
-html body .Details {
+html body .button-sarbatoreste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body .button-sarbatoreste__button {
+  background-color: #101111;
+  color: white;
+  border-color: #101111;
   font-size: 1.5rem;
-  line-height: 2.25rem;
+  padding: 0.5rem 5rem;
+}
+html body .button-sarbatoreste__button:hover {
+  background-color: #ffad1d;
+  border-color: #ffad1d;
+  color: black;
+}
+html body .button-sarbatoreste__button:active {
+  border-color: white;
+}
+html body .button-sarbatoreste__perioada-de-inscrieri {
+  margin: 0.5rem auto;
+}
+html body .Details {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   text-align: justify;
   background-color: #101111;
   color: white;
   padding-bottom: 9rem;
+}
+html body .Details__title {
+  margin-top: 0;
+}
+html body .Details__bete {
+  position: relative;
+  left: -10rem;
 }
 html body .Details__text_container {
   display: flex;
@@ -383,9 +452,13 @@ html body .Details__text_container {
     justify-content: space-around;
   }
 }
-html body .Details__text_container b {
+html body .Details__text_container__semi {
   font-weight: 600;
   color: #ffad1d;
+}
+html body .Details__text_container__maraton {
+  font-weight: 600;
+  color: #da0000;
 }
 html body .Details__text_container ul {
   list-style-type: none;

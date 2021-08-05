@@ -8,6 +8,9 @@ $red: #da0000;
 $burgundy: #830000;
 $black: #101111;
 
+$description-font-size: 1.25rem;
+$description-line-height: 2rem;
+
 .base-color {
 	color: $base-color;
 }
@@ -39,6 +42,7 @@ $black: #101111;
 .section-title {
 	text-transform: uppercase;
 	font-size: 3rem;
+	line-height: 3.75rem;
 	font-weight: 900;
 	margin-top: 9rem;
 	margin-bottom: 3rem;
@@ -70,6 +74,7 @@ html {
 					//     display: none;
 					// }
 					margin: 0 1rem;
+					padding: 0 .5rem;
 					a {
 						cursor: pointer;
 						color:black;
@@ -96,7 +101,7 @@ html {
 			align-self: center;
 			font-size: 2rem;
 			font-weight: 400;
-			line-height: 1;
+			line-height: 2rem;
 			margin-top: 5rem;
 			padding: 1.05rem;
 			text-decoration: none;
@@ -148,9 +153,14 @@ html {
 		}
 
 		.black-mountain {
-			padding: 6vh 0 0 0;
+			padding: 0;
 			position: relative;
-			bottom: -1rem;
+			bottom: -.1rem;
+			z-index: -1;
+		}
+
+		.black-mountain-reversed {
+			padding: 0;
 			z-index: -1;
 		}
 
@@ -162,6 +172,13 @@ html {
 			@media (max-width:1700px) {
 				top: -15rem;
 			}
+		}
+
+		.logo {
+			position: absolute;
+			top: 3vh;
+			left: 1rem;
+			z-index: 4;
 		}
 
 		// Sections
@@ -186,7 +203,9 @@ html {
 				padding-top: 7vh;
 			}
 
-
+			&__black-mountain {
+				padding-top: 6vh;
+			}
 
 			&__right {
 				margin-left: 11rem;
@@ -249,9 +268,9 @@ html {
 			}
 
 			&__description {
-				font-size: 1.25rem;
+				font-size: $description-font-size;
 				margin-top: 2rem;
-				line-height: 1.5rem;
+				line-height: $description-line-height;
 			}
 
 			&__cta {
@@ -266,44 +285,47 @@ html {
 
 			&__title {
 				text-align: center;
-				margin-top: 7rem;
+				margin-top: -13rem;
+
+				@media (max-width: $breakpoint-1) {
+					margin-top: -7rem;
+				}
 
 				b {
 					color: $base-color;
+					font-weight: 900;
 				}
 			}
 
 			&__description {
-				font-size: 1.5rem;
-				line-height: 2.25rem;
+				font-size: $description-font-size;
+				line-height: $description-line-height;
 				text-align: center;
-				margin-top: 3rem;
-				margin-bottom: 7rem;
+				margin-top: 2rem;
+				margin-bottom: 4rem;
+
+				strong {
+					color: $orange;
+				}
 			}
 		}
 
 		.Sarbatoreste {
-			// color: white;
-			// background-image:url( ./assets/photos/stoned.jpg );
-			// box-shadow: inset 0 0 0 2000px rgb(2 2 2 / 45%);
 			width:100%;
-			// height:30vh;
-			// background-position: center;
-			// background-size: cover;
-			// background-repeat: no-repeat;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			margin-bottom: 9rem;;
 
 			p {
 				font-style: italic;
 				text-transform: uppercase;
-				text-align: center;
+				text-align: start;
 				display: inline;
 				margin: 1.5rem;
 				font-size: 1.5rem;
+				line-height: 2rem;
+				font-weight: 900;
 			}
 
 			strong {
@@ -313,10 +335,12 @@ html {
 			&__sarbatoreste {
 				font-style: italic;
 				text-transform: uppercase;
-				text-align: center;
+				text-align: start;
 				display: inline;
 				margin: 1.5rem;
 				font-size: 1.5rem;
+				line-height: 2rem;
+				font-weight: 900;
 			}
 
 			&__flex {
@@ -338,11 +362,33 @@ html {
 				&__miscarea {
 					position: relative;
 					left: -13rem;
+
+					strong {
+						font-size: 2.5rem;
+					}
 				}
 
 				&__natura {
 					position: relative;
 					left: 7rem;
+				}
+
+				&__emotia {
+					strong {
+						font-size: 3.25rem;
+					}
+				}
+
+				&__valea-cernei {
+					strong {
+						font-size: 1.75rem;
+					}
+				}
+
+				&__revederea {
+					strong {
+						font-size: 2rem;
+					}
 				}
 
 			}
@@ -430,14 +476,51 @@ html {
 			}
 		}
 
+		.button-sarbatoreste {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			&__button {
+				background-color: $black;
+				color: white;
+				border-color: $black;
+				font-size: 1.5rem;
+				padding: .5rem 5rem;
+
+				&:hover {
+					background-color: $base-color;
+					border-color: $base-color;
+					color: black;
+					
+				}
+				&:active {
+					border-color: white;
+				}
+			}
+
+			&__perioada-de-inscrieri {
+				margin: 0.5rem auto;
+			}
+		}
+
 		.Details {
 
-			font-size: 1.5rem;
-			line-height: 2.25rem;
+			font-size: $description-font-size;
+			line-height: 1.5rem;
 			text-align: justify;
 			background-color: $black;
 			color: white;
 			padding-bottom: 9rem;
+
+			&__title {
+				margin-top: 0;
+			}
+
+			&__bete {
+				position: relative;
+				left: -10rem;
+			}
 
 			&__text_container {
 				display: flex;
@@ -449,10 +532,16 @@ html {
 					justify-content: space-around;
 				}
 
-				b {
+				&__semi {
 					font-weight: 600;
 					color: $base-color;
 				}
+
+				&__maraton {
+					font-weight: 600;
+					color: $red;
+				}
+
 				ul {
 					// padding: 0 5rem;
 					list-style-type: none;
