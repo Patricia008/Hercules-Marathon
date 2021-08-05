@@ -98,12 +98,17 @@ html body .button:active {
 }
 html body article section {
   width: 100%;
-  padding: 0 15rem;
+  padding: 0 21rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 2200px) {
+  html body article section {
+    padding: 0 15rem;
+  }
 }
 @media (max-width: 1600px) {
   html body article section {
