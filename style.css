@@ -22,7 +22,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", "Exo 2", sans-serif;
   cursor: default;
 }
 
@@ -184,6 +183,7 @@ html body .Heading__right {
 html body .Heading__title {
   display: inline-flex;
   font-family: "Myriad Pro";
+  font-weight: 900;
 }
 html body .Heading__title__hercules {
   font-size: 5rem;
@@ -478,6 +478,27 @@ html body .Details__text_container__right {
 @media (max-width: 1000px) {
   html body .Details__text_container__right {
     margin-left: 0;
+  }
+}
+html body .Trasee {
+  padding: 0;
+}
+html body .Trasee__padding {
+  padding: 0 30rem;
+}
+@media (max-width: 2200px) {
+  html body .Trasee__padding {
+    padding: 0 15rem;
+  }
+}
+@media (max-width: 1600px) {
+  html body .Trasee__padding {
+    padding: 0 9rem;
+  }
+}
+@media (max-width: 1250px) {
+  html body .Trasee__padding {
+    padding: 0 3rem;
   }
 }
 html body .Trasee__subtitle {
