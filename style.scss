@@ -11,6 +11,8 @@ $description-font-size: 1.2rem;
 $description-line-height: 1.5rem;
 $title-font-size: 2.9rem;
 $title-line-height: 3.5rem;
+$smol-text-font-size: 1rem;
+$smol-text-line-height: 2rem;
 
 .base-color {
 	color: $base-color;
@@ -107,7 +109,7 @@ html {
 			text-decoration: none;
 			text-align: center;
 			text-transform: uppercase;
-			font-weight: 600;
+			font-weight: 900;
 			border-color: $base-color;
 			color: black;
 			
@@ -720,15 +722,17 @@ html {
 			padding-bottom: 2rem;
 
 			&__title {
-				margin-bottom: 0;
+				margin-bottom: 2rem;
+				margin-top: 9rem;
 			}
 
 			&__pareri {
 				display: grid;
 				grid-template-columns: 1fr 2fr 1fr;
 				grid-gap: 9rem;
-				margin-bottom: 9rem;
-				font-size: 1rem;
+				margin-bottom: 6rem;
+				font-size: $smol-text-font-size;
+				margin-top: $smol-text-line-height;
 
 				// page-padding
 				padding: 0 30rem;
@@ -744,9 +748,14 @@ html {
 					padding: 0 3rem;
 				}
 
-				b {
-					float: right;
+				&__text {
+					text-align: justify;
+
+					b {
+						float: right;
+					}
 				}
+
 			}
 		}
 
@@ -755,9 +764,9 @@ html {
 			background-color: $black;
 			color: white;
 			width:100%;
-			padding-bottom: 5rem;
 			display: flex;
 			flex-direction: row;
+			padding-top: 2rem;
 
 			@media (max-width:$breakpoint-1) {
 				flex-direction: column;
@@ -766,26 +775,48 @@ html {
 
 			&__title {
 				flex: 3;
+				margin-top: 0;
 			}
 
 			&__description {
 				flex: 2;
-				font-size: 1.5rem;
-				line-height: 2.25rem;
+				
 				margin-bottom: 3rem;
 				margin-top: 4rem;
-
-				font-weight: 600;
 				margin-left: 7rem;
 
 				@media (max-width:$breakpoint-1) {
 					margin-left: 0;
 				}
+
+				&__text {
+					font-size: $smol-text-font-size;
+					line-height: $smol-text-line-height;
+					font-weight: 600;
+				}
+
+				&__step {
+					display: flex;
+					align-items: center;
+					margin-bottom: 1.5rem;
+
+					img {
+						height: 2.75rem;
+						margin-right: 1.5rem;
+					}
+				}
 			}
 
 			&__button {
-				margin-top: 4rem;
+				margin-top: 5rem;
+				font-size: 1.5rem;
+				padding: 1.2rem;
 			}
+		}
+
+		.Footer {
+			padding: 0;
+			background-color: $black;
 		}
 
 		// Media queries for Tablets
@@ -889,6 +920,7 @@ html {
 	z-index: 99999;
 	text-transform: uppercase;
 	margin-top: 3rem;
+	user-select: none;
 }
 
 .controls > div{
@@ -1065,6 +1097,7 @@ html {
 	max-height: 550px;
 	max-width: 100%;
 	height: 100%;
+	user-select: none;
 
 	img {
 		cursor: pointer;

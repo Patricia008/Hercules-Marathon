@@ -84,7 +84,7 @@ html body .button {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 900;
   border-color: #ffad1d;
   color: black;
 }
@@ -602,14 +602,16 @@ html body .Editii {
   padding-bottom: 2rem;
 }
 html body .Editii__title {
-  margin-bottom: 0;
+  margin-bottom: 2rem;
+  margin-top: 9rem;
 }
 html body .Editii__pareri {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-gap: 9rem;
-  margin-bottom: 9rem;
+  margin-bottom: 6rem;
   font-size: 1rem;
+  margin-top: 2rem;
   padding: 0 30rem;
 }
 @media (max-width: 2200px) {
@@ -627,16 +629,19 @@ html body .Editii__pareri {
     padding: 0 3rem;
   }
 }
-html body .Editii__pareri b {
+html body .Editii__pareri__text {
+  text-align: justify;
+}
+html body .Editii__pareri__text b {
   float: right;
 }
 html body .Inscriere {
   background-color: #101111;
   color: white;
   width: 100%;
-  padding-bottom: 5rem;
   display: flex;
   flex-direction: row;
+  padding-top: 2rem;
 }
 @media (max-width: 1000px) {
   html body .Inscriere {
@@ -646,14 +651,12 @@ html body .Inscriere {
 }
 html body .Inscriere__title {
   flex: 3;
+  margin-top: 0;
 }
 html body .Inscriere__description {
   flex: 2;
-  font-size: 1.5rem;
-  line-height: 2.25rem;
   margin-bottom: 3rem;
   margin-top: 4rem;
-  font-weight: 600;
   margin-left: 7rem;
 }
 @media (max-width: 1000px) {
@@ -661,8 +664,28 @@ html body .Inscriere__description {
     margin-left: 0;
   }
 }
+html body .Inscriere__description__text {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+html body .Inscriere__description__step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+html body .Inscriere__description__step img {
+  height: 2.75rem;
+  margin-right: 1.5rem;
+}
 html body .Inscriere__button {
-  margin-top: 4rem;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  padding: 1.2rem;
+}
+html body .Footer {
+  padding: 0;
+  background-color: #101111;
 }
 @media (min-width: 700px) and (max-width: 1000px) {
   html body #desktop-nav ul {
@@ -751,6 +774,7 @@ html body .Inscriere__button {
   z-index: 99999;
   text-transform: uppercase;
   margin-top: 3rem;
+  user-select: none;
 }
 
 .controls > div {
@@ -927,6 +951,7 @@ html body .Inscriere__button {
   max-height: 550px;
   max-width: 100%;
   height: 100%;
+  user-select: none;
 }
 .slide img {
   cursor: pointer;
