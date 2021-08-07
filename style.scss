@@ -53,6 +53,8 @@ $smol-text-line-height: 2rem;
 
 html {
 	scroll-behavior: smooth;
+	font-size: 16px;
+
 	body {
 		// Nav Bar Desktop
 		#desktop-nav {
@@ -270,15 +272,15 @@ html {
 					font-weight: 600;
 				}
 
-				@media screen and (max-width:1375px) {
+				@media screen and (max-width: 1375px) {
 					font-size: 4rem;
 				}
 
-				@media screen and (max-width:850px) {
+				@media screen and (max-width: 850px) {
 					font-size: 3rem;
 				}
 
-				@media screen and (max-width:670px) {
+				@media screen and (max-width: 670px) {
 					font-size: 2rem;
 				}
 
@@ -572,7 +574,7 @@ html {
 				position: relative;
 				left: -10rem;
 
-				@media screen and (max-width:1375px) {
+				@media screen and (max-width: 1375px) {
 					left: -5rem;
 				}
 			}
@@ -582,7 +584,7 @@ html {
 				flex-direction: row;
 				justify-content: space-between;
 
-				@media screen and (max-width:$breakpoint-1) {
+				@media screen and (max-width: $breakpoint-1) {
 					flex-direction: column;
 					justify-content: space-around;
 				}
@@ -616,7 +618,7 @@ html {
 						margin-left: 6rem;
 					}
 					
-					@media screen and (max-width:$breakpoint-1) {
+					@media screen and (max-width: $breakpoint-1) {
 						margin-left: 0;
 					}
 				}
@@ -634,15 +636,15 @@ html {
 			&__padding {
 				// page-padding
 				padding: 0 30rem;
-				@media screen and (max-width:2200px) {
+				@media screen and (max-width: 2200px) {
 					padding: 0 15rem;
 				}
 
-				@media screen and (max-width:1665px) {
+				@media screen and (max-width: 1665px) {
 					padding: 0 9rem;
 				}
 
-				@media screen and (max-width:1375px) {
+				@media screen and (max-width: 1375px) {
 					padding: 0 3rem;
 				}
 			}
@@ -655,19 +657,19 @@ html {
 				height: 400px;
 				margin-left: 15rem;
 
-				@media screen and (max-width:1475px) {
+				@media screen and (max-width: 1475px) {
 					margin-left: 3rem;
 				}
 
-				@media screen and (max-width:1050px) {
+				@media screen and (max-width: 1050px) {
 					height: 300px;
 				}
 
-				@media screen and (max-width:915px) {
+				@media screen and (max-width: 915px) {
 					height: 143px;
 				}
 
-				@media screen and (max-width:680px) {
+				@media screen and (max-width: 680px) {
 					height: 102px;
 				}
 
@@ -677,19 +679,19 @@ html {
 					margin-right: -5rem;
 					align-self: flex-start;
 
-					@media screen and (max-width:1375px) {
+					@media screen and (max-width: 1375px) {
 						margin-right: -1rem;
 					}
 
-					@media screen and (max-width:1050px) {
+					@media screen and (max-width: 1050px) {
 						width: 320px;
 					}
 
-					@media screen and (max-width:915px) {
+					@media screen and (max-width: 915px) {
 						width: 166px;
 					}
 
-					@media screen and (max-width:680px) {
+					@media screen and (max-width: 680px) {
 						width: 107px;
 					}
 
@@ -755,7 +757,7 @@ html {
 					border-color: white;
 				}
 
-				@media screen and (max-width:680px) {
+				@media screen and (max-width: 680px) {
 					display: block;
 					width: 90%;
 				}
@@ -799,11 +801,11 @@ html {
 				margin-top: 0;
 				margin-bottom: 11rem;
 
-				@media screen and (max-width:1375px) {
+				@media screen and (max-width: 1375px) {
 					margin-bottom: 7rem;
 				}
 
-				@media screen and (max-width:1050px) {
+				@media screen and (max-width: 1050px) {
 					margin-bottom: 5rem;
 				}
 			}
@@ -829,28 +831,28 @@ html {
 			}
 
 			&__pareri {
-				display: grid;
-				grid-template-columns: 1fr 2fr 1fr;
-				grid-gap: 9rem;
+				display: flex;
+				// grid-template-columns: 1fr 2fr 1fr;
+				// grid-gap: 9rem;
 				margin-bottom: 6rem;
 				font-size: $smol-text-font-size;
 				margin-top: $smol-text-line-height;
 
 				// page-padding
 				padding: 0 30rem;
-				@media screen and (max-width:2200px) {
+				@media screen and (max-width: 2200px) {
 					padding: 0 15rem;
 				}
 
-				@media screen and (max-width:1665px) {
+				@media screen and (max-width: 1665px) {
 					padding: 0 9rem;
 				}
 
-				@media screen and (max-width:1375px) {
+				@media screen and (max-width: 1375px) {
 					padding: 0 3rem;
 				}
 
-				@media screen and (max-width:946px) {
+				@media screen and (max-width: 946px) {
 					grid-template-columns: 3fr 1fr;
 					grid-gap: 3rem;
 				}
@@ -858,18 +860,18 @@ html {
 				img {
 					max-height: 160px;
 
-					@media screen and (max-width:1190px) {
+					@media screen and (max-width: 1190px) {
 						max-height: 90px;
 					}
 
-					@media screen and (max-width:680px) {
+					@media screen and (max-width: 680px) {
 						max-height: 74px;
 					}
 				}
 
 				&__ghilimele {
 					&__left {
-						@media screen and (max-width:946px) {
+						@media screen and (max-width: 946px) {
 							display: none;
 						}
 					}
@@ -877,6 +879,15 @@ html {
 
 				&__text {
 					text-align: justify;
+					margin: 0 6rem;
+
+					@media screen and (max-width: 680px) {
+						margin: 0 4rem;
+					}
+
+					@media screen and (max-width: 946px) {
+						margin: 0;
+					}
 
 					b {
 						float: right;
@@ -957,19 +968,19 @@ html {
 
 				// page-padding
 				padding: 0 30rem;
-				@media screen and (max-width:2200px) {
+				@media screen and (max-width: 2200px) {
 					padding: 0 15rem;
 				}
 
-				@media screen and (max-width:1665px) {
+				@media screen and (max-width: 1665px) {
 					padding: 0 9rem;
 				}
 
-				@media screen and (max-width:1375px) {
+				@media screen and (max-width: 1375px) {
 					padding: 0 3rem;
 				}
 
-				@media screen and (max-width:865px) {
+				@media screen and (max-width: 865px) {
 					justify-content: space-evenly;
 				}
 
@@ -980,11 +991,11 @@ html {
 					text-decoration: none;
 					color: white;
 
-					@media screen and (max-width:865px) {
+					@media screen and (max-width: 865px) {
 						padding: 0 3rem;
 					}
 
-					@media screen and (max-width:607px) {
+					@media screen and (max-width: 607px) {
 						padding: 0 1.5rem;
 					}
 
@@ -998,7 +1009,7 @@ html {
 
 		// Media queries for Tablets
 
-		@media screen and (min-width:700px) and (max-width:1000px) {
+		@media screen and (min-width:700px) and (max-width: 1000px) {
 			// Nav Bar
 			#desktop-nav{
 				ul{
@@ -1086,11 +1097,11 @@ html {
 	padding-top: 9rem;
 
 	
-	@media screen and (max-width:946px) {
+	@media screen and (max-width: 946px) {
 		height: 587px;
 	}
 
-	@media screen and (max-width:795px) {
+	@media screen and (max-width: 795px) {
 		height: 744px;
 	}
 }
