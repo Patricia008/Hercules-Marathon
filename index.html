@@ -123,10 +123,10 @@
 			</div>
 		</div>
 		
-		<section class="black-mountain">
+		<section id="details" class="black-mountain">
 			<img src="./assets/svgs/Black_Mountain.svg">
 		</section>
-		<section id="details" class="Details">
+		<section class="Details">
 			<div class="section-title Details__title">
 				Detalii Concurs
 			</div>
@@ -193,7 +193,7 @@
 
 
 		<section id="trasee" class="Trasee">
-			<div class="section-title Trasee__padding">
+			<div class="section-title Trasee__padding Trasee__title">
 				Descrierea traseelor
 			</div>
 			<img src="./assets/svgs/semimaraton_dot.svg">
@@ -201,24 +201,73 @@
 				<div class="Trasee__subtitle base-color">
 					SEMIMARATON
 				</div>
-				<div class="Trasee__description">
-					Aici va fi descriere text, un paragraf vizibil, restul descrierii cu “see more”/dropdown
+				<div class="Trasee__flex">
+					<div>
+
+						<div class="Trasee__description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Integer enim neque volutpat ac tincidunt.<br/>
+							Morbi tristique senectus et netus et malesuada fames. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Placerat orci nulla pellentesque dignissim enim sit amet. Pharetra sit amet aliquam id diam. Diam in arcu cursus euismod quis viverra nibh cras.
+							<div class="Trasee__semimaraton__hidden">
+								Sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.
+								<br/><br/>
+								Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Proin sed libero enim sed faucibus turpis in.
+								<br/><br/>
+								Magna sit amet purus gravida. Nisl tincidunt eget nullam non nisi est sit amet. Egestas fringilla phasellus faucibus scelerisque. Et netus et malesuada fames ac. Dignissim cras tincidunt lobortis feugiat vivamus. Ut etiam sit amet nisl. Id porta nibh venenatis cras sed felis eget velit aliquet. Morbi tristique senectus et netus et malesuada fames ac.
+								Pretium nibh ipsum consequat nisl vel pretium. Sed id semper risus in hendrerit gravida. Placerat in egestas erat imperdiet sed euismod nisi. Lectus mauris ultrices eros in cursus turpis massa tincidunt dui. Egestas tellus rutrum tellus pellentesque eu tincidunt. Sed viverra tellus in hac habitasse platea dictumst. Nunc lobortis mattis aliquam faucibus purus in massa. Id ornare arcu odio ut sem nulla. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo integer.
+								<br/><br/>
+								Faucibus vitae aliquet nec ullamcorper sit. Aliquet enim tortor at auctor urna. Morbi tristique senectus et netus.
+								Id nibh tortor id aliquet lectus proin nibh nisl.
+								Velit ut tortor pretium viverra suspendisse. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula.
+								Ut tristique et egestas quis ipsum suspendisse ultrices. Pulvinar elementum integer enim neque. Faucibus interdum posuere lorem ipsum dolor sit. Enim lobortis scelerisque fermentum dui faucibus in ornare.
+								<br/><br/>
+								Vitae auctor eu augue ut. Dolor morbi non arcu risus quis varius.
+								Et odio pellentesque diam volutpat commodo sed egestas egestas. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Duis convallis convallis tellus id interdum velit laoreet id.
+								Quis blandit turpis cursus in hac habitasse platea dictumst. Nisi porta lorem mollis aliquam ut porttitor leo a. Amet luctus venenatis lectus magna fringilla. Neque aliquam vestibulum morbi blandit.
+							</div>
+						</div>
+						<button class="Trasee__button Trasee__semimaraton__button" onclick="click_see_more_semimaraton()">
+							Vezi Detalii
+						</button>
+					</div>
+					<img class="Trasee__shoe" src="./assets/svgs/yellow_shoe.svg">
 				</div>
-				<button class="button Trasee__semimaraton__button">
-					vezi harta
-				</button>
 			</div>
 			<img src="./assets/svgs/maraton_dot.svg">
 			<div class="Trasee__padding">
 				<div class="Trasee__subtitle red">
 					MARATON
 				</div>
-				<div class="Trasee__description">
-					Aici va fi descriere text, un paragraf vizibil, restul descrierii cu “see more”/dropdown
+				<div class="Trasee__flex">
+
+					<div>
+
+						<div class="Trasee__description">
+							Fusce ut placerat orci nulla. Adipiscing commodo elit at imperdiet dui accumsan sit. Id diam maecenas ultricies mi eget mauris. Gravida quis blandit turpis cursus in hac habitasse platea. Odio aenean sed adipiscing diam donec. Egestas congue quisque egestas diam in arcu cursus. Adipiscing at in tellus integer feugiat scelerisque varius. Enim nunc faucibus a pellentesque sit amet.
+							<div class="Trasee__maraton__hidden">
+								Sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus.
+								<br/><br/>
+								Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Proin sed libero enim sed faucibus turpis in.
+								<br/><br/>
+								Magna sit amet purus gravida. Nisl tincidunt eget nullam non nisi est sit amet. Egestas fringilla phasellus faucibus scelerisque. Et netus et malesuada fames ac. Dignissim cras tincidunt lobortis feugiat vivamus. Ut etiam sit amet nisl. Id porta nibh venenatis cras sed felis eget velit aliquet. Morbi tristique senectus et netus et malesuada fames ac.
+								Pretium nibh ipsum consequat nisl vel pretium. Sed id semper risus in hendrerit gravida. Placerat in egestas erat imperdiet sed euismod nisi. Lectus mauris ultrices eros in cursus turpis massa tincidunt dui. Egestas tellus rutrum tellus pellentesque eu tincidunt. Sed viverra tellus in hac habitasse platea dictumst. Nunc lobortis mattis aliquam faucibus purus in massa. Id ornare arcu odio ut sem nulla. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo integer.
+								<br/><br/>
+								Faucibus vitae aliquet nec ullamcorper sit. Aliquet enim tortor at auctor urna. Morbi tristique senectus et netus.
+								Id nibh tortor id aliquet lectus proin nibh nisl.
+								Velit ut tortor pretium viverra suspendisse. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula.
+								Ut tristique et egestas quis ipsum suspendisse ultrices. Pulvinar elementum integer enim neque. Faucibus interdum posuere lorem ipsum dolor sit. Enim lobortis scelerisque fermentum dui faucibus in ornare.
+								<br/><br/>
+								Vitae auctor eu augue ut. Dolor morbi non arcu risus quis varius.
+								Et odio pellentesque diam volutpat commodo sed egestas egestas. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Duis convallis convallis tellus id interdum velit laoreet id.
+								Quis blandit turpis cursus in hac habitasse platea dictumst. Nisi porta lorem mollis aliquam ut porttitor leo a. Amet luctus venenatis lectus magna fringilla. Neque aliquam vestibulum morbi blandit.
+							</div>
+						</div>
+						<button class="Trasee__button Trasee__maraton__button" onclick="click_see_more_maraton()">
+							Vezi Detalii
+						</button>
+					</div>
+					<img class="Trasee__shoe Trasee__shoe__red" src="./assets/svgs/red_shoe.svg">
 				</div>
-				<button class="button Trasee__maraton__button">
-					vezi harta
-				</button>
 			</div>
 		</section>
 
@@ -226,16 +275,15 @@
 			<div class="section-title DespreNoi__title">
 				Cine suntem noi
 			</div>
-			<div class="DespreNoi__subtitle">
+			<div class="section-title DespreNoi__subtitle">
 				ORANIZATORII HERCULES MARATON
 			</div>
 			<div class="DespreNoi__description">
-				<b>Clubul Sportiv Alternative Timișoara</b> a fost înființat în 2002 și de atunci are o activitate intensă în domeniul sporturilor montane, atât în ceea ce privește organizarea cât și participarea la competiții, expediții și ture montane.<br/>
+				<b>Clubul Sportiv Alternative Timișoara</b> a fost înființat în 2002 și de atunci are o activitate intensă în domeniul sporturilor montane, atât în ceea ce privește organizarea cât și participarea la competiții, expediții și ture montane.<br/><br/>
 
-				Membrii fondatori ai clubului au fost implicați în alte ONG-uri și în activitatea montană cu mulți ani înainte de înființarea clubului, ei fiind principalii propulsori ai acestuia.<br/>
+				Membrii fondatori ai clubului au fost implicați în alte ONG-uri și în activitatea montană cu mulți ani înainte de înființarea clubului, ei fiind principalii propulsori ai acestuia.<br/><br/>
 
-				Clubul s-a remarcat în rândul comunității alpine din România ca fiind un club cu oameni deschiși și plini de inițiativă, care nu doar organizează dar și participă la competiții, pentru a promova mișcarea în domeniul sporturilor montane.<br/>
-
+				Clubul s-a remarcat în rândul comunității alpine din România ca fiind un club cu oameni deschiși și plini de inițiativă, care nu doar organizează dar și participă la competiții, pentru a promova mișcarea în domeniul sporturilor montane.<br/><br/>
 				Politica clubului nu se bazează pe reguli de fier, ci mai degrabă pe o prietenie strânsă între membri. Fiecare membru își aduce aportul la activitățile sportive preferate și pe care le practică.
 			</div>
 

@@ -28,10 +28,10 @@
 
 .section-title {
   text-transform: uppercase;
-  font-size: 3rem;
-  line-height: 3.75rem;
+  font-size: 2.9rem;
+  line-height: 3.5rem;
   font-weight: 900;
-  margin-top: 9rem;
+  margin-top: 7rem;
   margin-bottom: 3rem;
 }
 
@@ -78,7 +78,6 @@ html body .button {
   display: flex;
   align-self: center;
   font-size: 2rem;
-  font-weight: 400;
   line-height: 2rem;
   margin-top: 5rem;
   padding: 1.05rem;
@@ -225,9 +224,9 @@ html body .Heading__subtitle__colored {
   font-style: italic;
 }
 html body .Heading__description {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-top: 2rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 html body .Heading__cta {
   text-transform: uppercase;
@@ -249,8 +248,8 @@ html body .Intro__title b {
   font-weight: 900;
 }
 html body .Intro__description {
-  font-size: 1.25rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 4rem;
@@ -433,7 +432,7 @@ html body .button-sarbatoreste__perioada-de-inscrieri {
   margin: 0.5rem auto;
 }
 html body .Details {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
   text-align: justify;
   background-color: #101111;
@@ -484,6 +483,9 @@ html body .Details__text_container__right {
 html body .Trasee {
   padding: 0;
 }
+html body .Trasee__title {
+  margin-top: 5rem;
+}
 html body .Trasee__padding {
   padding: 0 30rem;
 }
@@ -502,65 +504,99 @@ html body .Trasee__padding {
     padding: 0 3rem;
   }
 }
+html body .Trasee__flex {
+  display: flex;
+}
+html body .Trasee__shoe {
+  height: 400px;
+  margin-left: 15rem;
+}
+html body .Trasee__shoe__red {
+  height: auto;
+  width: 410px;
+  margin-right: -5rem;
+  align-self: flex-start;
+}
 html body .Trasee__subtitle {
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: 2.9rem;
+  line-height: 3.5rem;
   font-weight: 900;
+  margin-top: 1rem;
 }
 html body .Trasee__description {
-  font-size: 1.5rem;
-  line-height: 2.25rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-html body .Trasee__semimaraton__button {
+html body .Trasee__semimaraton__hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0ms 400ms, opacity 400ms 0ms;
+}
+html body .Trasee__maraton__hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0ms 400ms, opacity 400ms 0ms;
+}
+html body .Trasee__button {
+  box-sizing: border-box;
+  background-color: #ffad1d;
+  border: 4px solid;
+  cursor: pointer;
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  border-color: #ffad1d;
+  color: black;
+  font-size: 1.1rem;
+  padding: 0.25rem 3.75rem;
+  font-weight: bold;
   align-self: flex-start;
   margin-bottom: 12rem;
+  margin-top: 6rem;
 }
-html body .Trasee__semimaraton__button:hover {
-  box-shadow: 0 0 5px 0 #ffad1d inset, 0 0 5px 2px #ffad1d;
+html body .Trasee__button:hover {
+  background-color: #101111;
+  border-color: #101111;
+  color: #ffad1d;
 }
-html body .Trasee__semimaraton__button:active {
-  box-shadow: none;
+html body .Trasee__button:active {
+  border-color: white;
+}
+html body .Trasee__semimaraton__button {
+  margin-bottom: 0;
 }
 html body .Trasee__maraton__button {
-  align-self: flex-start;
   background-color: #da0000;
   color: white;
   border-color: #da0000;
-  margin-bottom: 9rem;
 }
 html body .Trasee__maraton__button:hover {
-  box-shadow: 0 0 5px 0 #da0000 inset, 0 0 5px 2px #da0000;
-}
-html body .Trasee__maraton__button:active {
-  box-shadow: none;
+  color: white;
 }
 html body .DespreNoi {
-  background-image: url(./assets/photos/stoned.jpg);
-  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.6);
+  background-image: url(./assets/svgs/cinesuntem.png);
   width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-bottom: 5rem;
 }
 html body .DespreNoi__title {
   margin-bottom: 0;
+  margin-top: 7rem;
 }
 html body .DespreNoi__subtitle {
-  font-size: 2rem;
-  line-height: 3rem;
-  margin-bottom: 3rem;
+  color: #ff6914;
+  margin-top: 0;
+  margin-bottom: 11rem;
 }
 html body .DespreNoi__description {
-  font-size: 1.5rem;
-  line-height: 2.25rem;
-  margin-bottom: 3rem;
-}
-html body .DespreNoi__description b {
-  font-weight: 600;
-  color: #ffad1d;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: 6rem;
 }
 html body .Editii {
   padding-bottom: 9rem;
@@ -570,6 +606,19 @@ html body .Editii__poze {
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
+}
+html body #conTest {
+  width: 80%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  left: 10%;
+}
+html body .carousel .panel {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
 }
 html body .Inscriere {
   background-color: #101111;
