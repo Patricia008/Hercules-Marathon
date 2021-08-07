@@ -895,52 +895,6 @@ html body .Footer__contact a img {
     font-size: 3em;
   }
 }
-@media screen and (max-width: 700px) {
-  html body #desktop-nav {
-    display: none;
-  }
-  html body #mobile-nav {
-    background-color: #000;
-    opacity: 0.8;
-    position: fixed;
-    width: 100%;
-    min-height: 50px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    transition: all 0.3s linear;
-    font-family: monospace;
-  }
-  html body #mobile-nav i {
-    color: #fff;
-    font-size: 2em;
-    margin-left: 10px;
-    transition: all 0.3s linear;
-  }
-  html body #mobile-nav ul {
-    position: absolute;
-    top: 0px;
-    transform: translatex(-100vw);
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    transition: all 0.3s linear;
-  }
-  html body #mobile-nav ul li {
-    width: 100%;
-    text-align: center;
-  }
-  html body #mobile-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    border-bottom: 1px solid #fff;
-  }
-}
 
 .lazy {
   display: none;
