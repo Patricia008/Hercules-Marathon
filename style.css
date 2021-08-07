@@ -36,8 +36,8 @@
 }
 
 html {
+  overflow-x: auto;
   scroll-behavior: smooth;
-  font-size: 16px;
 }
 html body #desktop-nav {
   background-color: white;
@@ -96,6 +96,12 @@ html body .button:hover {
 html body .button:active {
   border-color: #101111;
 }
+@media screen and (max-width: 564px) {
+  html body .button {
+    padding: 0.7rem;
+    font-size: 1.5rem;
+  }
+}
 html body article section {
   width: 100%;
   background-position: center;
@@ -125,6 +131,11 @@ html body .perioada-de-inscrieri {
   color: #ffad1d;
   margin-top: 0.5rem;
   font-style: italic;
+}
+@media screen and (max-width: 564px) {
+  html body .perioada-de-inscrieri {
+    font-size: 0.7rem;
+  }
 }
 html body .black-mountain {
   padding: 0;
@@ -229,12 +240,24 @@ html body .Heading__title__hercules {
     font-size: 4rem;
   }
 }
+@media screen and (max-width: 564px) {
+  html body .Heading__title__hercules {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
 html body .Heading__title__x {
   color: #ffad1d;
   font-size: 12rem;
   line-height: 10rem;
   flex: 1;
   font-weight: 600;
+}
+@media screen and (max-width: 564px) {
+  html body .Heading__title__x {
+    font-size: 7rem;
+    line-height: 6rem;
+  }
 }
 @media screen and (max-width: 1375px) {
   html body .Heading__title {
@@ -255,11 +278,23 @@ html body .Heading__subtitle {
   font-size: 2.25rem;
   line-height: 1.25rem;
 }
+@media screen and (max-width: 564px) {
+  html body .Heading__subtitle {
+    font-size: 1.25rem;
+    line-height: 0.25rem;
+  }
+}
 html body .Heading__subtitle__colored {
   color: #ffad1d;
   font-weight: 600;
   margin-top: 4rem;
   font-style: italic;
+}
+@media screen and (max-width: 564px) {
+  html body .Heading__subtitle__colored {
+    font-weight: 900;
+    margin-top: 2rem;
+  }
 }
 html body .Heading__description {
   font-size: 1.2rem;
@@ -271,11 +306,21 @@ html body .Heading__description {
     max-width: 435px;
   }
 }
+@media screen and (max-width: 703px) {
+  html body .Heading__description {
+    font-size: 1rem;
+  }
+}
 html body .Heading__cta {
   text-transform: uppercase;
   font-size: 3rem;
   font-style: italic;
   font-weight: 600;
+}
+@media screen and (max-width: 564px) {
+  html body .Heading__cta {
+    font-size: 2rem;
+  }
 }
 html body .Intro__title {
   text-align: center;
@@ -903,6 +948,52 @@ html body .Footer__contact a img {
   }
   html body article h1 {
     font-size: 3em;
+  }
+}
+@media screen and (max-width: 700px) {
+  html body #desktop-nav {
+    display: none;
+  }
+  html body #mobile-nav {
+    background-color: #000;
+    opacity: 0.8;
+    position: fixed;
+    width: 100%;
+    min-height: 50px;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.3s linear;
+    font-family: monospace;
+  }
+  html body #mobile-nav i {
+    color: #fff;
+    font-size: 2em;
+    margin-left: 10px;
+    transition: all 0.3s linear;
+  }
+  html body #mobile-nav ul {
+    position: absolute;
+    top: 0px;
+    transform: translatex(-100vw);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s linear;
+  }
+  html body #mobile-nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  html body #mobile-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
   }
 }
 
