@@ -134,15 +134,15 @@ html {
 				
 				// page-padding
 				padding: 0 30rem;
-				@media (max-width:2200px) {
+				@media screen and (max-width:2200px) {
 					padding: 0 15rem;
 				}
 
-				@media (max-width:1665px) {
+				@media screen and (max-width:1665px) {
 					padding: 0 9rem;
 				}
 
-				@media (max-width:1375px) {
+				@media screen and (max-width:1375px) {
 					padding: 0 3rem;
 				}
 			}
@@ -172,15 +172,15 @@ html {
 			top: -20.55rem;
 			position: relative;
 
-			@media (max-width:1700px) {
+			@media screen and (max-width:1700px) {
 				top: -15rem;
 			}
 
-			@media (max-width: 1185px) {
+			@media screen and (max-width: 1185px) {
 				top: -11rem;
 			}
 
-			@media (max-width: 845px) {
+			@media screen and (max-width: 845px) {
 				top: -8rem;
 			}
 		}
@@ -208,7 +208,7 @@ html {
 			padding-top: 1rem;
 			padding-bottom: 17rem;
 
-			@media (max-width: 1185px) {
+			@media screen and (max-width: 1185px) {
 				flex-direction: column;
 				justify-content: space-around;
 			}
@@ -216,7 +216,7 @@ html {
 			&__black-mountain {
 				padding-top: 5rem;
 
-				@media (max-width: 1185px) {
+				@media screen and (max-width: 1185px) {
 					padding-top: 9rem;
 				}
 			}
@@ -227,11 +227,11 @@ html {
 				margin-bottom: 4rem;
 
 
-				@media (max-width: 1470px) {
+				@media screen and (max-width: 1470px) {
 					margin-left: 5rem;
 				}
 
-				@media (max-width: 1185px) {
+				@media screen and (max-width: 1185px) {
 					margin-left: 0;
 					margin-top: 4rem;
 					margin-bottom: 0;
@@ -249,15 +249,15 @@ html {
 					flex: 1;
 					margin-right: 1rem;
 
-					@media (max-width: 1185px) {
+					@media screen and (max-width: 1185px) {
 						margin-right: -3rem;
 					}
 
-					@media (max-width: 1100px) {
+					@media screen and (max-width: 1100px) {
 						margin-right: .5rem;
 					}
 
-					@media (max-width: 703px) {
+					@media screen and (max-width: 703px) {
 						font-size: 4rem;
 					}
 				}
@@ -270,15 +270,15 @@ html {
 					font-weight: 600;
 				}
 
-				@media (max-width:1375px) {
+				@media screen and (max-width:1375px) {
 					font-size: 4rem;
 				}
 
-				@media (max-width:850px) {
+				@media screen and (max-width:850px) {
 					font-size: 3rem;
 				}
 
-				@media (max-width:670px) {
+				@media screen and (max-width:670px) {
 					font-size: 2rem;
 				}
 
@@ -307,7 +307,7 @@ html {
 				margin-top: 2rem;
 				line-height: $description-line-height;
 
-				@media (max-width: 1185px) {
+				@media screen and (max-width: 1185px) {
 					max-width: 435px;
 				}
 			}
@@ -326,11 +326,11 @@ html {
 				text-align: center;
 				margin-top: -13rem;
 
-				@media (max-width: 1185px) {
+				@media screen and (max-width: 1185px) {
 					margin-top: -8rem;
 				}
 
-				@media (max-width: 845px) {
+				@media screen and (max-width: 845px) {
 					margin-top: -6rem;
 				}
 
@@ -406,7 +406,7 @@ html {
 					position: relative;
 					left: -13rem;
 
-					@media (max-width: 1072px) {
+					@media screen and (max-width: 1072px) {
 						left: 0;
 					}
 
@@ -419,7 +419,7 @@ html {
 					position: relative;
 					left: 7rem;
 
-					@media (max-width: 817px) {
+					@media screen and (max-width: 817px) {
 						left: 0;
 					}
 				}
@@ -572,7 +572,7 @@ html {
 				position: relative;
 				left: -10rem;
 
-				@media (max-width:1375px) {
+				@media screen and (max-width:1375px) {
 					left: -5rem;
 				}
 			}
@@ -582,7 +582,7 @@ html {
 				flex-direction: row;
 				justify-content: space-between;
 
-				@media (max-width:$breakpoint-1) {
+				@media screen and (max-width:$breakpoint-1) {
 					flex-direction: column;
 					justify-content: space-around;
 				}
@@ -612,11 +612,11 @@ html {
 					margin-left: 9rem;
 
 					
-					@media (max-width: 1422px) {
+					@media screen and (max-width: 1422px) {
 						margin-left: 6rem;
 					}
 					
-					@media (max-width:$breakpoint-1) {
+					@media screen and (max-width:$breakpoint-1) {
 						margin-left: 0;
 					}
 				}
@@ -634,15 +634,15 @@ html {
 			&__padding {
 				// page-padding
 				padding: 0 30rem;
-				@media (max-width:2200px) {
+				@media screen and (max-width:2200px) {
 					padding: 0 15rem;
 				}
 
-				@media (max-width:1665px) {
+				@media screen and (max-width:1665px) {
 					padding: 0 9rem;
 				}
 
-				@media (max-width:1375px) {
+				@media screen and (max-width:1375px) {
 					padding: 0 3rem;
 				}
 			}
@@ -655,19 +655,19 @@ html {
 				height: 400px;
 				margin-left: 15rem;
 
-				@media (max-width:1475px) {
+				@media screen and (max-width:1475px) {
 					margin-left: 3rem;
 				}
 
-				@media (max-width:1050px) {
+				@media screen and (max-width:1050px) {
 					height: 300px;
 				}
 
-				@media (max-width:915px) {
+				@media screen and (max-width:915px) {
 					height: 143px;
 				}
 
-				@media (max-width:680px) {
+				@media screen and (max-width:680px) {
 					height: 102px;
 				}
 
@@ -677,19 +677,19 @@ html {
 					margin-right: -5rem;
 					align-self: flex-start;
 
-					@media (max-width:1375px) {
+					@media screen and (max-width:1375px) {
 						margin-right: -1rem;
 					}
 
-					@media (max-width:1050px) {
+					@media screen and (max-width:1050px) {
 						width: 320px;
 					}
 
-					@media (max-width:915px) {
+					@media screen and (max-width:915px) {
 						width: 166px;
 					}
 
-					@media (max-width:680px) {
+					@media screen and (max-width:680px) {
 						width: 107px;
 					}
 
@@ -755,7 +755,7 @@ html {
 					border-color: white;
 				}
 
-				@media (max-width:680px) {
+				@media screen and (max-width:680px) {
 					display: block;
 					width: 90%;
 				}
@@ -799,11 +799,11 @@ html {
 				margin-top: 0;
 				margin-bottom: 11rem;
 
-				@media (max-width:1375px) {
+				@media screen and (max-width:1375px) {
 					margin-bottom: 7rem;
 				}
 
-				@media (max-width:1050px) {
+				@media screen and (max-width:1050px) {
 					margin-bottom: 5rem;
 				}
 			}
@@ -838,26 +838,38 @@ html {
 
 				// page-padding
 				padding: 0 30rem;
-				@media (max-width:2200px) {
+				@media screen and (max-width:2200px) {
 					padding: 0 15rem;
 				}
 
-				@media (max-width:1665px) {
+				@media screen and (max-width:1665px) {
 					padding: 0 9rem;
 				}
 
-				@media (max-width:1375px) {
+				@media screen and (max-width:1375px) {
 					padding: 0 3rem;
 				}
 
-				@media (max-width:946px) {
+				@media screen and (max-width:946px) {
 					grid-template-columns: 3fr 1fr;
 					grid-gap: 3rem;
 				}
 
+				img {
+					max-height: 160px;
+
+					@media screen and (max-width:1190px) {
+						max-height: 90px;
+					}
+
+					@media screen and (max-width:680px) {
+						max-height: 74px;
+					}
+				}
+
 				&__ghilimele {
 					&__left {
-						@media (max-width:946px) {
+						@media screen and (max-width:946px) {
 							display: none;
 						}
 					}
@@ -883,7 +895,7 @@ html {
 			flex-direction: row;
 			padding-top: 2rem;
 
-			@media (max-width: 1106px) {
+			@media screen and (max-width: 1106px) {
 				flex-direction: column;
 				justify-content: space-around;
 			}
@@ -892,7 +904,7 @@ html {
 				flex: 3;
 				margin-top: 0;
 
-				@media (max-width: 1106px) {
+				@media screen and (max-width: 1106px) {
 					margin-bottom: 5rem;
 				}
 			}
@@ -903,7 +915,7 @@ html {
 				margin-bottom: 3rem;
 				margin-left: 7rem;
 
-				@media (max-width: 1106px) {
+				@media screen and (max-width: 1106px) {
 					margin-left: 0;
 				}
 
@@ -945,19 +957,19 @@ html {
 
 				// page-padding
 				padding: 0 30rem;
-				@media (max-width:2200px) {
+				@media screen and (max-width:2200px) {
 					padding: 0 15rem;
 				}
 
-				@media (max-width:1665px) {
+				@media screen and (max-width:1665px) {
 					padding: 0 9rem;
 				}
 
-				@media (max-width:1375px) {
+				@media screen and (max-width:1375px) {
 					padding: 0 3rem;
 				}
 
-				@media (max-width:865px) {
+				@media screen and (max-width:865px) {
 					justify-content: space-evenly;
 				}
 
@@ -968,11 +980,11 @@ html {
 					text-decoration: none;
 					color: white;
 
-					@media (max-width:865px) {
+					@media screen and (max-width:865px) {
 						padding: 0 3rem;
 					}
 
-					@media (max-width:607px) {
+					@media screen and (max-width:607px) {
 						padding: 0 1.5rem;
 					}
 
@@ -986,7 +998,7 @@ html {
 
 		// Media queries for Tablets
 
-		@media (min-width:700px) and (max-width:1000px) {
+		@media screen and (min-width:700px) and (max-width:1000px) {
 			// Nav Bar
 			#desktop-nav{
 				ul{
@@ -1001,7 +1013,7 @@ html {
 			}
 		}
 		// Media queries for Mobiles
-		@media (max-width:700px) {
+		@media screen and (max-width:700px) {
 			#desktop-nav {
 				display: none;
 			}
@@ -1074,11 +1086,11 @@ html {
 	padding-top: 9rem;
 
 	
-	@media (max-width:946px) {
+	@media screen and (max-width:946px) {
 		height: 587px;
 	}
 
-	@media (max-width:795px) {
+	@media screen and (max-width:795px) {
 		height: 744px;
 	}
 }
