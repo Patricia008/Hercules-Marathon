@@ -97,12 +97,12 @@ html body .button:active {
 }
 html body article section {
   width: 100%;
-  padding: 0 30rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  padding: 0 30rem;
 }
 @media (max-width: 2200px) {
   html body article section {
@@ -656,7 +656,6 @@ html body .Inscriere__title {
 html body .Inscriere__description {
   flex: 2;
   margin-bottom: 3rem;
-  margin-top: 4rem;
   margin-left: 7rem;
 }
 @media (max-width: 1000px) {
@@ -686,6 +685,40 @@ html body .Inscriere__button {
 html body .Footer {
   padding: 0;
   background-color: #101111;
+  color: white;
+}
+html body .Footer__contact {
+  display: flex;
+  justify-content: center;
+  margin: 6rem 0;
+  font-size: 1.15rem;
+  padding: 0 30rem;
+}
+@media (max-width: 2200px) {
+  html body .Footer__contact {
+    padding: 0 15rem;
+  }
+}
+@media (max-width: 1600px) {
+  html body .Footer__contact {
+    padding: 0 9rem;
+  }
+}
+@media (max-width: 1250px) {
+  html body .Footer__contact {
+    padding: 0 3rem;
+  }
+}
+html body .Footer__contact a {
+  margin: 0 5rem;
+  font-weight: 900;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+html body .Footer__contact a img {
+  width: 32px;
+  cursor: pointer;
 }
 @media (min-width: 700px) and (max-width: 1000px) {
   html body #desktop-nav ul {
