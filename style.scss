@@ -184,7 +184,7 @@ html {
 		.black-mountain {
 			padding: 0;
 			position: relative;
-			bottom: -6px;
+			bottom: -2px;
 			z-index: -1;
 
 			img {
@@ -208,7 +208,7 @@ html {
 			padding: 0;
 			z-index: -1;
 			position: relative;
-			bottom: 6px;
+			bottom: 2px;
 
 			img {
 				@media screen and (max-width: $phone-breakpoint) {
