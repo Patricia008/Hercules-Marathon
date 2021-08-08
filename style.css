@@ -96,12 +96,18 @@ html body .button {
   border-color: #ffad1d;
   color: black;
 }
-html body .button:hover {
-  background-color: #00e0dd;
-  border-color: #00e0dd;
-}
 html body .button:active {
   border-color: #101111;
+}
+@media screen and (min-width: 564px) {
+  html body .button {
+    padding: 0.7rem;
+    font-size: 1.5rem;
+  }
+  html body .button:hover {
+    background-color: #00e0dd;
+    border-color: #00e0dd;
+  }
 }
 @media screen and (max-width: 564px) {
   html body .button {
@@ -656,10 +662,12 @@ html body .button-sarbatoreste__button {
   font-size: 1.5rem;
   padding: 0.5rem 5rem;
 }
-html body .button-sarbatoreste__button:hover {
-  background-color: #ffad1d;
-  border-color: #ffad1d;
-  color: black;
+@media screen and (min-width: 564px) {
+  html body .button-sarbatoreste__button:hover {
+    background-color: #ffad1d;
+    border-color: #ffad1d;
+    color: black;
+  }
 }
 html body .button-sarbatoreste__button:active {
   border-color: white;
@@ -898,10 +906,12 @@ html body .Trasee__button {
   margin-bottom: 12rem;
   margin-top: 6rem;
 }
-html body .Trasee__button:hover {
-  background-color: #101111;
-  border-color: #101111;
-  color: #ffad1d;
+@media screen and (min-width: 564px) {
+  html body .Trasee__button:hover {
+    background-color: #101111;
+    border-color: #101111;
+    color: #ffad1d;
+  }
 }
 html body .Trasee__button:active {
   border-color: white;
