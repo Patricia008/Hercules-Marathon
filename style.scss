@@ -244,10 +244,8 @@ html {
 		}
 
 		.top-mountains-footer {
-			img {
-				@media screen and (max-width: $phone-breakpoint) {
-					max-width: 99.9%;
-				}
+			@media screen and (max-width: $phone-breakpoint) {
+				max-width: 99.9%;
 			}
 		}
 

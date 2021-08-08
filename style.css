@@ -216,7 +216,7 @@ html body .top-mountains {
   }
 }
 @media screen and (max-width: 564px) {
-  html body .top-mountains-footer img {
+  html body .top-mountains-footer {
     max-width: 99.9%;
   }
 }
