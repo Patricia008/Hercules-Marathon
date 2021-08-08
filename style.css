@@ -1227,7 +1227,7 @@ html body .Footer__contact a img {
     background-color: white;
     position: fixed;
     width: 100%;
-    min-height: 94px;
+    min-height: 63px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1235,20 +1235,14 @@ html body .Footer__contact a img {
     z-index: 3;
   }
   html body .mobile-nav__burger {
-    width: 100px;
+    width: 74px;
     position: absolute;
     right: 0;
     top: 0;
-    padding: 1.5rem;
+    padding: 1rem;
     cursor: pointer;
   }
   html body .mobile-nav__burger img {
-    cursor: pointer;
-  }
-  html body .mobile-nav__x {
-    cursor: pointer;
-  }
-  html body .mobile-nav__x img {
     cursor: pointer;
   }
   html body .mobile-nav i {
@@ -1270,12 +1264,10 @@ html body .Footer__contact a img {
     transition: all 0.3s linear;
     list-style-type: none;
     z-index: 5;
-    height: 100vh;
   }
   html body .mobile-nav ul li {
     width: 100%;
     text-align: center;
-    padding: 3rem 0;
     cursor: pointer;
   }
   html body .mobile-nav ul li a {
@@ -1283,6 +1275,18 @@ html body .Footer__contact a img {
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
+    cursor: pointer;
+  }
+  html body .mobile-nav ul li:not(:last-child) {
+    padding: 3rem 0;
+  }
+  html body .mobile-nav ul li:last-child {
+    padding: 3rem 0 60rem 0;
+  }
+  html body .mobile-nav__x {
+    cursor: pointer;
+  }
+  html body .mobile-nav__x img {
     cursor: pointer;
   }
 }
