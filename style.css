@@ -158,7 +158,7 @@ html body .perioada-de-inscrieri {
 html body .black-mountain {
   padding: 0;
   position: relative;
-  bottom: -16px;
+  bottom: -3px;
   z-index: -1;
 }
 @media screen and (max-width: 564px) {
@@ -169,26 +169,26 @@ html body .black-mountain {
 html body .black-mountain-reversed {
   padding: 0;
   z-index: -1;
-  margin-top: -0.1rem;
+  margin-top: -3px;
 }
 html body .top-mountains {
   padding: 0;
-  top: -20.55rem;
+  top: -328.8px;
   position: relative;
 }
 @media screen and (max-width: 1700px) {
   html body .top-mountains {
-    top: -15rem;
+    top: -240px;
   }
 }
 @media screen and (max-width: 1185px) {
   html body .top-mountains {
-    top: -11rem;
+    top: -176px;
   }
 }
 @media screen and (max-width: 845px) {
   html body .top-mountains {
-    top: -8rem;
+    top: -128px;
   }
 }
 @media screen and (max-width: 564px) {
