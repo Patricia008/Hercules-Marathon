@@ -189,7 +189,7 @@ html {
 
 			img {
 				@media screen and (max-width: $phone-breakpoint) {
-					max-width: 98%;
+					max-width: 99.9%;
 				}
 			}
 		}
@@ -212,7 +212,7 @@ html {
 
 			img {
 				@media screen and (max-width: $phone-breakpoint) {
-					max-width: 98%;
+					max-width: 99.9%;
 				}
 			}
 		}
@@ -236,6 +236,7 @@ html {
 
 			@media screen and (max-width: $phone-breakpoint) {
 				top: -48px;
+				max-width: 99.9%;
 			}
 		}
 
