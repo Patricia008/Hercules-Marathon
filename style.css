@@ -170,8 +170,8 @@ html body .dot {
   max-height: fit-content;
 }
 @media screen and (max-width: 564px) {
-  html body .dot img {
-    max-width: 99.9%;
+  html body .dot {
+    max-width: 99%;
   }
 }
 html body .black-mountain-reversed {
@@ -208,6 +208,10 @@ html body .top-mountains {
 @media screen and (max-width: 564px) {
   html body .top-mountains {
     top: -48px;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .top-mountains img {
     max-width: 99.9%;
   }
 }
