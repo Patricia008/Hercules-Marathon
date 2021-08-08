@@ -1334,12 +1334,16 @@ html {
 						}
 					}
 
-					li:not(:last-child)  {
-						padding: 3rem 0;
+					li:first-child {
+						padding: 5rem 0 1rem 0;
+					}
+	
+					li:not(:last-child):not(:first-child)  {
+						padding: 1rem 0;
 					}
 
 					li:last-child {
-						padding: 3rem 0 60rem 0;
+						padding: 4rem 0 60rem 0;
 					}
 				}
 
