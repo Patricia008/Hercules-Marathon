@@ -1380,18 +1380,22 @@ html {
 	padding-top: 9rem;
 
 	
-	@media screen and (max-width: 946px) {
-		height: 587px;
-	}
+	// @media screen and (max-width: 946px) {
+	// 	height: 587px;
+	// }
 
-	@media screen and (max-width: 795px) {
-		height: 744px;
+	// @media screen and (max-width: 795px) {
+	// 	height: 744px;
+	// }
+
+	@media screen and (max-width: $phone-breakpoint) {
+		height: 335px;
 	}
 
 	@media screen and (max-width: $phone-breakpoint) {
 		padding-top: 0;
 		padding-bottom: 3rem;
-		height: 288px;
+		// height: 288px;
 	}
 }
 
@@ -1567,6 +1571,14 @@ html {
 	position: relative;
 	height: 90%;
 	width: 100%;
+
+	@media screen and (max-width: 946px) {
+		height: 80%;
+	}
+
+	@media screen and (max-width: $phone-breakpoint) {
+		height: 74%;
+	}
 }
 
 .slider *{
