@@ -1018,9 +1018,7 @@ html body .Editii__title {
   }
 }
 html body .Editii__pareri {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-gap: 9rem;
+  display: flex;
   margin-bottom: 6rem;
   font-size: 1rem;
   margin-top: 1.5rem;
@@ -1039,12 +1037,6 @@ html body .Editii__pareri {
 @media screen and (max-width: 1375px) {
   html body .Editii__pareri {
     padding: 0 3rem;
-  }
-}
-@media screen and (max-width: 946px) {
-  html body .Editii__pareri {
-    grid-template-columns: 3fr 1fr;
-    grid-gap: 3rem;
   }
 }
 @media screen and (max-width: 564px) {
@@ -1068,6 +1060,11 @@ html body .Editii__pareri img {
     max-height: 74px;
   }
 }
+@media screen and (max-width: 564px) {
+  html body .Editii__pareri img {
+    max-height: 40px;
+  }
+}
 @media screen and (max-width: 946px) {
   html body .Editii__pareri__ghilimele__left {
     display: none;
@@ -1075,6 +1072,7 @@ html body .Editii__pareri img {
 }
 html body .Editii__pareri__text {
   text-align: justify;
+  margin: 0 6rem;
 }
 @media screen and (max-width: 680px) {
   html body .Editii__pareri__text {
@@ -1083,7 +1081,12 @@ html body .Editii__pareri__text {
 }
 @media screen and (max-width: 946px) {
   html body .Editii__pareri__text {
-    margin: 0;
+    margin: 0 2rem 0 0;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .Editii__pareri__text {
+    margin: 0 1rem 0 0;
   }
 }
 html body .Editii__pareri__text b {

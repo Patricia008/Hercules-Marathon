@@ -1069,9 +1069,7 @@ html {
 			}
 
 			&__pareri {
-				display: grid;
-				grid-template-columns: 1fr 2fr 1fr;
-				grid-gap: 9rem;
+				display: flex;
 				margin-bottom: 6rem;
 				font-size: $smol-text-font-size;
 				margin-top: $smol-text-line-height;
@@ -1088,12 +1086,6 @@ html {
 
 				@media screen and (max-width: 1375px) {
 					padding: 0 3rem;
-				}
-
-				
-				@media screen and (max-width: 946px) {
-					grid-template-columns: 3fr 1fr;
-					grid-gap: 3rem;
 				}
 				
 				@media screen and (max-width: $phone-breakpoint) {
@@ -1113,6 +1105,10 @@ html {
 					@media screen and (max-width: 680px) {
 						max-height: 74px;
 					}
+
+					@media screen and (max-width: $phone-breakpoint) {
+						max-height: 40px;
+					}
 				}
 
 				&__ghilimele {
@@ -1125,14 +1121,18 @@ html {
 
 				&__text {
 					text-align: justify;
-					// margin: 0 6rem;
+					margin: 0 6rem;
 
 					@media screen and (max-width: 680px) {
 						margin: 0 4rem;
 					}
 
 					@media screen and (max-width: 946px) {
-						margin: 0;
+						margin: 0 2rem 0 0;
+					}
+
+					@media screen and (max-width: $phone-breakpoint) {
+						margin: 0 1rem 0 0;
 					}
 
 					b {
