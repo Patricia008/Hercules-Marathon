@@ -187,11 +187,11 @@ html {
 			bottom: -.1rem;
 			z-index: -1;
 
-			// img {
-			// 	@media screen and (max-width: $phone-breakpoint) {
-			// 		max-width: $phone-breakpoint;
-			// 	}
-			// }
+			img {
+				@media screen and (max-width: $phone-breakpoint) {
+					max-width: 535px;
+				}
+			}
 		}
 
 		.black-mountain-reversed {
@@ -204,6 +204,7 @@ html {
 			padding: 0;
 			top: -20.55rem;
 			position: relative;
+			max-width: 100vw;
 
 			@media screen and (max-width:1700px) {
 				top: -15rem;
