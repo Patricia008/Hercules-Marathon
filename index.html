@@ -19,28 +19,29 @@
 		<script type="text/javascript" src="slider.js"></script>
 	</head>
 	<body>
-	<!-- Nav Bar For Desktop and Tablet-->
 	<nav id="desktop-nav">
 		<ul>
 			<li><a href="#heading">ACASĂ</a></li>
 			<li><a href="#details">CONCURS</a></li>
 			<li><a href="#desprenoi">DESPRE NOI</a></li>
-			<li><a href="#inscriere">CONTACT</a></li>
+			<li><a href="#contact">CONTACT</a></li>
 		</ul>
 	</nav>
-	<!-- Nav Bar For Mobile -->
-	<nav id="mobile-nav">
-		<div class="fas fa-bars" onclick="click_bars()">
-			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="50px" width="50px">
-				<path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
-			</svg>
+	<nav id="mobile-nav" class="mobile-nav">
+		<div class="mobile-nav__burger" onclick="click_burger()">
+			<img
+				src="./assets/svgs/Mobile_Hamburger_Menu_Icon.svg"
+				alt="burger"
+			/>
 		</div>
 		<ul>
-			<li><a href="#heading">ACASĂ</a></li>
-			<li><a href="#details">CONCURS</a></li>
-			<li><a href="#desprenoi">DESPRE NOI</a></li>
-			<li><a href="#inscriere">CONTACT</a></li>
-			<i class="fas fa-times" onclick="click_times()"></i>
+			<li onclick="click_x()"><a href="#heading">ACASĂ</a></li>
+			<li onclick="click_x()"><a href="#details">CONCURS</a></li>
+			<li onclick="click_x()"><a href="#desprenoi">DESPRE NOI</a></li>
+			<li onclick="click_x()"><a href="#contact">CONTACT</a></li>
+			<li class="mobile-nav__x" onclick="click_x()">
+				<img src="./assets/svgs/close.png" alt="x" width="30px"/>
+			</li>
 		</ul>
 	</nav>
 	<img
@@ -137,7 +138,7 @@
 			</div>
 		</div>
 		
-		<section id="details" class="black-mountain">
+		<section id="details" class="black-mountain Details__black-mountains">
 			<img src="./assets/svgs/Black_Mountain.svg" alt="Mountains" viewBox="0 0 100 100">
 		</section>
 		<section class="Details">
@@ -378,7 +379,7 @@
 		<section class="black-mountain">
 			<img src="./assets/svgs/Black_Mountain.svg" alt="Mountain" viewBox="0 0 100 100">
 		</section>
-		<section id="inscriere" class="Inscriere">
+		<section class="Inscriere">
 			<div class="section-title Inscriere__title">
 				Sărbătorește și tu
 				<div class="base-color">
@@ -419,7 +420,7 @@
 		</section>
 
 		
-		<section class="Footer">
+		<section id="contact" class="Footer">
 			<img src="./assets/svgs/Mountains_Footer.svg" alt="Mountains" viewBox="0 0 100 100"/>
 			<div class="Footer__contact">
 				<a>

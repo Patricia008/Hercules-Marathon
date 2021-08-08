@@ -1,17 +1,17 @@
 
-function click_bars() {
+function click_burger() {
 	const mobile_nav=document.querySelector('#mobile-nav ul')
 	mobile_nav.style.transform='translatex(0vw)'
-	let bars=document.querySelector('.fa-bars')
-	bars.style.transform="rotate(360deg)"
-	bars.style.display='none'
+	let burger=document.querySelector('.mobile-nav__burger')
+	burger.style.transform="rotate(360deg)"
+	burger.style.display='none'
 }
 
-function click_times() {
-	let bars=document.querySelector('.fa-bars')
+function click_x() {
+	let burger=document.querySelector('.mobile-nav__burger')
 	const mobile_nav=document.querySelector('#mobile-nav ul')
-	bars.style.display = 'block';
-	mobile_nav.style.transform = 'translatex(-100vw)'
+	burger.style.display = 'block';
+	mobile_nav.style.transform = 'translatex(110vw)'
 }
 
 function change_visible_state(hidden_text, see_more_button) {
@@ -66,23 +66,10 @@ function addListenerMulti(element, eventNames, listener) {
 		let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
 			// Loop through IntersectionObserverEntry objects
 			entries.forEach(function(entry) {
-  
-			  // Do these if the target intersects with the root
-			  if (entry.isIntersecting) {
-  
 				let lazyImage = entry.target;
 				lazyImage.src = lazyImage.dataset.src;
 				lazyImage.classList.remove("lazy");
 				lazyImageObserver.unobserve(lazyImage);
-			  }
-  
-			  else{
-				  
-				   let lazyImage = entry.target;
-				lazyImage.src = lazyImage.dataset.src;
-				lazyImage.classList.remove("lazy");
-				lazyImageObserver.unobserve(lazyImage);
-			  }
 			});
 		});
   

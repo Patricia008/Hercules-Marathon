@@ -74,7 +74,7 @@ html body #desktop-nav ul li a {
   font-size: 1.25em;
   text-transform: uppercase;
 }
-html body #mobile-nav {
+html body .mobile-nav {
   display: none;
 }
 html body .button {
@@ -96,9 +96,6 @@ html body .button {
   border-color: #ffad1d;
   color: black;
 }
-html body .button:active {
-  border-color: #101111;
-}
 @media screen and (min-width: 564px) {
   html body .button {
     padding: 0.7rem;
@@ -108,6 +105,9 @@ html body .button:active {
     background-color: #00e0dd;
     border-color: #00e0dd;
   }
+}
+html body .button:active {
+  border-color: #101111;
 }
 @media screen and (max-width: 564px) {
   html body .button {
@@ -708,7 +708,7 @@ html body .Details__title {
 }
 @media screen and (max-width: 564px) {
   html body .Details__title {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 }
 html body .Details__bete {
@@ -970,7 +970,7 @@ html body .DespreNoi__title {
 }
 @media screen and (max-width: 564px) {
   html body .DespreNoi__title {
-    margin-top: 2rem;
+    margin-top: 6rem;
   }
 }
 html body .DespreNoi__subtitle {
@@ -1219,58 +1219,71 @@ html body .Footer__contact a img {
   width: 32px;
   cursor: pointer;
 }
-@media screen and (min-width: 700px) and (max-width: 1000px) {
-  html body #desktop-nav ul {
-    width: 100%;
-  }
-  html body article h1 {
-    font-size: 3em;
-  }
-}
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1008px) {
   html body #desktop-nav {
     display: none;
   }
-  html body #mobile-nav {
-    background-color: #000;
-    opacity: 0.8;
+  html body .mobile-nav {
+    background-color: white;
     position: fixed;
     width: 100%;
-    min-height: 50px;
-    display: none;
+    min-height: 94px;
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     transition: all 0.3s linear;
-    font-family: monospace;
+    z-index: 3;
   }
-  html body #mobile-nav i {
-    color: #fff;
+  html body .mobile-nav__burger {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1.5rem;
+    cursor: pointer;
+  }
+  html body .mobile-nav__burger img {
+    cursor: pointer;
+  }
+  html body .mobile-nav__x {
+    cursor: pointer;
+  }
+  html body .mobile-nav__x img {
+    cursor: pointer;
+  }
+  html body .mobile-nav i {
+    color: black;
     font-size: 2em;
     margin-left: 10px;
     transition: all 0.3s linear;
   }
-  html body #mobile-nav ul {
+  html body .mobile-nav ul {
     position: absolute;
     top: 0px;
-    transform: translatex(-100vw);
-    background-color: rgba(0, 0, 0, 0.8);
+    transform: translatex(110vw);
+    background-color: white;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     transition: all 0.3s linear;
+    list-style-type: none;
+    z-index: 5;
+    height: 100vh;
   }
-  html body #mobile-nav ul li {
+  html body .mobile-nav ul li {
     width: 100%;
     text-align: center;
+    padding: 3rem 0;
+    cursor: pointer;
   }
-  html body #mobile-nav ul li a {
-    color: #fff;
+  html body .mobile-nav ul li a {
+    color: black;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
-    border-bottom: 1px solid #fff;
+    cursor: pointer;
   }
 }
 
@@ -1318,7 +1331,7 @@ html body .Footer__contact a img {
   font-size: 24px;
   letter-spacing: 5px;
   font-weight: bold;
-  z-index: 99999;
+  z-index: 2;
   text-transform: uppercase;
   margin-top: 3rem;
   user-select: none;
