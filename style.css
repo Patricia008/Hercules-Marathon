@@ -215,6 +215,11 @@ html body .top-mountains {
     max-width: 99.9%;
   }
 }
+@media screen and (max-width: 564px) {
+  html body .top-mountains-footer img {
+    max-width: 99.9%;
+  }
+}
 html body .logo {
   position: absolute;
   top: 2rem;
