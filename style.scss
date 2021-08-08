@@ -199,7 +199,7 @@ html {
 
 			img {
 				@media screen and (max-width: $phone-breakpoint) {
-					max-width: $phone-breakpoint;
+					max-width: 99.9%;
 				}
 			}
 		}
