@@ -34,6 +34,13 @@
   margin-top: 7rem;
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 564px) {
+  .section-title {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+  }
+}
 
 html {
   overflow-x: auto;
@@ -126,6 +133,11 @@ html body article section {
     padding: 0 3rem;
   }
 }
+@media screen and (max-width: 564px) {
+  html body article section {
+    padding: 0 2rem;
+  }
+}
 html body .perioada-de-inscrieri {
   font-size: 0.9rem;
   color: #ffad1d;
@@ -143,14 +155,10 @@ html body .black-mountain {
   bottom: -0.1rem;
   z-index: -1;
 }
-@media screen and (max-width: 564px) {
-  html body .black-mountain img {
-    max-width: 564px;
-  }
-}
 html body .black-mountain-reversed {
   padding: 0;
   z-index: -1;
+  margin-top: -0.1rem;
 }
 html body .top-mountains {
   padding: 0;
@@ -170,6 +178,11 @@ html body .top-mountains {
 @media screen and (max-width: 845px) {
   html body .top-mountains {
     top: -8rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .top-mountains {
+    top: -3rem;
   }
 }
 html body .logo {
@@ -192,6 +205,11 @@ html body .Heading {
   html body .Heading {
     flex-direction: column;
     justify-content: space-around;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .Heading {
+    padding-bottom: 6rem;
   }
 }
 html body .Heading__black-mountain {
@@ -303,8 +321,8 @@ html body .Heading__subtitle__colored {
 }
 html body .Heading__description {
   font-size: 1.2rem;
-  margin-top: 2rem;
   line-height: 1.5rem;
+  margin-top: 2rem;
 }
 @media screen and (max-width: 1185px) {
   html body .Heading__description {
@@ -314,6 +332,12 @@ html body .Heading__description {
 @media screen and (max-width: 703px) {
   html body .Heading__description {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .Heading__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 html body .Heading__cta {
@@ -341,6 +365,11 @@ html body .Intro__title {
     margin-top: -6rem;
   }
 }
+@media screen and (max-width: 564px) {
+  html body .Intro__title {
+    margin-top: -1rem;
+  }
+}
 html body .Intro__title b {
   color: #ffad1d;
   font-weight: 900;
@@ -351,6 +380,12 @@ html body .Intro__description {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 4rem;
+}
+@media screen and (max-width: 564px) {
+  html body .Intro__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 html body .Intro__description strong {
   color: #ff6914;
@@ -372,8 +407,19 @@ html body .Sarbatoreste p {
   line-height: 2rem;
   font-weight: 900;
 }
+@media screen and (max-width: 564px) {
+  html body .Sarbatoreste p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
 html body .Sarbatoreste strong {
   font-size: 2.3rem;
+}
+@media screen and (max-width: 564px) {
+  html body .Sarbatoreste strong {
+    font-size: 0.9rem;
+  }
 }
 html body .Sarbatoreste__sarbatoreste {
   font-style: italic;
@@ -384,6 +430,12 @@ html body .Sarbatoreste__sarbatoreste {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 900;
+}
+@media screen and (max-width: 564px) {
+  html body .Sarbatoreste__sarbatoreste {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 html body .Sarbatoreste__flex {
   display: flex;
@@ -410,6 +462,11 @@ html body .Sarbatoreste__flex__miscarea {
 html body .Sarbatoreste__flex__miscarea strong {
   font-size: 2.5rem;
 }
+@media screen and (max-width: 564px) {
+  html body .Sarbatoreste__flex__miscarea strong {
+    font-size: 0.9rem;
+  }
+}
 html body .Sarbatoreste__flex__natura {
   position: relative;
   left: 7rem;
@@ -419,14 +476,46 @@ html body .Sarbatoreste__flex__natura {
     left: 0;
   }
 }
+@media screen and (max-width: 564px) {
+  html body .Sarbatoreste__flex__natura {
+    left: 1rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .Sarbatoreste__flex__emotia {
+    position: relative;
+    left: -4rem;
+  }
+}
 html body .Sarbatoreste__flex__emotia strong {
   font-size: 3.25rem;
+}
+@media screen and (max-width: 564px) {
+  html body .Sarbatoreste__flex__emotia strong {
+    font-size: 0.9rem;
+  }
 }
 html body .Sarbatoreste__flex__valea-cernei strong {
   font-size: 1.75rem;
 }
+@media screen and (max-width: 564px) {
+  html body .Sarbatoreste__flex__valea-cernei strong {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .Sarbatoreste__flex__revederea {
+    position: relative;
+    left: 5rem;
+  }
+}
 html body .Sarbatoreste__flex__revederea strong {
   font-size: 2rem;
+}
+@media screen and (max-width: 564px) {
+  html body .Sarbatoreste__flex__revederea strong {
+    font-size: 0.9rem;
+  }
 }
 html body .Sarbatoreste__hercules {
   display: inline-flex;
@@ -439,9 +528,21 @@ html body .Sarbatoreste__hercules__maraton {
   line-height: 2.7rem;
   margin-right: 0.5rem;
 }
+@media screen and (max-width: 564px) {
+  html body .Sarbatoreste__hercules__maraton {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+}
 html body .Sarbatoreste__hercules__x {
   font-size: 6rem;
   line-height: 5rem;
+}
+@media screen and (max-width: 564px) {
+  html body .Sarbatoreste__hercules__x {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
 }
 html body .floating-nv {
   animation-name: floating-nv;
@@ -536,8 +637,20 @@ html body .button-sarbatoreste__button:hover {
 html body .button-sarbatoreste__button:active {
   border-color: white;
 }
+@media screen and (max-width: 564px) {
+  html body .button-sarbatoreste__button {
+    display: block;
+    width: 80%;
+    padding: 0.5rem;
+  }
+}
 html body .button-sarbatoreste__perioada-de-inscrieri {
   margin: 0.5rem auto;
+}
+@media screen and (max-width: 564px) {
+  html body .button-sarbatoreste {
+    margin-bottom: 2rem;
+  }
 }
 html body .Details {
   font-size: 1.2rem;
@@ -547,8 +660,20 @@ html body .Details {
   color: white;
   padding-bottom: 9rem;
 }
+@media screen and (max-width: 564px) {
+  html body .Details {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
+  }
+}
 html body .Details__title {
   margin-top: 0;
+}
+@media screen and (max-width: 564px) {
+  html body .Details__title {
+    margin-top: 2rem;
+  }
 }
 html body .Details__bete {
   position: relative;
@@ -557,6 +682,13 @@ html body .Details__bete {
 @media screen and (max-width: 1375px) {
   html body .Details__bete {
     left: -5rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .Details__bete {
+    width: 170px;
+    height: 111px;
+    left: -1.5rem;
   }
 }
 html body .Details__text_container {
@@ -622,6 +754,11 @@ html body .Trasee__padding {
     padding: 0 3rem;
   }
 }
+@media screen and (max-width: 564px) {
+  html body .Trasee__padding {
+    padding: 0 2rem;
+  }
+}
 html body .Trasee__flex {
   display: flex;
 }
@@ -647,6 +784,17 @@ html body .Trasee__shoe {
 @media screen and (max-width: 680px) {
   html body .Trasee__shoe {
     height: 102px;
+    position: absolute;
+    margin-top: -5rem;
+    right: 4rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .Trasee__shoe {
+    height: 76px;
+    margin-left: 1rem;
+    margin-top: -3rem;
+    right: 2rem;
   }
 }
 html body .Trasee__shoe__red {
@@ -675,11 +823,23 @@ html body .Trasee__shoe__red {
     width: 107px;
   }
 }
+@media screen and (max-width: 564px) {
+  html body .Trasee__shoe__red {
+    width: 73px;
+    margin-right: 0;
+  }
+}
 html body .Trasee__subtitle {
   font-size: 2.9rem;
   line-height: 3.5rem;
   font-weight: 900;
   margin-top: 1rem;
+}
+@media screen and (max-width: 564px) {
+  html body .Trasee__subtitle {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
 }
 html body .Trasee__description {
   font-size: 1.2rem;
@@ -687,17 +847,11 @@ html body .Trasee__description {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-html body .Trasee__semimaraton__hidden {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  transition: height 0ms 400ms, opacity 400ms 0ms;
-}
-html body .Trasee__maraton__hidden {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  transition: height 0ms 400ms, opacity 400ms 0ms;
+@media screen and (max-width: 564px) {
+  html body .Trasee__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 html body .Trasee__button {
   box-sizing: border-box;
@@ -730,8 +884,26 @@ html body .Trasee__button:active {
     width: 90%;
   }
 }
+html body .Trasee__semimaraton__hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0ms 400ms, opacity 400ms 0ms;
+}
 html body .Trasee__semimaraton__button {
   margin-bottom: 0;
+}
+@media screen and (max-width: 564px) {
+  html body .Trasee__semimaraton__button {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+html body .Trasee__maraton__hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0ms 400ms, opacity 400ms 0ms;
 }
 html body .Trasee__maraton__button {
   background-color: #da0000;
@@ -740,6 +912,12 @@ html body .Trasee__maraton__button {
 }
 html body .Trasee__maraton__button:hover {
   color: white;
+}
+@media screen and (max-width: 564px) {
+  html body .Trasee__maraton__button {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
 html body .DespreNoi {
   background-image: url(./assets/svgs/cinesuntem.png);
@@ -751,6 +929,11 @@ html body .DespreNoi {
 html body .DespreNoi__title {
   margin-bottom: 0;
   margin-top: 7rem;
+}
+@media screen and (max-width: 564px) {
+  html body .DespreNoi__title {
+    margin-top: 2rem;
+  }
 }
 html body .DespreNoi__subtitle {
   color: #ff6914;
@@ -767,10 +950,26 @@ html body .DespreNoi__subtitle {
     margin-bottom: 5rem;
   }
 }
+@media screen and (max-width: 564px) {
+  html body .DespreNoi__subtitle {
+    margin-bottom: 3rem;
+  }
+}
 html body .DespreNoi__description {
   font-size: 1.2rem;
   line-height: 1.5rem;
   margin-bottom: 6rem;
+}
+@media screen and (max-width: 564px) {
+  html body .DespreNoi__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .DespreNoi__description {
+    margin-bottom: 2rem;
+  }
 }
 html body .Editii {
   padding-bottom: 2rem;
@@ -783,7 +982,7 @@ html body .Editii__pareri {
   display: flex;
   margin-bottom: 6rem;
   font-size: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   padding: 0 30rem;
 }
 @media screen and (max-width: 2200px) {
@@ -799,6 +998,11 @@ html body .Editii__pareri {
 @media screen and (max-width: 1375px) {
   html body .Editii__pareri {
     padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .Editii__pareri {
+    padding: 0 2rem;
   }
 }
 @media screen and (max-width: 946px) {
@@ -877,7 +1081,7 @@ html body .Inscriere__description {
 }
 html body .Inscriere__description__text {
   font-size: 1rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
   font-weight: 600;
 }
 html body .Inscriere__description__step {
@@ -919,6 +1123,11 @@ html body .Footer__contact {
 @media screen and (max-width: 1375px) {
   html body .Footer__contact {
     padding: 0 3rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .Footer__contact {
+    padding: 0 2rem;
   }
 }
 @media screen and (max-width: 865px) {
