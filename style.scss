@@ -173,6 +173,12 @@ html {
 			position: relative;
 			bottom: -.1rem;
 			z-index: -1;
+
+			img {
+				@media screen and (max-width: $phone-breakpoint) {
+					max-width: $phone-breakpoint;
+				}
+			}
 		}
 
 		.black-mountain-reversed {
