@@ -184,14 +184,14 @@ html {
 		.black-mountain {
 			padding: 0;
 			position: relative;
-			bottom: -16px;
+			bottom: -3px;
 			z-index: -1;
 
-			// img {
-			// 	@media screen and (max-width: $phone-breakpoint) {
-			// 		max-width: 535px;
-			// 	}
-			// }
+			img {
+				@media screen and (max-width: $phone-breakpoint) {
+					max-width: $phone-breakpoint;
+				}
+			}
 		}
 
 		.dot {
@@ -202,7 +202,13 @@ html {
 			padding: 0;
 			z-index: -1;
 			position: relative;
-			top: -16px;
+			top: -3px;
+
+			img {
+				@media screen and (max-width: $phone-breakpoint) {
+					max-width: $phone-breakpoint;
+				}
+			}
 		}
 
 		.top-mountains {
