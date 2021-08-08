@@ -446,9 +446,19 @@ html body .Sarbatoreste__flex__1 {
   left: -5rem;
   position: relative;
 }
+@media screen and (max-width: 564px) {
+  html body .Sarbatoreste__flex__1 {
+    left: 0;
+  }
+}
 html body .Sarbatoreste__flex__2 {
-  left: 4rem;
+  left: 1rem;
   position: relative;
+}
+@media screen and (max-width: 564px) {
+  html body .Sarbatoreste__flex__2 {
+    left: 0;
+  }
 }
 html body .Sarbatoreste__flex__miscarea {
   position: relative;
@@ -484,7 +494,7 @@ html body .Sarbatoreste__flex__natura {
 @media screen and (max-width: 564px) {
   html body .Sarbatoreste__flex__emotia {
     position: relative;
-    left: -4rem;
+    left: 1rem;
   }
 }
 html body .Sarbatoreste__flex__emotia strong {
@@ -506,7 +516,7 @@ html body .Sarbatoreste__flex__valea-cernei strong {
 @media screen and (max-width: 564px) {
   html body .Sarbatoreste__flex__revederea {
     position: relative;
-    left: 5rem;
+    left: 1rem;
   }
 }
 html body .Sarbatoreste__flex__revederea strong {

@@ -485,11 +485,19 @@ html {
 				&__1{
 					left: -5rem;
 					position: relative;
+
+					@media screen and (max-width: $phone-breakpoint) {
+						left: 0;
+					}
 				}
 
 				&__2 {
-					left: 4rem;
+					left: 1rem;
 					position: relative;
+
+					@media screen and (max-width: $phone-breakpoint) {
+						left: 0;
+					}
 				}
 
 				&__miscarea {
@@ -526,7 +534,7 @@ html {
 
 					@media screen and (max-width: $phone-breakpoint) {
 						position: relative;
-						left: -4rem;
+						left: 1rem;
 					}
 
 					strong {
@@ -552,7 +560,7 @@ html {
 
 					@media screen and (max-width: $phone-breakpoint) {
 						position: relative;
-						left: 5rem;
+						left: 1rem;
 					}
 
 					strong {
