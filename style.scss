@@ -184,7 +184,7 @@ html {
 		.black-mountain {
 			padding: 0;
 			position: relative;
-			bottom: -3px;
+			bottom: -6px;
 			z-index: -1;
 
 			img {
@@ -196,13 +196,19 @@ html {
 
 		.dot {
 			max-height: fit-content;
+
+			img {
+				@media screen and (max-width: $phone-breakpoint) {
+					max-width: $phone-breakpoint;
+				}
+			}
 		}
 
 		.black-mountain-reversed {
 			padding: 0;
 			z-index: -1;
 			position: relative;
-			top: -3px;
+			bottom: 6px;
 
 			img {
 				@media screen and (max-width: $phone-breakpoint) {

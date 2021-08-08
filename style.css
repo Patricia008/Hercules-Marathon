@@ -158,7 +158,7 @@ html body .perioada-de-inscrieri {
 html body .black-mountain {
   padding: 0;
   position: relative;
-  bottom: -3px;
+  bottom: -6px;
   z-index: -1;
 }
 @media screen and (max-width: 564px) {
@@ -169,11 +169,16 @@ html body .black-mountain {
 html body .dot {
   max-height: fit-content;
 }
+@media screen and (max-width: 564px) {
+  html body .dot img {
+    max-width: 564px;
+  }
+}
 html body .black-mountain-reversed {
   padding: 0;
   z-index: -1;
   position: relative;
-  top: -3px;
+  bottom: 6px;
 }
 @media screen and (max-width: 564px) {
   html body .black-mountain-reversed img {
