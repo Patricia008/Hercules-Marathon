@@ -161,18 +161,14 @@ html body .black-mountain {
   bottom: -16px;
   z-index: -1;
 }
-@media screen and (max-width: 564px) {
-  html body .black-mountain img {
-    max-width: 535px;
-  }
-}
 html body .dot {
   max-height: fit-content;
 }
 html body .black-mountain-reversed {
   padding: 0;
   z-index: -1;
-  margin-top: -16px;
+  position: relative;
+  top: -16px;
 }
 html body .top-mountains {
   padding: 0;
