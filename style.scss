@@ -1313,7 +1313,7 @@ html {
 				display: flex;
 				justify-content: flex-start;
 				align-items: center;
-				transition: all .3s linear;
+				transition: all .2s linear;
 				z-index: 3;
 
 				&__burger {
@@ -1333,7 +1333,7 @@ html {
 					color: black;
 					font-size: 2em;
 					margin-left: 10px;
-					transition:all .3s linear;
+					transition:all .2s linear;
 				}
 				ul {
 					position: absolute;
@@ -1345,7 +1345,7 @@ html {
 					flex-direction: column;
 					justify-content: space-around;
 					align-items: center;
-					transition: all .3s linear;
+					transition: all .2s linear;
 					list-style-type: none;
 					z-index: 5;
 

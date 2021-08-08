@@ -1260,7 +1260,7 @@ html body .Footer__contact a img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
     z-index: 3;
   }
   html body .mobile-nav__burger {
@@ -1278,7 +1278,7 @@ html body .Footer__contact a img {
     color: black;
     font-size: 2em;
     margin-left: 10px;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
   }
   html body .mobile-nav ul {
     position: absolute;
@@ -1290,7 +1290,7 @@ html body .Footer__contact a img {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
     list-style-type: none;
     z-index: 5;
   }
