@@ -191,6 +191,12 @@ html body .logo {
   left: 1rem;
   z-index: 4;
 }
+@media screen and (max-width: 564px) {
+  html body .logo {
+    top: 0;
+    width: 100px;
+  }
+}
 html body .Heading {
   color: white;
   background-color: #101111;
@@ -218,6 +224,11 @@ html body .Heading__black-mountain {
 @media screen and (max-width: 1185px) {
   html body .Heading__black-mountain {
     padding-top: 9rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .Heading__black-mountain {
+    padding-top: 7rem;
   }
 }
 html body .Heading__right {
@@ -385,6 +396,12 @@ html body .Intro__description {
   html body .Intro__description {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .Intro__description {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
   }
 }
 html body .Intro__description strong {
@@ -652,6 +669,7 @@ html body .button-sarbatoreste__button:active {
     display: block;
     width: 80%;
     padding: 0.5rem;
+    margin-top: 2rem;
   }
 }
 html body .button-sarbatoreste__perioada-de-inscrieri {
@@ -984,12 +1002,25 @@ html body .DespreNoi__description {
 html body .Editii {
   padding-bottom: 2rem;
 }
+@media screen and (max-width: 564px) {
+  html body .Editii {
+    padding-bottom: 0;
+  }
+}
 html body .Editii__title {
   margin-bottom: 2rem;
   margin-top: 9rem;
 }
+@media screen and (max-width: 564px) {
+  html body .Editii__title {
+    margin-top: 3rem;
+    padding-bottom: 0;
+  }
+}
 html body .Editii__pareri {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 9rem;
   margin-bottom: 6rem;
   font-size: 1rem;
   margin-top: 1.5rem;
@@ -1010,15 +1041,18 @@ html body .Editii__pareri {
     padding: 0 3rem;
   }
 }
-@media screen and (max-width: 564px) {
-  html body .Editii__pareri {
-    padding: 0 2rem;
-  }
-}
 @media screen and (max-width: 946px) {
   html body .Editii__pareri {
     grid-template-columns: 3fr 1fr;
     grid-gap: 3rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .Editii__pareri {
+    padding: 0 2rem;
+    grid-gap: 1rem;
+    line-height: 1.3rem;
+    margin-bottom: 2rem;
   }
 }
 html body .Editii__pareri img {
@@ -1041,7 +1075,6 @@ html body .Editii__pareri img {
 }
 html body .Editii__pareri__text {
   text-align: justify;
-  margin: 0 6rem;
 }
 @media screen and (max-width: 680px) {
   html body .Editii__pareri__text {
@@ -1055,6 +1088,7 @@ html body .Editii__pareri__text {
 }
 html body .Editii__pareri__text b {
   float: right;
+  text-align: right;
 }
 html body .Inscriere {
   background-color: #101111;
@@ -1102,6 +1136,12 @@ html body .Inscriere__description__step {
 html body .Inscriere__description__step img {
   height: 2.75rem;
   margin-right: 1.5rem;
+}
+@media screen and (max-width: 564px) {
+  html body .Inscriere__description__step img {
+    height: 1.7rem;
+    margin-right: 1rem;
+  }
 }
 html body .Inscriere__button {
   margin-top: 5rem;
@@ -1247,6 +1287,13 @@ html body .Footer__contact a img {
 @media screen and (max-width: 795px) {
   .sliderContainer {
     height: 744px;
+  }
+}
+@media screen and (max-width: 564px) {
+  .sliderContainer {
+    padding-top: 0;
+    padding-bottom: 3rem;
+    height: 288px;
   }
 }
 
