@@ -77,8 +77,9 @@ html {
 			display: flex;
 			justify-content: flex-end;
 			align-items: center;
-			padding: 2.5rem;
+			padding: 2.3rem;
 			z-index: 3;
+			font-weight: 600;
 			ul {
 				list-style: none;
 				display: flex;
@@ -257,7 +258,9 @@ html {
 
 			@media screen and (max-width: $phone-breakpoint) {
 				top: 0;
+				left: 0;
 				width: 100px;
+				height: 103px;
 			}
 		}
 
@@ -294,7 +297,7 @@ html {
 				}
 
 				@media screen and (max-width: $phone-breakpoint) {
-					padding-top: 7rem;
+					padding-top: 6rem;
 				}
 			}
 
@@ -1313,6 +1316,7 @@ html {
 				align-items: center;
 				transition: all .2s linear;
 				z-index: 3;
+				font-weight: 600;
 
 				&__burger {
 					width: 74px;

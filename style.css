@@ -55,8 +55,9 @@ html body #desktop-nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 2.5rem;
+  padding: 2.3rem;
   z-index: 3;
+  font-weight: 600;
 }
 html body #desktop-nav ul {
   list-style: none;
@@ -229,7 +230,9 @@ html body .logo {
 @media screen and (max-width: 564px) {
   html body .logo {
     top: 0;
+    left: 0;
     width: 100px;
+    height: 103px;
   }
 }
 html body .Heading {
@@ -263,7 +266,7 @@ html body .Heading__black-mountain {
 }
 @media screen and (max-width: 564px) {
   html body .Heading__black-mountain {
-    padding-top: 7rem;
+    padding-top: 6rem;
   }
 }
 html body .Heading__right {
@@ -1263,6 +1266,7 @@ html body .Footer__contact a img {
     align-items: center;
     transition: all 0.2s linear;
     z-index: 3;
+    font-weight: 600;
   }
   html body .mobile-nav__burger {
     width: 74px;
