@@ -121,7 +121,7 @@ html {
 			border-color: $base-color;
 			color: black;
 
-			@media screen and (min-width: $phone-breakpoint) {
+			@media screen and (max-width: $phone-breakpoint) {
 				padding: .7rem;
 				font-size: 1.5rem;
 
@@ -724,7 +724,7 @@ html {
 				font-size: 1.5rem;
 				padding: .5rem 5rem;
 
-				@media screen and (min-width: $phone-breakpoint) {
+				@media screen and (max-width: $phone-breakpoint) {
 					&:hover {
 						background-color: $base-color;
 						border-color: $base-color;
@@ -972,7 +972,7 @@ html {
 				margin-bottom: 12rem;
 				margin-top: 6rem;
 				
-				@media screen and (min-width: $phone-breakpoint) {
+				@media screen and (max-width: $phone-breakpoint) {
 					&:hover {
 						background-color: $black;
 						border-color: $black;
