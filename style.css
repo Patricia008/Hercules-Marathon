@@ -273,6 +273,7 @@ html body .Heading__right {
   margin-left: 11rem;
   z-index: 2;
   margin-bottom: 4rem;
+  width: 50%;
 }
 @media screen and (max-width: 1470px) {
   html body .Heading__right {
@@ -349,6 +350,7 @@ html body .Heading__title__x {
 html body .Heading__subtitle {
   font-size: 2.25rem;
   line-height: 1.25rem;
+  font-weight: 600;
 }
 @media screen and (max-width: 564px) {
   html body .Heading__subtitle {
