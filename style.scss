@@ -305,7 +305,6 @@ html {
 				margin-left: 11rem;
 				z-index: 2;
 				margin-bottom: 4rem;
-				width: 50%;
 
 
 				@media screen and (max-width: 1470px) {
@@ -378,7 +377,6 @@ html {
 			&__subtitle {
 				font-size: 2.25rem;
 				line-height: 1.25rem;
-				font-weight: 600;
 
 				@media screen and (max-width: $phone-breakpoint) {
 					font-size: 1.25rem;
