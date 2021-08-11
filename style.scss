@@ -245,6 +245,9 @@ html {
 		}
 
 		.top-mountains-footer {
+			background-color: $black;
+			margin-top: -.1rem;
+
 			@media screen and (max-width: $phone-breakpoint) {
 				max-width: 99.9%;
 			}
@@ -1243,10 +1246,79 @@ html {
 			}
 		}
 
+		.Faq {
+			background-color: $black;
+			color: white;
+			margin-top: -1rem;
+
+			&__title {
+				margin-top: 3rem;
+
+				&__bottom {
+					margin-top: 2rem;
+				}
+			}
+			
+			&__line {
+				display: flex;
+				flex-direction: row;
+
+				@media screen and (max-width: $phone-breakpoint) {
+					margin-bottom: 1rem;
+				}
+
+				&__hr {
+					content: "";
+					width: 100%;
+					border-bottom: 3px solid white;
+					margin-bottom: 4.5rem;
+
+					@media screen and (max-width: $phone-breakpoint) {
+						margin-bottom: 2rem;
+					}
+					
+					&__right {
+						margin-left: 2rem;
+					}
+
+					&__left {
+						margin-right: 2rem;
+					}
+				}
+			}
+
+			&__question {
+				display: flex;
+				align-items: center;
+				font-size: $smol-text-font-size;
+
+				&__title {
+					color: $base-color;
+					font-weight: 600;
+					margin-left: 1rem;
+				}
+
+				&__arrow {
+					height: 26px;
+
+					@media screen and (max-width: $phone-breakpoint) {
+						height: 17px;
+					}
+				}
+			}
+
+			&__answer {
+				font-size: $smol-text-font-size;
+				margin-left: 4rem;
+				margin-bottom: 2rem;
+			}
+		}
+
 		.Footer {
 			padding: 0;
 			background-color: $black;
 			color: white;
+			margin-top: -.1rem;
 
 			&__contact {
 				display: flex;
