@@ -216,6 +216,10 @@ html body .top-mountains {
     max-width: 99.9%;
   }
 }
+html body .top-mountains-footer {
+  background-color: #101111;
+  margin-top: -0.1rem;
+}
 @media screen and (max-width: 564px) {
   html body .top-mountains-footer {
     max-width: 99.9%;
@@ -1194,10 +1198,70 @@ html body .Inscriere__button {
   font-size: 1.5rem;
   padding: 1.2rem;
 }
+html body .Faq {
+  background-color: #101111;
+  color: white;
+  margin-top: -1rem;
+}
+html body .Faq__title {
+  margin-top: 3rem;
+}
+html body .Faq__title__bottom {
+  margin-top: 2rem;
+}
+html body .Faq__line {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 564px) {
+  html body .Faq__line {
+    margin-bottom: 1rem;
+  }
+}
+html body .Faq__line__hr {
+  content: "";
+  width: 100%;
+  border-bottom: 3px solid white;
+  margin-bottom: 4.5rem;
+}
+@media screen and (max-width: 564px) {
+  html body .Faq__line__hr {
+    margin-bottom: 2rem;
+  }
+}
+html body .Faq__line__hr__right {
+  margin-left: 2rem;
+}
+html body .Faq__line__hr__left {
+  margin-right: 2rem;
+}
+html body .Faq__question {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+html body .Faq__question__title {
+  color: #ffad1d;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+html body .Faq__question__arrow {
+  height: 26px;
+}
+@media screen and (max-width: 564px) {
+  html body .Faq__question__arrow {
+    height: 17px;
+  }
+}
+html body .Faq__answer {
+  font-size: 1rem;
+  margin-left: 4rem;
+}
 html body .Footer {
   padding: 0;
   background-color: #101111;
   color: white;
+  margin-top: -0.1rem;
 }
 html body .Footer__contact {
   display: flex;
