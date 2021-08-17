@@ -808,6 +808,10 @@ html {
 					justify-content: space-around;
 				}
 
+				b {
+					font-weight: 600;
+				}
+
 				&__semi {
 					font-weight: 600;
 					color: $base-color;
@@ -957,6 +961,19 @@ html {
 				@media screen and (max-width: $phone-breakpoint) {
 					font-size: $smol-text-font-size;
 					line-height: $smol-text-line-height;
+				}
+
+				b {
+					font-weight: 600;
+				}
+
+				ul {
+					margin-left: 2rem;
+					list-style: none;
+
+					li {
+						margin-bottom: .5rem;
+					}
 				}
 			}
 

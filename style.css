@@ -777,6 +777,9 @@ html body .Details__text_container {
     justify-content: space-around;
   }
 }
+html body .Details__text_container b {
+  font-weight: 600;
+}
 html body .Details__text_container__semi {
   font-weight: 600;
   color: #ffad1d;
@@ -927,6 +930,16 @@ html body .Trasee__description {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+}
+html body .Trasee__description b {
+  font-weight: 600;
+}
+html body .Trasee__description ul {
+  margin-left: 2rem;
+  list-style: none;
+}
+html body .Trasee__description ul li {
+  margin-bottom: 0.5rem;
 }
 html body .Trasee__button {
   box-sizing: border-box;
