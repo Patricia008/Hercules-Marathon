@@ -124,13 +124,18 @@ html {
 			border-color: $base-color;
 			color: black;
 
+			&:hover {
+				background-color: $turquoise;
+				border-color: $turquoise;
+			}
+
 			@media screen and (max-width: $phone-breakpoint) {
 				padding: .7rem;
 				font-size: 1.5rem;
 
 				&:hover {
-					background-color: $turquoise;
-					border-color: $turquoise;
+					background-color: $base-color;
+					border-color: $base-color;
 				}
 			}
 
@@ -730,11 +735,17 @@ html {
 				font-size: 1.5rem;
 				padding: .5rem 5rem;
 
+				&:hover {
+					background-color: $base-color;
+					border-color: $base-color;
+					color: black;
+				}
+
 				@media screen and (max-width: $phone-breakpoint) {
 					&:hover {
-						background-color: $base-color;
-						border-color: $base-color;
-						color: black;
+						background-color: $black;
+						border-color: $black;
+						color: white;
 						
 					}
 				}
@@ -1023,10 +1034,20 @@ html {
 
 				&__button {
 					margin-bottom: 0;
+
+					&:hover {
+						background-color: $turquoise;
+						border-color: $turquoise;
+					}
 				
 					@media screen and (max-width: $phone-breakpoint) {
 						margin-top: 3rem;
 						margin-bottom: 3rem;
+
+						&:hover {
+							background-color: $base-color;
+							border-color: $base-color;
+						}
 					}
 				}
 
@@ -1046,12 +1067,18 @@ html {
 					border-color: $red;
 
 					&:hover {
-						color: white;
+						background-color: $black;
+						border-color: $black;
 					}
 
 					@media screen and (max-width: $phone-breakpoint) {
 						margin-top: 3rem;
 						margin-bottom: 3rem;
+
+						&:hover {
+							background-color: $red;
+							border-color: $red;
+						}
 					}
 				}
 			}
