@@ -91,7 +91,6 @@ html body .button {
   align-self: center;
   font-size: 2rem;
   line-height: 2rem;
-  margin-top: 5rem;
   padding: 1.05rem;
   text-decoration: none;
   text-align: center;
@@ -383,6 +382,7 @@ html body .Heading__description {
   font-size: 1.2rem;
   line-height: 1.5rem;
   margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 @media screen and (max-width: 1185px) {
   html body .Heading__description {
@@ -697,6 +697,9 @@ html body .button-sarbatoreste {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+html body .button-sarbatoreste a {
+  margin-top: 5rem;
 }
 html body .button-sarbatoreste__button {
   background-color: #101111;
