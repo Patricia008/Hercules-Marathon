@@ -1154,18 +1154,14 @@ html {
 				}
 
 				img {
-					max-height: 160px;
+					max-height: 98px;
 
 					@media screen and (max-width: 1190px) {
-						max-height: 90px;
-					}
-
-					@media screen and (max-width: 680px) {
-						max-height: 74px;
+						max-height: 71px;
 					}
 
 					@media screen and (max-width: $phone-breakpoint) {
-						max-height: 40px;
+						max-height: 27px;
 					}
 				}
 
