@@ -115,7 +115,6 @@ html {
 			align-self: center;
 			font-size: 2rem;
 			line-height: 2rem;
-			margin-top: 5rem;
 			padding: 1.05rem;
 			text-decoration: none;
 			text-align: center;
@@ -411,6 +410,7 @@ html {
 				font-size: $description-font-size;
 				line-height: $description-line-height;
 				margin-top: 2rem;
+				margin-bottom: 3rem;
 
 				@media screen and (max-width: 1185px) {
 					max-width: 435px;
@@ -727,6 +727,10 @@ html {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+
+			a {
+				margin-top: 5rem;
+			}
 
 			&__button {
 				background-color: $black;
