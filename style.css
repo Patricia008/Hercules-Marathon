@@ -46,6 +46,9 @@ html {
   overflow-x: auto;
   scroll-behavior: smooth;
 }
+html body a {
+  text-decoration: none;
+}
 html body #desktop-nav {
   background-color: white;
   position: fixed;
@@ -1256,6 +1259,7 @@ html body .Faq__question__arrow {
 html body .Faq__answer {
   font-size: 1rem;
   margin-left: 4rem;
+  margin-bottom: 2rem;
 }
 html body .Footer {
   padding: 0;
@@ -1299,7 +1303,6 @@ html body .Footer__contact a {
   padding: 0 5rem;
   font-weight: 900;
   cursor: pointer;
-  text-decoration: none;
   color: white;
 }
 @media screen and (max-width: 865px) {
