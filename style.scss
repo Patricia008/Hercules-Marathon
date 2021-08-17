@@ -1038,6 +1038,7 @@ html {
 					&:hover {
 						background-color: $turquoise;
 						border-color: $turquoise;
+						color: black;
 					}
 				
 					@media screen and (max-width: $phone-breakpoint) {
@@ -1069,6 +1070,7 @@ html {
 					&:hover {
 						background-color: $black;
 						border-color: $black;
+						color: white;
 					}
 
 					@media screen and (max-width: $phone-breakpoint) {

@@ -995,6 +995,7 @@ html body .Trasee__semimaraton__button {
 html body .Trasee__semimaraton__button:hover {
   background-color: #00e0dd;
   border-color: #00e0dd;
+  color: black;
 }
 @media screen and (max-width: 564px) {
   html body .Trasee__semimaraton__button {
@@ -1020,6 +1021,7 @@ html body .Trasee__maraton__button {
 html body .Trasee__maraton__button:hover {
   background-color: #101111;
   border-color: #101111;
+  color: white;
 }
 @media screen and (max-width: 564px) {
   html body .Trasee__maraton__button {
