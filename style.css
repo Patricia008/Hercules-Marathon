@@ -824,6 +824,15 @@ html body .Details__text_container__right {
     margin-left: 0;
   }
 }
+html body .Details__text_container__right ul {
+  list-style: disc;
+  margin-left: 3rem;
+}
+@media screen and (max-width: 1000px) {
+  html body .Details__text_container__right ul {
+    margin-left: 1rem;
+  }
+}
 html body .Trasee {
   padding: 0;
 }
