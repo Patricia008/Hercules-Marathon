@@ -196,18 +196,20 @@ html {
 			z-index: -1;
 
 			img {
-				@media screen and (max-width: $phone-breakpoint) {
-					max-width: 99.9%;
-				}
+				max-width: 99.9%;
+				// @media screen and (max-width: $phone-breakpoint) {
+				// 	max-width: 99.9%;
+				// }
 			}
 		}
 
 		.dot {
 			max-height: fit-content;
+			max-width: 99%;
 
-			@media screen and (max-width: $phone-breakpoint) {
-				max-width: 99%;
-			}
+			// @media screen and (max-width: $phone-breakpoint) {
+			// 	max-width: 99%;
+			// }
 		}
 
 		.black-mountain-reversed {
@@ -217,9 +219,11 @@ html {
 			bottom: 2px;
 
 			img {
-				@media screen and (max-width: $phone-breakpoint) {
-					max-width: 99.9%;
-				}
+				max-width: 99.9%;
+
+				// @media screen and (max-width: $phone-breakpoint) {
+				// 	max-width: 99.9%;
+				// }
 			}
 		}
 
@@ -254,10 +258,11 @@ html {
 		.top-mountains-footer {
 			background-color: $black;
 			margin-top: -.1rem;
+			max-width: 99.9%;
 
-			@media screen and (max-width: $phone-breakpoint) {
-				max-width: 99.9%;
-			}
+			// @media screen and (max-width: $phone-breakpoint) {
+			// 	max-width: 99.9%;
+			// }
 		}
 
 		.logo {

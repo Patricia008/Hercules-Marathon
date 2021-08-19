@@ -168,18 +168,12 @@ html body .black-mountain {
   bottom: -2px;
   z-index: -1;
 }
-@media screen and (max-width: 564px) {
-  html body .black-mountain img {
-    max-width: 99.9%;
-  }
+html body .black-mountain img {
+  max-width: 99.9%;
 }
 html body .dot {
   max-height: fit-content;
-}
-@media screen and (max-width: 564px) {
-  html body .dot {
-    max-width: 99%;
-  }
+  max-width: 99%;
 }
 html body .black-mountain-reversed {
   padding: 0;
@@ -187,10 +181,8 @@ html body .black-mountain-reversed {
   position: relative;
   bottom: 2px;
 }
-@media screen and (max-width: 564px) {
-  html body .black-mountain-reversed img {
-    max-width: 99.9%;
-  }
+html body .black-mountain-reversed img {
+  max-width: 99.9%;
 }
 html body .top-mountains {
   padding: 0;
@@ -225,11 +217,7 @@ html body .top-mountains {
 html body .top-mountains-footer {
   background-color: #101111;
   margin-top: -0.1rem;
-}
-@media screen and (max-width: 564px) {
-  html body .top-mountains-footer {
-    max-width: 99.9%;
-  }
+  max-width: 99.9%;
 }
 html body .logo {
   position: absolute;
