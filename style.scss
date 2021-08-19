@@ -1262,6 +1262,7 @@ html {
 
 				@media screen and (max-width: 1106px) {
 					margin-bottom: 5rem;
+					flex: none;
 				}
 			}
 
@@ -1273,6 +1274,7 @@ html {
 
 				@media screen and (max-width: 1106px) {
 					margin-left: 0;
+					flex: none;
 				}
 
 				&__text {

@@ -1209,6 +1209,7 @@ html body .Inscriere__title {
 @media screen and (max-width: 1106px) {
   html body .Inscriere__title {
     margin-bottom: 5rem;
+    flex: none;
   }
 }
 html body .Inscriere__description {
@@ -1219,6 +1220,7 @@ html body .Inscriere__description {
 @media screen and (max-width: 1106px) {
   html body .Inscriere__description {
     margin-left: 0;
+    flex: none;
   }
 }
 html body .Inscriere__description__text {
