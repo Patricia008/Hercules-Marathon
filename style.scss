@@ -196,9 +196,9 @@ html {
 			z-index: -1;
 
 			img {
-				max-width: 99.9%;
+				max-width: 99.999%;
 				// @media screen and (max-width: $phone-breakpoint) {
-				// 	max-width: 99.9%;
+				// 	max-width: 99.999%;
 				// }
 			}
 		}
@@ -219,10 +219,10 @@ html {
 			bottom: 2px;
 
 			img {
-				max-width: 99.9%;
+				max-width: 99.999%;
 
 				// @media screen and (max-width: $phone-breakpoint) {
-				// 	max-width: 99.9%;
+				// 	max-width: 99.999%;
 				// }
 			}
 		}
@@ -250,7 +250,7 @@ html {
 
 			img {
 				@media screen and (max-width: $phone-breakpoint) {
-					max-width: 99.9%;
+					max-width: 99.99999%;
 				}
 			}
 		}
@@ -258,10 +258,10 @@ html {
 		.top-mountains-footer {
 			background-color: $black;
 			margin-top: -.1rem;
-			max-width: 99.9%;
+			max-width: 99.999%;
 
 			// @media screen and (max-width: $phone-breakpoint) {
-			// 	max-width: 99.9%;
+			// 	max-width: 99.999%;
 			// }
 		}
 

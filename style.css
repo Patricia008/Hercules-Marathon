@@ -169,7 +169,7 @@ html body .black-mountain {
   z-index: -1;
 }
 html body .black-mountain img {
-  max-width: 99.9%;
+  max-width: 99.999%;
 }
 html body .dot {
   max-height: fit-content;
@@ -182,7 +182,7 @@ html body .black-mountain-reversed {
   bottom: 2px;
 }
 html body .black-mountain-reversed img {
-  max-width: 99.9%;
+  max-width: 99.999%;
 }
 html body .top-mountains {
   padding: 0;
@@ -211,13 +211,13 @@ html body .top-mountains {
 }
 @media screen and (max-width: 564px) {
   html body .top-mountains img {
-    max-width: 99.9%;
+    max-width: 99.99999%;
   }
 }
 html body .top-mountains-footer {
   background-color: #101111;
   margin-top: -0.1rem;
-  max-width: 99.9%;
+  max-width: 99.999%;
 }
 html body .logo {
   position: absolute;
