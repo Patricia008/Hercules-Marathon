@@ -853,7 +853,6 @@ html {
 				&__right {
 					flex: 1;
 					margin-left: 9rem;
-
 					
 					@media screen and (max-width: 1422px) {
 						margin-left: 6rem;
@@ -861,6 +860,16 @@ html {
 					
 					@media screen and (max-width: $breakpoint-1) {
 						margin-left: 0;
+					}
+
+					ul {
+						list-style: disc;
+						margin-left: 3rem;
+
+						@media screen and (max-width: $breakpoint-1) {
+							margin-left: 1rem;
+						}
+	
 					}
 				}
 			}
