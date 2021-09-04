@@ -1001,6 +1001,11 @@ html {
 						margin-bottom: .5rem;
 					}
 				}
+
+				a {
+					cursor: pointer;
+					text-decoration: underline;
+				}
 			}
 
 			&__button {

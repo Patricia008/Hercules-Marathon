@@ -964,6 +964,10 @@ html body .Trasee__description ul {
 html body .Trasee__description ul li {
   margin-bottom: 0.5rem;
 }
+html body .Trasee__description a {
+  cursor: pointer;
+  text-decoration: underline;
+}
 html body .Trasee__button {
   box-sizing: border-box;
   background-color: #ffad1d;
