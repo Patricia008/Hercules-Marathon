@@ -1252,6 +1252,9 @@ html body .Participanti__table th {
 html body .Participanti__table tr:nth-child(odd) {
   background-color: #e4e2e2;
 }
+html body .Participanti__table tr:nth-child(even) {
+  background-color: white;
+}
 html body .Participanti__incarca-button {
   display: none;
   box-sizing: border-box;

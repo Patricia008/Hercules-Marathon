@@ -1312,6 +1312,10 @@ html {
 				tr:nth-child(odd) {
 					background-color: #e4e2e2;
 				}
+
+				tr:nth-child(even) {
+					background-color: white;
+				}
 			}
 
 			&__incarca-button {
