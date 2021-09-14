@@ -42,6 +42,68 @@ function click_see_more_maraton() {
 	change_visible_state(hidden_text, see_more_button)
 }
 
+let participanti = []
+let failedToLoadParticipants = false
+const PAGE_SIZE = 16
+let pageCount = 1
+
+fetch('https://racetime.ro/api/participants/3')
+	.then(response => response.json())
+	.then(data => {
+		participanti = data
+	})
+
+function read_one_page() {
+	const data = participanti.slice((pageCount-1) * PAGE_SIZE, (pageCount-1) * PAGE_SIZE + PAGE_SIZE)
+	
+	console.log(data)
+	if (participanti.length < pageCount * PAGE_SIZE) {
+		const incarca_inca_o_pagina_button = document.getElementsByClassName('Participanti__incarca-button')[0]
+		incarca_inca_o_pagina_button.style.display = 'none'
+	}
+	pageCount++
+	const table = document.getElementsByClassName("Participanti__table")[0]
+	data.forEach(participant => {
+		const row = table.insertRow();
+		const cell0 = row.insertCell(0);
+		const cell1 = row.insertCell(1);
+		const cell2 = row.insertCell(2);
+		const cell3 = row.insertCell(3);
+		const cell4 = row.insertCell(4);
+		const cell5 = row.insertCell(5);
+		cell0.innerHTML = participant.RaceName
+		cell1.innerHTML = participant.LastName
+		cell2.innerHTML = participant.FirstName
+		cell3.innerHTML = participant.City
+		cell4.innerHTML = participant.Team
+		cell5.innerHTML = participant.Status
+	})
+}
+
+function click_vezi_participanti() {
+	const participanti_table = document.getElementsByClassName('Participanti__table')[0]
+	const vezi_participanti_button = document.getElementsByClassName('Participanti__button')[0]
+	const incarca_inca_o_pagina_button = document.getElementsByClassName('Participanti__incarca-button')[0]
+	if (vezi_participanti_button.textContent.trim() === "Vezi Participanți") {
+		participanti_table.style.opacity = 1
+		participanti_table.style.marginTop = '6rem'
+		incarca_inca_o_pagina_button.style.display = 'flex'
+		participanti_table.style.height = 'auto'
+		participanti_table.style.transition = 'height 0ms 0ms, opacity 600ms 0ms'
+		vezi_participanti_button.textContent = "Ascunde Participanți"
+		read_one_page()
+	} else {
+		pageCount = 1
+		participanti_table.style.opacity = 0
+		participanti_table.style.marginTop = '-3rem'
+		incarca_inca_o_pagina_button.style.display = 'none'
+		participanti_table.style.height = 0
+		vezi_participanti_button.textContent = "Vezi Participanți"
+		document.querySelectorAll("table tbody td").forEach(function(e){e.remove()})
+
+	}
+}
+
 // Multiple event listener
 function addListenerMulti(element, eventNames, listener) {
 
@@ -78,4 +140,4 @@ function addListenerMulti(element, eventNames, listener) {
 		  lazyImageObserver.observe(lazyImage);
 		});
 	  }
-  }
+}

@@ -12,6 +12,7 @@
 
 		<title></title>
 		<noscript id="jss-insertion-point"></noscript>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" type = "text/css" href="style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&family=Exo+2:wght@300;500&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 		<link rel="icon" type="image/svg" href="./assets/svgs/FAV_Icon_Logo.svg"/>
@@ -226,7 +227,24 @@
 		<section class="black-mountain-reversed">
 			<img src="./assets/svgs/Black_Mountain_Reversed.svg" alt="Mountains">
 		</section>
-
+		<section class="Participanti">
+			<table class="Participanti__table" cellspacing="0" cellpadding="0">
+				<tr>
+					<th>Cursa</th>
+					<th>Nume</th>
+					<th>Prenume</th>
+					<th>Oraș</th>
+					<th>Echipă</th>
+					<th>Status</th>
+				</tr>
+			</table>
+			<button class="Participanti__incarca-button" onclick="read_one_page()">
+				Încarcă încă o pagină
+			</button>
+			<button class="Trasee__button Participanti__button" onclick="click_vezi_participanti()">
+				Vezi Participanți
+			</button>
+		</section>
 
 		<section id="trasee" class="Trasee">
 			<div class="section-title Trasee__padding Trasee__title">
@@ -513,7 +531,6 @@
 			</div>
 			<img src="./assets/svgs/ghilimele_colorate.svg" alt="ghilimele"/>
 		</div>
-		
 		<section class="black-mountain">
 			<img src="./assets/svgs/Black_Mountain.svg" alt="Mountain">
 		</section>
