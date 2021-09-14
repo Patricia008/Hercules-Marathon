@@ -183,9 +183,11 @@ html {
 			color: $base-color;
 			margin-top: .5rem;
 			font-style: italic;
+			line-height: 1rem;
 
 			@media screen and (max-width: $phone-breakpoint) {
 				font-size: .7rem;
+				line-height: .75rem;
 			}
 		}
 

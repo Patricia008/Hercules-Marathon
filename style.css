@@ -156,10 +156,12 @@ html body .perioada-de-inscrieri {
   color: #ffad1d;
   margin-top: 0.5rem;
   font-style: italic;
+  line-height: 1rem;
 }
 @media screen and (max-width: 564px) {
   html body .perioada-de-inscrieri {
     font-size: 0.7rem;
+    line-height: 0.75rem;
   }
 }
 html body .black-mountain {
