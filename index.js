@@ -55,8 +55,7 @@ fetch('https://racetime.ro/api/participants/3')
 
 function read_one_page() {
 	const data = participanti.slice((pageCount-1) * PAGE_SIZE, (pageCount-1) * PAGE_SIZE + PAGE_SIZE)
-	
-	console.log(data)
+
 	if (participanti.length < pageCount * PAGE_SIZE) {
 		const incarca_inca_o_pagina_button = document.getElementsByClassName('Participanti__incarca-button')[0]
 		incarca_inca_o_pagina_button.style.display = 'none'
