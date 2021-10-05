@@ -1413,7 +1413,7 @@ html body .Footer {
   padding: 0;
   background-color: #101111;
   color: white;
-  margin-top: -0.1rem;
+  margin-top: -1rem;
 }
 html body .Footer__contact {
   display: flex;
