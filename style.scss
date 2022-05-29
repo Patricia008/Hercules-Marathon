@@ -318,10 +318,19 @@ html {
 				}
 			}
 
+			&__title-container {
+				text-align: center;
+
+				@media screen and (max-width: 1185px) {
+					text-align: left;
+				}
+			}
+
 			&__title {
 				display: table-row;
 				font-family: 'Myriad Pro';
 				font-weight: 900;
+				// text-align: center;
 				
 				&__hercules {
 					display: table-cell;
@@ -352,20 +361,6 @@ html {
 					}
 				}
 
-				&__x {
-					color: $base-color;
-					font-size: 12rem;
-					line-height: 10rem;
-					flex: 1;
-					font-weight: 600;
-					margin-left: 1rem;
-
-					@media screen and (max-width: $phone-breakpoint) {
-						font-size: 7rem;
-						line-height: 6rem;
-					}
-				}
-
 				@media screen and (max-width: 1375px) {
 					font-size: 4rem;
 				}
@@ -383,28 +378,52 @@ html {
 			&__subtitle {
 				font-size: 2.25rem;
 				line-height: 1.25rem;
+				font-weight: 600;
 
 				@media screen and (max-width: $phone-breakpoint) {
 					font-size: 1.25rem;
 					line-height: 0.25rem;
 				}
 
-				&__colored {
-					color: $base-color;
-					font-weight: 600;
-					margin-top: 4rem;
-					font-style: italic;
+				&__donut {
+					font-size: 2.75rem;
+					margin-top: 1rem;
+					// text-align: center;
+
+					@media screen and (max-width: 703px) {
+						font-size: 1.75rem;
+					}
 
 					@media screen and (max-width: $phone-breakpoint) {
-						font-weight: 900;
+						font-size: 1.25rem;
+					}
+				}
+
+				&__colored {
+
+					margin-top: 3rem;
+					color: $base-color;
+					// font-weight: 600;
+					font-style: italic;
+					// text-align: center;
+
+					@media screen and (max-width: 703px) {
+						font-size: 1.75rem;
 						margin-top: 2rem;
 					}
+
+					@media screen and (max-width: $phone-breakpoint) {
+						font-size: 1.25rem;
+						// font-weight: 900;
+						// margin-top: 2rem;
+					}
+
 				}
 			}
 
 			&__description {
-				font-size: $description-font-size;
-				line-height: $description-line-height;
+				font-size: 1.8rem;
+				line-height: 2rem;
 				margin-top: 2rem;
 				margin-bottom: 3rem;
 
@@ -414,6 +433,7 @@ html {
 
 				@media screen and (max-width: 703px) {
 					font-size: 1rem;
+					line-height: 1.50rem;
 				}
 
 				@media screen and (max-width: $phone-breakpoint) {
@@ -439,6 +459,7 @@ html {
 			&__title {
 				text-align: center;
 				margin-top: -13rem;
+				margin-bottom: 4rem;
 
 				@media screen and (max-width: 1185px) {
 					margin-top: -8rem;
@@ -462,8 +483,6 @@ html {
 				font-size: $description-font-size;
 				line-height: $description-line-height;
 				text-align: center;
-				margin-top: 2rem;
-				margin-bottom: 4rem;
 
 				@media screen and (max-width: $phone-breakpoint) {
 					font-size: $smol-text-font-size;
@@ -478,244 +497,6 @@ html {
 				strong {
 					color: $orange;
 				}
-			}
-		}
-
-		.Sarbatoreste {
-			width:100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-
-			p {
-				font-style: italic;
-				text-transform: uppercase;
-				text-align: start;
-				display: inline;
-				margin: 1.5rem;
-				font-size: 1.5rem;
-				line-height: 2rem;
-				font-weight: 900;
-
-				@media screen and (max-width: $phone-breakpoint) {
-					font-size: .75rem;
-					line-height: 1rem;
-				}
-			}
-
-			strong {
-				font-size: 2.3rem;
-
-				@media screen and (max-width: $phone-breakpoint) {
-					font-size: .9rem;
-				}
-			}
-
-			&__sarbatoreste {
-				font-style: italic;
-				text-transform: uppercase;
-				text-align: start;
-				display: inline;
-				margin: 1.5rem;
-				font-size: 1.5rem;
-				line-height: 2rem;
-				font-weight: 900;
-
-				@media screen and (max-width: $phone-breakpoint) {
-					font-size: .75rem;
-					line-height: 1rem;
-				}
-			}
-
-			&__flex {
-				display: flex;
-				width: 100%;
-				justify-content: space-around;
-
-
-				&__1{
-					left: -5rem;
-					position: relative;
-
-					@media screen and (max-width: $phone-breakpoint) {
-						left: 0;
-					}
-				}
-
-				&__2 {
-					left: 1rem;
-					position: relative;
-
-					@media screen and (max-width: $phone-breakpoint) {
-						left: 0;
-					}
-				}
-
-				&__miscarea {
-					position: relative;
-					left: -13rem;
-
-					@media screen and (max-width: 1072px) {
-						left: 0;
-					}
-
-					strong {
-						font-size: 2.5rem;
-
-						@media screen and (max-width: $phone-breakpoint) {
-							font-size: .9rem;
-						}
-					}
-				}
-
-				&__natura {
-					position: relative;
-					left: 7rem;
-
-					@media screen and (max-width: 817px) {
-						left: 0;
-					}
-
-					@media screen and (max-width: $phone-breakpoint) {
-						left: 1rem;
-					}
-				}
-
-				&__emotia {
-
-					@media screen and (max-width: $phone-breakpoint) {
-						position: relative;
-						left: 1rem;
-					}
-
-					strong {
-						font-size: 3.25rem;
-
-						@media screen and (max-width: $phone-breakpoint) {
-							font-size: .9rem;
-						}
-					}
-				}
-
-				&__valea-cernei {
-					strong {
-						font-size: 1.75rem;
-
-						@media screen and (max-width: $phone-breakpoint) {
-							font-size: .9rem;
-						}
-					}
-				}
-
-				&__revederea {
-
-					@media screen and (max-width: $phone-breakpoint) {
-						position: relative;
-						left: 1rem;
-					}
-
-					strong {
-						font-size: 2rem;
-
-						@media screen and (max-width: $phone-breakpoint) {
-							font-size: .9rem;
-						}
-					}
-				}
-
-			}
-
-			&__hercules {
-				display: inline-flex;
-				font-size: 2.3rem;
-				font-weight: 900;
-				font-style: italic;
-				text-transform: uppercase;
-
-				&__maraton {
-					line-height: 2.7rem;
-					margin-right: .5rem;
-
-					@media screen and (max-width: $phone-breakpoint) {
-						font-size: .9rem;
-						line-height: 1rem;
-					}
-				}
-
-				&__x {
-					font-size: 6rem;
-					line-height: 5rem;
-
-					@media screen and (max-width: $phone-breakpoint) {
-						font-size: 1.3rem;
-						line-height: 1.5rem;
-					}
-				}
-			}
-		}
-
-		.floating-nv {  
-			animation-name: floating-nv;
-			animation-duration: 3s;
-			animation-iteration-count: infinite;
-			animation-timing-function: ease-in-out;
-			margin-left: 30px;
-			margin-top: 5px;
-		}
-
-		.floating-sv {  
-			animation-name: floating-sv;
-			animation-duration: 3s;
-			animation-iteration-count: infinite;
-			animation-timing-function: ease-in-out;
-			margin-left: 30px;
-			margin-top: 5px;
-		}
-
-		.floating-ne {  
-			animation-name: floating-ne;
-			animation-duration: 3s;
-			animation-iteration-count: infinite;
-			animation-timing-function: ease-in-out;
-			margin-left: 30px;
-			margin-top: 5px;
-		}
-
-		.floating-circle {  
-			animation-name: floating-circle;
-			animation-duration: 3s;
-			animation-iteration-count: infinite;
-			animation-timing-function: ease-in-out;
-			margin-left: 30px;
-			margin-top: 5px;
-		}
-		
-		@keyframes floating-nv {
-			from { transform: translate(0,  0px); }
-			65%  { transform: translate(10px, 15px); }
-			to   { transform: translate(0, -0px); }    
-		}
-
-		@keyframes floating-sv {
-			from { transform: translate(0,  0px); }
-			65%  { transform: translate(-15px, 5px); }
-			to   { transform: translate(0, -0px); }    
-		}
-
-		@keyframes floating-ne {
-			from { transform: translate(0,  0px); }
-			65%  { transform: translate(10px, -12px); }
-			to   { transform: translate(0, 0px); }    
-		}
-
-		@keyframes floating-circle {
-			from {
-				-webkit-transform: rotate(0deg) translate3d(6px, 0, 0) rotate(0deg);
-			}
-			
-			to {
-				-webkit-transform: rotate(360deg) translate3d(6px, 0, 0) rotate(-360deg);
 			}
 		}
 
@@ -771,6 +552,53 @@ html {
 
 			@media screen and (max-width: $phone-breakpoint) {
 				margin-bottom: 2rem;
+			}
+		}
+
+		.Organizatorii {
+			background-color: $black;
+			color: white;
+
+			&__title {
+				margin-top: 1rem;
+
+				@media screen and (max-width: $phone-breakpoint) {
+					margin-top: 3rem;
+				}
+			}
+
+			&__description {
+				font-size: $description-font-size;
+				line-height: $description-line-height;
+				text-align: center;
+
+				@media screen and (max-width: $phone-breakpoint) {
+					font-size: $smol-text-font-size;
+					line-height: $smol-text-line-height;
+				}
+
+				@media screen and (max-width: $phone-breakpoint) {
+					margin-bottom: 2rem;
+					margin-top: 1rem;
+				}
+
+				strong {
+					color: $orange;
+				}
+			}
+
+			&__left-align {
+				text-align: left;
+			}
+
+			&__domenii {
+				margin-top: 3rem;
+			}
+
+			&__list {
+				text-align: center;
+				list-style-position: inside;
+				text-align: left;
 			}
 		}
 
@@ -1109,13 +937,14 @@ html {
 		}
 
 		.DespreNoi {
-
 			background-image:url( ./assets/svgs/cinesuntem.png );
 			width:100%;
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-
+			padding-top: 3rem;
+			padding-bottom: 5rem;
+		
 			&__title {
 				margin-bottom: 0;
 				margin-top: 7rem;
@@ -1157,6 +986,50 @@ html {
 					margin-bottom: 2rem;
 				}
 			}
+		}
+
+		.Echipa {
+			&__title {
+				margin-top: 9rem;
+				text-align: center;
+			}
+
+			&__card-container {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			&__card {
+				padding: 10px;
+				margin: 10px;
+				background: #eaeaeaad;
+
+				&__img-container {
+					text-align: center;
+				}
+
+				&__img{
+					width: 160px;
+					height: 160px;
+					border-radius: 50%;
+					margin-top: 20px;
+					margin-left: 20px;
+					margin-right: 20px;
+					margin-bottom: 20px;
+				}
+
+				&__author {
+					text-align: center;
+					font-weight: 600;
+				}
+
+				&__job {
+					text-align: center;
+				}
+			}
+			  
+			  
 		}
 
 		.Editii {
@@ -1422,6 +1295,19 @@ html {
 			}
 		}
 
+		.SaParticipi {
+			padding-bottom: 2rem;
+
+			&__title {
+				margin-top: 3rem;
+				text-align: center;
+			}
+
+			&__button {
+				margin: 3rem auto;
+			}
+		}
+
 		.Faq {
 			background-color: $black;
 			color: white;
@@ -1634,6 +1520,11 @@ html {
 				}
 			}
 		}
+	}
+
+	.bolded {
+		font-weight: 600;
+		display: inline;
 	}
 }
 
@@ -2000,3 +1891,38 @@ html {
 	}
 
 }
+
+
+.all-team-cards {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+  }
+  
+
+  
+//   h1{
+// 	font-weight: 800;
+// 	font-size: 2rem;
+// 	letter-spacing: 2px;
+// 	text-indent: 10px;
+//   }
+  
+//   @media screen and (max-width: 768px) {
+// 	.column {
+// 	  width: 100%;
+// 	  height: auto;
+// 	}
+//   }
+//   @media screen and (max-width: 1024px) {
+// 	.column {
+// 	  width: 100%;
+// 	  height: auto;
+// 	}
+//   }
+//   @media screen and (max-width: 1280px) {
+// 	.column {
+// 	  width: 100%;
+// 	  height: auto;
+// 	}
+//   }

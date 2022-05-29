@@ -284,6 +284,14 @@ html body .Heading__right {
     margin-bottom: 0;
   }
 }
+html body .Heading__title-container {
+  text-align: center;
+}
+@media screen and (max-width: 1185px) {
+  html body .Heading__title-container {
+    text-align: left;
+  }
+}
 html body .Heading__title {
   display: table-row;
   font-family: "Myriad Pro";
@@ -321,20 +329,6 @@ html body .Heading__title__hercules {
     width: 214px;
   }
 }
-html body .Heading__title__x {
-  color: #ffad1d;
-  font-size: 12rem;
-  line-height: 10rem;
-  flex: 1;
-  font-weight: 600;
-  margin-left: 1rem;
-}
-@media screen and (max-width: 564px) {
-  html body .Heading__title__x {
-    font-size: 7rem;
-    line-height: 6rem;
-  }
-}
 @media screen and (max-width: 1375px) {
   html body .Heading__title {
     font-size: 4rem;
@@ -353,6 +347,7 @@ html body .Heading__title__x {
 html body .Heading__subtitle {
   font-size: 2.25rem;
   line-height: 1.25rem;
+  font-weight: 600;
 }
 @media screen and (max-width: 564px) {
   html body .Heading__subtitle {
@@ -360,21 +355,39 @@ html body .Heading__subtitle {
     line-height: 0.25rem;
   }
 }
-html body .Heading__subtitle__colored {
-  color: #ffad1d;
-  font-weight: 600;
-  margin-top: 4rem;
-  font-style: italic;
+html body .Heading__subtitle__donut {
+  font-size: 2.75rem;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 703px) {
+  html body .Heading__subtitle__donut {
+    font-size: 1.75rem;
+  }
 }
 @media screen and (max-width: 564px) {
+  html body .Heading__subtitle__donut {
+    font-size: 1.25rem;
+  }
+}
+html body .Heading__subtitle__colored {
+  margin-top: 3rem;
+  color: #ffad1d;
+  font-style: italic;
+}
+@media screen and (max-width: 703px) {
   html body .Heading__subtitle__colored {
-    font-weight: 900;
+    font-size: 1.75rem;
     margin-top: 2rem;
   }
 }
+@media screen and (max-width: 564px) {
+  html body .Heading__subtitle__colored {
+    font-size: 1.25rem;
+  }
+}
 html body .Heading__description {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 2rem;
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
@@ -386,6 +399,7 @@ html body .Heading__description {
 @media screen and (max-width: 703px) {
   html body .Heading__description {
     font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 @media screen and (max-width: 564px) {
@@ -408,6 +422,7 @@ html body .Heading__cta {
 html body .Intro__title {
   text-align: center;
   margin-top: -13rem;
+  margin-bottom: 4rem;
 }
 @media screen and (max-width: 1185px) {
   html body .Intro__title {
@@ -432,8 +447,6 @@ html body .Intro__description {
   font-size: 1.2rem;
   line-height: 1.5rem;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
 }
 @media screen and (max-width: 564px) {
   html body .Intro__description {
@@ -449,243 +462,6 @@ html body .Intro__description {
 }
 html body .Intro__description strong {
   color: #ff6914;
-}
-html body .Sarbatoreste {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-html body .Sarbatoreste p {
-  font-style: italic;
-  text-transform: uppercase;
-  text-align: start;
-  display: inline;
-  margin: 1.5rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 900;
-}
-@media screen and (max-width: 564px) {
-  html body .Sarbatoreste p {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-html body .Sarbatoreste strong {
-  font-size: 2.3rem;
-}
-@media screen and (max-width: 564px) {
-  html body .Sarbatoreste strong {
-    font-size: 0.9rem;
-  }
-}
-html body .Sarbatoreste__sarbatoreste {
-  font-style: italic;
-  text-transform: uppercase;
-  text-align: start;
-  display: inline;
-  margin: 1.5rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 900;
-}
-@media screen and (max-width: 564px) {
-  html body .Sarbatoreste__sarbatoreste {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
-html body .Sarbatoreste__flex {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-html body .Sarbatoreste__flex__1 {
-  left: -5rem;
-  position: relative;
-}
-@media screen and (max-width: 564px) {
-  html body .Sarbatoreste__flex__1 {
-    left: 0;
-  }
-}
-html body .Sarbatoreste__flex__2 {
-  left: 1rem;
-  position: relative;
-}
-@media screen and (max-width: 564px) {
-  html body .Sarbatoreste__flex__2 {
-    left: 0;
-  }
-}
-html body .Sarbatoreste__flex__miscarea {
-  position: relative;
-  left: -13rem;
-}
-@media screen and (max-width: 1072px) {
-  html body .Sarbatoreste__flex__miscarea {
-    left: 0;
-  }
-}
-html body .Sarbatoreste__flex__miscarea strong {
-  font-size: 2.5rem;
-}
-@media screen and (max-width: 564px) {
-  html body .Sarbatoreste__flex__miscarea strong {
-    font-size: 0.9rem;
-  }
-}
-html body .Sarbatoreste__flex__natura {
-  position: relative;
-  left: 7rem;
-}
-@media screen and (max-width: 817px) {
-  html body .Sarbatoreste__flex__natura {
-    left: 0;
-  }
-}
-@media screen and (max-width: 564px) {
-  html body .Sarbatoreste__flex__natura {
-    left: 1rem;
-  }
-}
-@media screen and (max-width: 564px) {
-  html body .Sarbatoreste__flex__emotia {
-    position: relative;
-    left: 1rem;
-  }
-}
-html body .Sarbatoreste__flex__emotia strong {
-  font-size: 3.25rem;
-}
-@media screen and (max-width: 564px) {
-  html body .Sarbatoreste__flex__emotia strong {
-    font-size: 0.9rem;
-  }
-}
-html body .Sarbatoreste__flex__valea-cernei strong {
-  font-size: 1.75rem;
-}
-@media screen and (max-width: 564px) {
-  html body .Sarbatoreste__flex__valea-cernei strong {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (max-width: 564px) {
-  html body .Sarbatoreste__flex__revederea {
-    position: relative;
-    left: 1rem;
-  }
-}
-html body .Sarbatoreste__flex__revederea strong {
-  font-size: 2rem;
-}
-@media screen and (max-width: 564px) {
-  html body .Sarbatoreste__flex__revederea strong {
-    font-size: 0.9rem;
-  }
-}
-html body .Sarbatoreste__hercules {
-  display: inline-flex;
-  font-size: 2.3rem;
-  font-weight: 900;
-  font-style: italic;
-  text-transform: uppercase;
-}
-html body .Sarbatoreste__hercules__maraton {
-  line-height: 2.7rem;
-  margin-right: 0.5rem;
-}
-@media screen and (max-width: 564px) {
-  html body .Sarbatoreste__hercules__maraton {
-    font-size: 0.9rem;
-    line-height: 1rem;
-  }
-}
-html body .Sarbatoreste__hercules__x {
-  font-size: 6rem;
-  line-height: 5rem;
-}
-@media screen and (max-width: 564px) {
-  html body .Sarbatoreste__hercules__x {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-  }
-}
-html body .floating-nv {
-  animation-name: floating-nv;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
-}
-html body .floating-sv {
-  animation-name: floating-sv;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
-}
-html body .floating-ne {
-  animation-name: floating-ne;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
-}
-html body .floating-circle {
-  animation-name: floating-circle;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  margin-left: 30px;
-  margin-top: 5px;
-}
-@keyframes floating-nv {
-  from {
-    transform: translate(0, 0px);
-  }
-  65% {
-    transform: translate(10px, 15px);
-  }
-  to {
-    transform: translate(0, 0px);
-  }
-}
-@keyframes floating-sv {
-  from {
-    transform: translate(0, 0px);
-  }
-  65% {
-    transform: translate(-15px, 5px);
-  }
-  to {
-    transform: translate(0, 0px);
-  }
-}
-@keyframes floating-ne {
-  from {
-    transform: translate(0, 0px);
-  }
-  65% {
-    transform: translate(10px, -12px);
-  }
-  to {
-    transform: translate(0, 0px);
-  }
-}
-@keyframes floating-circle {
-  from {
-    -webkit-transform: rotate(0deg) translate3d(6px, 0, 0) rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg) translate3d(6px, 0, 0) rotate(-360deg);
-  }
 }
 html body .button-sarbatoreste {
   display: flex;
@@ -736,6 +512,49 @@ html body .button-sarbatoreste__perioada-de-inscrieri {
   html body .button-sarbatoreste {
     margin-bottom: 2rem;
   }
+}
+html body .Organizatorii {
+  background-color: #101111;
+  color: white;
+}
+html body .Organizatorii__title {
+  margin-top: 1rem;
+}
+@media screen and (max-width: 564px) {
+  html body .Organizatorii__title {
+    margin-top: 3rem;
+  }
+}
+html body .Organizatorii__description {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+@media screen and (max-width: 564px) {
+  html body .Organizatorii__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .Organizatorii__description {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+}
+html body .Organizatorii__description strong {
+  color: #ff6914;
+}
+html body .Organizatorii__left-align {
+  text-align: left;
+}
+html body .Organizatorii__domenii {
+  margin-top: 3rem;
+}
+html body .Organizatorii__list {
+  text-align: center;
+  list-style-position: inside;
+  text-align: left;
 }
 html body .Details {
   font-size: 1.2rem;
@@ -1059,6 +878,8 @@ html body .DespreNoi {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 html body .DespreNoi__title {
   margin-bottom: 0;
@@ -1104,6 +925,39 @@ html body .DespreNoi__description {
   html body .DespreNoi__description {
     margin-bottom: 2rem;
   }
+}
+html body .Echipa__title {
+  margin-top: 9rem;
+  text-align: center;
+}
+html body .Echipa__card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+html body .Echipa__card {
+  padding: 10px;
+  margin: 10px;
+  background: #eaeaeaad;
+}
+html body .Echipa__card__img-container {
+  text-align: center;
+}
+html body .Echipa__card__img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+html body .Echipa__card__author {
+  text-align: center;
+  font-weight: 600;
+}
+html body .Echipa__card__job {
+  text-align: center;
 }
 html body .Editii {
   padding-bottom: 2rem;
@@ -1349,6 +1203,16 @@ html body .Inscriere__button {
   font-size: 1.5rem;
   padding: 1.2rem;
 }
+html body .SaParticipi {
+  padding-bottom: 2rem;
+}
+html body .SaParticipi__title {
+  margin-top: 3rem;
+  text-align: center;
+}
+html body .SaParticipi__button {
+  margin: 3rem auto;
+}
 html body .Faq {
   background-color: #101111;
   color: white;
@@ -1541,6 +1405,10 @@ html body .Footer__contact a img {
   html body .mobile-nav__x img {
     cursor: pointer;
   }
+}
+html .bolded {
+  font-weight: 600;
+  display: inline;
 }
 
 .lazy {
@@ -1885,6 +1753,11 @@ html body .Footer__contact a img {
   .slide {
     max-height: 345px;
   }
+}
+.all-team-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 /*# sourceMappingURL=style.css.map */
