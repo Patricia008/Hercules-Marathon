@@ -998,12 +998,15 @@ html {
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
+				max-width: 1197px;
+				align-self: center;
 			}
 
 			&__card {
 				padding: 10px;
 				margin: 10px;
 				background: #eaeaeaad;
+				min-height: 327px;
 
 				&__img-container {
 					text-align: center;

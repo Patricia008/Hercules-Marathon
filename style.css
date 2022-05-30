@@ -934,11 +934,14 @@ html body .Echipa__card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 1197px;
+  align-self: center;
 }
 html body .Echipa__card {
   padding: 10px;
   margin: 10px;
   background: #eaeaeaad;
+  min-height: 327px;
 }
 html body .Echipa__card__img-container {
   text-align: center;
