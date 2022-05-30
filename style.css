@@ -456,7 +456,6 @@ html body .Intro__description {
 }
 @media screen and (max-width: 564px) {
   html body .Intro__description {
-    margin-bottom: 2rem;
     margin-top: 1rem;
   }
 }
@@ -538,7 +537,6 @@ html body .Organizatorii__description {
 }
 @media screen and (max-width: 564px) {
   html body .Organizatorii__description {
-    margin-bottom: 2rem;
     margin-top: 1rem;
   }
 }
