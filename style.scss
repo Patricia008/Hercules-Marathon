@@ -1046,6 +1046,7 @@ html {
 			&__title {
 				margin-bottom: 2rem;
 				margin-top: 9rem;
+				text-align: center;
 
 				@media screen and (max-width: $phone-breakpoint) {
 					margin-top: 3rem;

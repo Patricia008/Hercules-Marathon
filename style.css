@@ -973,6 +973,7 @@ html body .Editii {
 html body .Editii__title {
   margin-bottom: 2rem;
   margin-top: 9rem;
+  text-align: center;
 }
 @media screen and (max-width: 564px) {
   html body .Editii__title {
