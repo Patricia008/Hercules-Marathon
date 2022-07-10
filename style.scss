@@ -76,6 +76,10 @@ html {
 			border-spacing: 1.5rem 0;
 			margin-left: -1.5rem;
 			margin-top: 1.5rem;
+
+			@media screen and (max-width: $phone-breakpoint) {
+				border-spacing: .5rem 0;
+			}
 		}
 
 		#desktop-nav {
@@ -115,18 +119,17 @@ html {
 		.button {
 			box-sizing: border-box;
 			background-color: $base-color;
-			font-style: italic;
 			border: 4px solid;
 			cursor: pointer;
 			display: flex;
 			align-self: center;
-			font-size: 2rem;
+			font-size: 1.75rem;
 			line-height: 2rem;
-			padding: 1.05rem;
+			padding: .25rem 1.05rem .25rem;
 			text-decoration: none;
 			text-align: center;
 			text-transform: uppercase;
-			font-weight: 900;
+			font-weight: 600;
 			border-color: $base-color;
 			color: black;
 
@@ -233,7 +236,7 @@ html {
 				top: -240px;
 			}
 
-			@media screen and (max-width: 1185px) {
+			@media screen and (max-width: 1000px) {
 				top: -176px;
 			}
 
@@ -273,20 +276,15 @@ html {
 		// Sections
 		.Heading {
 			color: white;
-			// background-image:url( ./assets/photos/cladire.jpg );
 			background-color: $black;
-			// box-shadow: inset 0 0 0 2000px rgb(2 2 2 / 70%);
 			width:100%;
-			// background-position: center;
-			// background-size: cover;
-			// background-repeat: no-repeat;
 			display: flex;
 			flex-direction: row;
-			justify-content: space-between;
+			justify-content: space-around;
 			padding-top: 1rem;
 			padding-bottom: 3rem;
 
-			@media screen and (max-width: 1185px) {
+			@media screen and (max-width: 1000px) {
 				flex-direction: column;
 				justify-content: space-around;
 			}
@@ -295,10 +293,24 @@ html {
 				padding-bottom: 6rem;
 			}
 
+			&__particip {
+				padding-top: 0.5rem;
+				padding-bottom: 0.5rem;
+			}
+
+			&__logo {
+				width: auto;
+				height: 279px;
+
+				@media screen and (max-width: 703px) {
+					height: 199px;
+				}
+			}
+
 			&__black-mountain {
 				padding-top: 5rem;
 
-				@media screen and (max-width: 1185px) {
+				@media screen and (max-width: 1000px) {
 					padding-top: 9rem;
 				}
 
@@ -317,7 +329,7 @@ html {
 					margin-left: 5rem;
 				}
 
-				@media screen and (max-width: 1185px) {
+				@media screen and (max-width: 1000px) {
 					margin-left: 0;
 					margin-top: 4rem;
 					margin-bottom: 0;
@@ -327,7 +339,7 @@ html {
 			&__title-container {
 				text-align: center;
 
-				@media screen and (max-width: 1185px) {
+				@media screen and (max-width: 1000px) {
 					text-align: left;
 				}
 			}
@@ -336,7 +348,6 @@ html {
 				display: table-row;
 				font-family: 'Myriad Pro';
 				font-weight: 900;
-				// text-align: center;
 				
 				&__hercules {
 					display: table-cell;
@@ -347,7 +358,7 @@ html {
 					flex: 1;
 					margin-right: 1rem;
 
-					@media screen and (max-width: 1185px) {
+					@media screen and (max-width: 1000px) {
 						margin-right: -3rem;
 					}
 
@@ -382,37 +393,19 @@ html {
 			}
 
 			&__subtitle {
-				font-size: 2.25rem;
-				line-height: 1.25rem;
-				font-weight: 600;
-				text-align: right;
+				font-size: 3.5rem;
+				line-height: 3.5rem;
+				font-weight: 900;
 
 				@media screen and (max-width: $phone-breakpoint) {
 					font-size: 1.25rem;
 					line-height: 0.25rem;
 				}
 
-				&__donut {
-					font-size: 2.75rem;
-					margin-top: 1rem;
-					// text-align: center;
-
-					@media screen and (max-width: 703px) {
-						font-size: 1.75rem;
-					}
-
-					@media screen and (max-width: $phone-breakpoint) {
-						font-size: 1.25rem;
-					}
-				}
 
 				&__colored {
 
-					margin-top: 3rem;
-					color: $base-color;
-					// font-weight: 600;
-					font-style: italic;
-					// text-align: center;
+					color: $turquoise;
 
 					@media screen and (max-width: 703px) {
 						font-size: 1.75rem;
@@ -421,8 +414,6 @@ html {
 
 					@media screen and (max-width: $phone-breakpoint) {
 						font-size: 1.25rem;
-						// font-weight: 900;
-						// margin-top: 2rem;
 					}
 
 				}
@@ -434,7 +425,7 @@ html {
 				margin-top: 2rem;
 				margin-bottom: 3rem;
 
-				@media screen and (max-width: 1185px) {
+				@media screen and (max-width: 1000px) {
 					max-width: 435px;
 				}
 
@@ -459,6 +450,10 @@ html {
 					font-size: 2rem;
 				}
 			}
+
+			&__perioada-de-inscrieri {
+				margin-top: 3.5rem;
+			}
 		}
 
 		.Intro {
@@ -466,18 +461,6 @@ html {
 			&__title {
 				text-align: center;
 				margin-bottom: 4rem;
-
-				@media screen and (max-width: 1185px) {
-					margin-top: -8rem;
-				}
-
-				@media screen and (max-width: 845px) {
-					margin-top: -6rem;
-				}
-
-				@media screen and (max-width: $phone-breakpoint) {
-					margin-top: -1rem;
-				}
 
 				b {
 					color: $base-color;
@@ -496,7 +479,6 @@ html {
 				}
 
 				@media screen and (max-width: $phone-breakpoint) {
-					// margin-bottom: 2rem;
 					margin-top: 1rem;
 				}
 
@@ -687,6 +669,7 @@ html {
 				&__right {
 					flex: 1;
 					margin-left: 9rem;
+					margin-bottom: 3rem;
 					
 					@media screen and (max-width: 1422px) {
 						margin-left: 6rem;
@@ -1315,6 +1298,10 @@ html {
 
 			&__button {
 				margin: 3rem auto;
+
+				button {
+					margin: auto;
+				}
 			}
 
 			&__perioada-de-inscrieri {
