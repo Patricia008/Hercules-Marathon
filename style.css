@@ -49,6 +49,12 @@ html {
 html body a {
   text-decoration: none;
 }
+html body .PricesTable {
+  border-collapse: separate;
+  border-spacing: 1.5rem 0;
+  margin-left: -1.5rem;
+  margin-top: 1.5rem;
+}
 html body #desktop-nav {
   background-color: white;
   position: fixed;
@@ -155,7 +161,6 @@ html body .perioada-de-inscrieri {
   font-size: 0.9rem;
   color: #ffad1d;
   margin-top: 0.5rem;
-  font-style: italic;
   line-height: 1rem;
 }
 html body .black-mountain {
@@ -235,7 +240,7 @@ html body .Heading {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 1rem;
-  padding-bottom: 17rem;
+  padding-bottom: 3rem;
 }
 @media screen and (max-width: 1185px) {
   html body .Heading {
@@ -342,6 +347,7 @@ html body .Heading__subtitle {
   font-size: 2.25rem;
   line-height: 1.25rem;
   font-weight: 600;
+  text-align: right;
 }
 @media screen and (max-width: 564px) {
   html body .Heading__subtitle {
@@ -415,7 +421,6 @@ html body .Heading__cta {
 }
 html body .Intro__title {
   text-align: center;
-  margin-top: -13rem;
   margin-bottom: 4rem;
 }
 @media screen and (max-width: 1185px) {
@@ -932,7 +937,7 @@ html body .Echipa__card-container {
 html body .Echipa__card {
   padding: 10px;
   margin: 10px;
-  background: #eaeaeaad;
+  background: rgba(234, 234, 234, 0.6784313725);
   min-height: 327px;
 }
 html body .Echipa__card__img-container {
@@ -1722,11 +1727,9 @@ html .bolded {
   .active-slide.slide {
     max-height: 500px;
   }
-
   .slide {
     max-height: 400px;
   }
-
   .controls {
     font-size: 18px;
   }
@@ -1740,7 +1743,6 @@ html .bolded {
   .active-slide.slide {
     max-height: 500px;
   }
-
   .slide {
     max-height: 345px;
   }
@@ -1749,7 +1751,6 @@ html .bolded {
   .active-slide.slide {
     max-height: 450px;
   }
-
   .slide {
     max-height: 345px;
   }

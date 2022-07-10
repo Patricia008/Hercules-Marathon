@@ -71,6 +71,13 @@ html {
 			text-decoration: none;
 		}
 
+		.PricesTable {
+			border-collapse: separate;
+			border-spacing: 1.5rem 0;
+			margin-left: -1.5rem;
+			margin-top: 1.5rem;
+		}
+
 		#desktop-nav {
 			background-color: white;
 			position: fixed;
@@ -182,7 +189,6 @@ html {
 			font-size: .9rem;
 			color: $base-color;
 			margin-top: .5rem;
-			font-style: italic;
 			line-height: 1rem;
 
 			// @media screen and (max-width: $phone-breakpoint) {
@@ -278,7 +284,7 @@ html {
 			flex-direction: row;
 			justify-content: space-between;
 			padding-top: 1rem;
-			padding-bottom: 17rem;
+			padding-bottom: 3rem;
 
 			@media screen and (max-width: 1185px) {
 				flex-direction: column;
@@ -379,6 +385,7 @@ html {
 				font-size: 2.25rem;
 				line-height: 1.25rem;
 				font-weight: 600;
+				text-align: right;
 
 				@media screen and (max-width: $phone-breakpoint) {
 					font-size: 1.25rem;
@@ -458,7 +465,6 @@ html {
 
 			&__title {
 				text-align: center;
-				margin-top: -13rem;
 				margin-bottom: 4rem;
 
 				@media screen and (max-width: 1185px) {
