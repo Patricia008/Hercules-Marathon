@@ -81,7 +81,7 @@ function read_one_page() {
 
 function click_vezi_participanti() {
 	const participanti_table = document.getElementsByClassName('Participanti__table')[0]
-	const vezi_participanti_button = document.getElementsByClassName('Participanti__button')[0]
+	const vezi_participanti_button = document.getElementById('Participanti__button')
 	const incarca_inca_o_pagina_button = document.getElementsByClassName('Participanti__incarca-button')[0]
 	if (vezi_participanti_button.textContent.trim() === "Vezi Participanți") {
 		participanti_table.style.opacity = 1

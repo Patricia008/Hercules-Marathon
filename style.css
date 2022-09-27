@@ -504,7 +504,7 @@ html body .Organizatorii {
   color: white;
 }
 html body .Organizatorii__title {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 @media screen and (max-width: 564px) {
   html body .Organizatorii__title {
@@ -864,7 +864,7 @@ html body .DespreNoi {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 3rem;
+  padding-top: 4rem;
   padding-bottom: 5rem;
 }
 html body .DespreNoi__title {

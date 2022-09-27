@@ -548,8 +548,7 @@ html {
 			color: white;
 
 			&__title {
-				margin-top: 1rem;
-
+				margin-top: 0;
 				@media screen and (max-width: $phone-breakpoint) {
 					margin-top: 3rem;
 				}
@@ -931,7 +930,7 @@ html {
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			padding-top: 3rem;
+			padding-top: 4rem;
 			padding-bottom: 5rem;
 		
 			&__title {
