@@ -188,18 +188,6 @@ html {
 			}
 		}
 
-		.perioada-de-inscrieri {
-			font-size: .9rem;
-			color: $base-color;
-			margin-top: .5rem;
-			line-height: 1rem;
-
-			// @media screen and (max-width: $phone-breakpoint) {
-			// 	font-size: .7rem;
-			// 	line-height: .75rem;
-			// }
-		}
-
 		.black-mountain {
 			padding: 0;
 			position: relative;
@@ -293,9 +281,21 @@ html {
 				padding-bottom: 6rem;
 			}
 
-			&__particip {
-				padding-top: 0.5rem;
-				padding-bottom: 0.5rem;
+			&__perioada-s-a-terminat {
+				font-size: 1.2rem;
+				line-height: 1.5rem;
+				text-align: left;
+				color: $base-color;
+
+				@media screen and (max-width: 703px) {
+					font-size: 1.2rem;
+    				line-height: 1.5rem;
+				}
+
+				@media screen and (max-width: $phone-breakpoint) {
+					font-size: $smol-text-font-size;
+					line-height: $smol-text-line-height;
+				}
 			}
 
 			&__logo {
@@ -430,8 +430,8 @@ html {
 				}
 
 				@media screen and (max-width: 703px) {
-					font-size: 1rem;
-					line-height: 1.50rem;
+					font-size: 1.2rem;
+					line-height: 1.5rem;
 				}
 
 				@media screen and (max-width: $phone-breakpoint) {
@@ -449,10 +449,6 @@ html {
 				@media screen and (max-width: $phone-breakpoint) {
 					font-size: 2rem;
 				}
-			}
-
-			&__perioada-de-inscrieri {
-				margin-top: 3.5rem;
 			}
 		}
 
@@ -531,11 +527,6 @@ html {
 					display: block;
 					padding: 0.5rem 2rem;
 				}
-			}
-
-			&__perioada-de-inscrieri {
-				margin: 0.5rem auto;
-				color: $orange;
 			}
 
 			@media screen and (max-width: $phone-breakpoint) {
@@ -1301,11 +1292,6 @@ html {
 				button {
 					margin: auto;
 				}
-			}
-
-			&__perioada-de-inscrieri {
-				margin: 0.5rem auto;
-				color: black;
 			}
 		}
 
