@@ -271,11 +271,11 @@ html body .Heading__perioada-s-a-terminat {
 }
 html body .Heading__logo {
   width: auto;
-  height: 279px;
+  height: 424px;
 }
 @media screen and (max-width: 703px) {
   html body .Heading__logo {
-    height: 199px;
+    height: 300px;
   }
 }
 html body .Heading__black-mountain {
