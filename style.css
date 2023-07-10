@@ -369,8 +369,8 @@ html body .Heading__title__hercules {
   }
 }
 html body .Heading__subtitle {
-  font-size: 3.5rem;
-  line-height: 3.5rem;
+  font-size: 58px;
+  line-height: 58px;
   font-weight: 900;
 }
 @media screen and (max-width: 564px) {
@@ -380,7 +380,7 @@ html body .Heading__subtitle {
   }
 }
 html body .Heading__subtitle__colored {
-  color: #00e0dd;
+  color: #ffad1d;
 }
 @media screen and (max-width: 703px) {
   html body .Heading__subtitle__colored {
@@ -394,10 +394,9 @@ html body .Heading__subtitle__colored {
   }
 }
 html body .Heading__description {
-  font-size: 1.8rem;
-  line-height: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  font-size: 21px;
+  margin-top: 20px;
+  margin-bottom: 2.5rem;
 }
 @media screen and (max-width: 1000px) {
   html body .Heading__description {
@@ -424,7 +423,34 @@ html body .Heading__cta {
 }
 @media screen and (max-width: 564px) {
   html body .Heading__cta {
-    font-size: 2rem;
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 703px) {
+  html body .Heading__cta {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 564px) {
+  html body .Heading__cta {
+    font-size: 1.25rem;
+    line-height: 4rem;
+  }
+}
+html body .Heading__particip {
+  padding: 1rem;
+}
+html body .Heading__romburi {
+  width: 196px;
+  height: fit-content;
+  position: absolute;
+  right: 1rem;
+  top: 8rem;
+  z-index: 1;
+}
+@media screen and (max-width: 2207px) {
+  html body .Heading__romburi {
+    top: 5rem;
   }
 }
 html body .Intro__title {

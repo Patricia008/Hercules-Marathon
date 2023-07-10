@@ -393,8 +393,8 @@ html {
 			}
 
 			&__subtitle {
-				font-size: 3.5rem;
-				line-height: 3.5rem;
+				font-size: 58px;
+				line-height: 58px;
 				font-weight: 900;
 
 				@media screen and (max-width: $phone-breakpoint) {
@@ -405,7 +405,7 @@ html {
 
 				&__colored {
 
-					color: $turquoise;
+					color: $base-color;
 
 					@media screen and (max-width: 703px) {
 						font-size: 1.75rem;
@@ -420,10 +420,9 @@ html {
 			}
 
 			&__description {
-				font-size: 1.8rem;
-				line-height: 2rem;
-				margin-top: 2rem;
-				margin-bottom: 3rem;
+				font-size: 21px;
+				margin-top: 20px;
+				margin-bottom: 2.5rem;
 
 				@media screen and (max-width: 1000px) {
 					max-width: 435px;
@@ -447,7 +446,32 @@ html {
 				font-weight: 600;
 
 				@media screen and (max-width: $phone-breakpoint) {
-					font-size: 2rem;
+					font-size: 1.25rem;
+				}
+				@media screen and (max-width: 703px) {
+					font-size: 1.75rem;
+				}
+
+				@media screen and (max-width: $phone-breakpoint) {
+					font-size: 1.25rem;
+					line-height: 4rem;
+				}
+			}
+
+			&__particip {
+				padding: 1rem;
+			}
+
+			&__romburi {
+				width: 196px;
+				height: fit-content;
+				position: absolute;
+				right: 1rem;
+				top: 8rem;
+				z-index: 1;
+
+				@media screen and (max-width: 2207px) {
+					top: 5rem;
 				}
 			}
 		}
