@@ -301,9 +301,16 @@ html {
 			&__logo {
 				width: auto;
 				height: 424px;
+				position: relative;
+				top: -4rem;
 
 				@media screen and (max-width: 703px) {
 					height: 300px;
+				}
+
+				@media screen and (max-width: $phone-breakpoint) {
+					height: 203px;
+					top: initial;
 				}
 			}
 
