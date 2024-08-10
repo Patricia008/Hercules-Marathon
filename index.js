@@ -35,6 +35,14 @@ function click_see_more_semimaraton() {
 	change_visible_state(hidden_text, see_more_button)
 }
 
+
+function click_see_more_cross() {
+	const hidden_text = document.getElementsByClassName('Trasee__cross__hidden')[0]
+	const see_more_button = document.getElementsByClassName('Trasee__cross__button')[0]
+
+	change_visible_state(hidden_text, see_more_button)
+}
+
 function click_see_more_maraton() {
 	const hidden_text = document.getElementsByClassName('Trasee__maraton__hidden')[0]
 	const see_more_button = document.getElementsByClassName('Trasee__maraton__button')[0]

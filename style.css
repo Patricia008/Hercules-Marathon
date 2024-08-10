@@ -51,8 +51,9 @@ html body a {
 }
 html body .PricesTable {
   border-collapse: separate;
-  border-spacing: 1.5rem 0;
-  margin-left: -1.5rem;
+  border-spacing: 1rem 0;
+  margin-left: -4.5rem;
+  margin-right: -5rem;
   margin-top: 1.5rem;
 }
 @media screen and (max-width: 564px) {
@@ -273,7 +274,6 @@ html body .Heading__logo {
   width: auto;
   height: 424px;
   position: relative;
-  top: -4rem;
 }
 @media screen and (max-width: 703px) {
   html body .Heading__logo {
@@ -863,6 +863,30 @@ html body .Trasee__semimaraton__button:hover {
     margin-bottom: 3rem;
   }
   html body .Trasee__semimaraton__button:hover {
+    background-color: #ffad1d;
+    border-color: #ffad1d;
+  }
+}
+html body .Trasee__cross__hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height 0ms 400ms, opacity 400ms 0ms;
+}
+html body .Trasee__cross__button {
+  margin-bottom: 0;
+}
+html body .Trasee__cross__button:hover {
+  background-color: #00e0dd;
+  border-color: #00e0dd;
+  color: black;
+}
+@media screen and (max-width: 564px) {
+  html body .Trasee__cross__button {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  html body .Trasee__cross__button:hover {
     background-color: #ffad1d;
     border-color: #ffad1d;
   }

@@ -73,8 +73,9 @@ html {
 
 		.PricesTable {
 			border-collapse: separate;
-			border-spacing: 1.5rem 0;
-			margin-left: -1.5rem;
+			border-spacing: 1rem 0;
+			margin-left: -4.5rem;
+			margin-right: -5rem;
 			margin-top: 1.5rem;
 
 			@media screen and (max-width: $phone-breakpoint) {
@@ -302,7 +303,6 @@ html {
 				width: auto;
 				height: 424px;
 				position: relative;
-				top: -4rem;
 
 				@media screen and (max-width: 703px) {
 					height: 300px;
@@ -885,6 +885,36 @@ html {
 			}
 
 			&__semimaraton {
+				&__hidden {
+					opacity: 0;
+					height: 0;
+					overflow: hidden;
+					transition: height 0ms 400ms, opacity 400ms 0ms;
+				}
+
+				&__button {
+					margin-bottom: 0;
+
+					&:hover {
+						background-color: $turquoise;
+						border-color: $turquoise;
+						color: black;
+					}
+				
+					@media screen and (max-width: $phone-breakpoint) {
+						margin-top: 3rem;
+						margin-bottom: 3rem;
+
+						&:hover {
+							background-color: $base-color;
+							border-color: $base-color;
+						}
+					}
+				}
+
+			}
+
+			&__cross {
 				&__hidden {
 					opacity: 0;
 					height: 0;
