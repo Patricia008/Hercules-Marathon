@@ -73,9 +73,8 @@ html {
 
 		.PricesTable {
 			border-collapse: separate;
-			border-spacing: 1rem 0;
-			margin-left: -4.5rem;
-			margin-right: -5rem;
+			border-spacing: 1.5rem 0;
+			margin-left: -1.5rem;
 			margin-top: 1.5rem;
 
 			@media screen and (max-width: $phone-breakpoint) {
