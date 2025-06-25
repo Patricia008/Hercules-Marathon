@@ -636,6 +636,10 @@ html body .Details__text_container__maraton {
   font-weight: 600;
   color: #da0000;
 }
+html body .Details__text_container__cros {
+  font-weight: 600;
+  color: #ff6914;
+}
 html body .Details__text_container ul {
   list-style-type: none;
 }
