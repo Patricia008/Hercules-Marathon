@@ -231,8 +231,8 @@ html body .logo {
   }
 }
 html body .Heading {
-  color: white;
-  background-color: #101111;
+  color: #0f1f3a;
+  background-color: #198c82;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -301,7 +301,6 @@ html body .Heading__black-mountain {
 html body .Heading__right {
   margin-left: 11rem;
   z-index: 2;
-  margin-bottom: 4rem;
 }
 @media screen and (max-width: 1470px) {
   html body .Heading__right {
@@ -534,7 +533,6 @@ html body .button-sarbatoreste__button:active {
   }
 }
 html body .Organizatorii {
-  background-color: #101111;
   color: white;
 }
 html body .Organizatorii__title {
