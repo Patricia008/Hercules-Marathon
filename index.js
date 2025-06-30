@@ -55,7 +55,7 @@ let failedToLoadParticipants = false
 const PAGE_SIZE = 16
 let pageCount = 1
 
-fetch('https://racetime.ro/api/participants/83')
+fetch('https://racetime.ro/api/participants/152')
 	.then(response => response.json())
 	.then(data => {
 		participanti = data
